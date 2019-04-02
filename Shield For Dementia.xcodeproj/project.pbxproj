@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		185893D622536F36006A5C17 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 185893D522536F36006A5C17 /* GoogleService-Info.plist */; };
+		1CD7C18F83F7034E22BA15FB /* Pods_Shield_For_Dementia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6490D335997F1C0E98E8027D /* Pods_Shield_For_Dementia.framework */; };
+		2A5045B1E8B14B86831249A2 /* Pods_Shield_For_DementiaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A9CF3B9C3B479A0488B12D /* Pods_Shield_For_DementiaTests.framework */; };
+		43EF146BCA407CC3B5C555E1 /* Pods_Shield_For_DementiaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB748431E958BFEEF13320BD /* Pods_Shield_For_DementiaUITests.framework */; };
 		BD96EABE2252D90C0042F236 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96EABD2252D90C0042F236 /* AppDelegate.swift */; };
 		BD96EAC02252D90C0042F236 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96EABF2252D90C0042F236 /* ViewController.swift */; };
 		BD96EAC32252D90C0042F236 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD96EAC12252D90C0042F236 /* Main.storyboard */; };
@@ -35,6 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0FBABC181B06B370249B39E1 /* Pods-Shield For Dementia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shield For Dementia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shield For Dementia/Pods-Shield For Dementia.debug.xcconfig"; sourceTree = "<group>"; };
+		185893D522536F36006A5C17 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		19B6D2559A4C511B35CB61D9 /* Pods-Shield For DementiaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shield For DementiaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shield For DementiaTests/Pods-Shield For DementiaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3E71CD4C7E2401A330C3684F /* Pods-Shield For DementiaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shield For DementiaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shield For DementiaTests/Pods-Shield For DementiaTests.release.xcconfig"; sourceTree = "<group>"; };
+		6490D335997F1C0E98E8027D /* Pods_Shield_For_Dementia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shield_For_Dementia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86A9CF3B9C3B479A0488B12D /* Pods_Shield_For_DementiaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shield_For_DementiaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4D6B6FA7D8939F2B516DDA2 /* Pods-Shield For DementiaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shield For DementiaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shield For DementiaUITests/Pods-Shield For DementiaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BD96EABA2252D90B0042F236 /* Shield For Dementia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shield For Dementia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD96EABD2252D90C0042F236 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD96EABF2252D90C0042F236 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +60,9 @@
 		BD96EADC2252D90D0042F236 /* Shield For DementiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shield For DementiaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD96EAE02252D90D0042F236 /* Shield_For_DementiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shield_For_DementiaUITests.swift; sourceTree = "<group>"; };
 		BD96EAE22252D90D0042F236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB748431E958BFEEF13320BD /* Pods_Shield_For_DementiaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shield_For_DementiaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD6478BC999782C6B294D84F /* Pods-Shield For Dementia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shield For Dementia.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shield For Dementia/Pods-Shield For Dementia.release.xcconfig"; sourceTree = "<group>"; };
+		FC84541F1BE76BA887CF6AD5 /* Pods-Shield For DementiaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shield For DementiaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shield For DementiaUITests/Pods-Shield For DementiaUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CD7C18F83F7034E22BA15FB /* Pods_Shield_For_Dementia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A5045B1E8B14B86831249A2 /* Pods_Shield_For_DementiaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +86,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43EF146BCA407CC3B5C555E1 /* Pods_Shield_For_DementiaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B96C0E48537EE60BD243FEE2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FBABC181B06B370249B39E1 /* Pods-Shield For Dementia.debug.xcconfig */,
+				DD6478BC999782C6B294D84F /* Pods-Shield For Dementia.release.xcconfig */,
+				19B6D2559A4C511B35CB61D9 /* Pods-Shield For DementiaTests.debug.xcconfig */,
+				3E71CD4C7E2401A330C3684F /* Pods-Shield For DementiaTests.release.xcconfig */,
+				B4D6B6FA7D8939F2B516DDA2 /* Pods-Shield For DementiaUITests.debug.xcconfig */,
+				FC84541F1BE76BA887CF6AD5 /* Pods-Shield For DementiaUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BD96EAB12252D90B0042F236 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +113,8 @@
 				BD96EAD42252D90D0042F236 /* Shield For DementiaTests */,
 				BD96EADF2252D90D0042F236 /* Shield For DementiaUITests */,
 				BD96EABB2252D90B0042F236 /* Products */,
+				B96C0E48537EE60BD243FEE2 /* Pods */,
+				E2BF8F72D911A4649FDFDC04 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +134,7 @@
 				BD96EABD2252D90C0042F236 /* AppDelegate.swift */,
 				BD96EABF2252D90C0042F236 /* ViewController.swift */,
 				BD96EAC12252D90C0042F236 /* Main.storyboard */,
+				185893D522536F36006A5C17 /* GoogleService-Info.plist */,
 				BD96EAC72252D90D0042F236 /* Assets.xcassets */,
 				BD96EAC92252D90D0042F236 /* LaunchScreen.storyboard */,
 				BD96EACC2252D90D0042F236 /* Info.plist */,
@@ -128,6 +161,16 @@
 			path = "Shield For DementiaUITests";
 			sourceTree = "<group>";
 		};
+		E2BF8F72D911A4649FDFDC04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6490D335997F1C0E98E8027D /* Pods_Shield_For_Dementia.framework */,
+				86A9CF3B9C3B479A0488B12D /* Pods_Shield_For_DementiaTests.framework */,
+				DB748431E958BFEEF13320BD /* Pods_Shield_For_DementiaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD96EAE52252D90D0042F236 /* Build configuration list for PBXNativeTarget "Shield For Dementia" */;
 			buildPhases = (
+				86F492BE9CD2C282CE7A8388 /* [CP] Check Pods Manifest.lock */,
 				BD96EAB62252D90B0042F236 /* Sources */,
 				BD96EAB72252D90B0042F236 /* Frameworks */,
 				BD96EAB82252D90B0042F236 /* Resources */,
+				D95FCACACA4E9C0A9C13A583 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD96EAE82252D90D0042F236 /* Build configuration list for PBXNativeTarget "Shield For DementiaTests" */;
 			buildPhases = (
+				E2D9F04985EE102F11CE56B2 /* [CP] Check Pods Manifest.lock */,
 				BD96EACD2252D90D0042F236 /* Sources */,
 				BD96EACE2252D90D0042F236 /* Frameworks */,
 				BD96EACF2252D90D0042F236 /* Resources */,
@@ -170,6 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD96EAEB2252D90D0042F236 /* Build configuration list for PBXNativeTarget "Shield For DementiaUITests" */;
 			buildPhases = (
+				D15C71A661236E891BDEBAE2 /* [CP] Check Pods Manifest.lock */,
 				BD96EAD82252D90D0042F236 /* Sources */,
 				BD96EAD92252D90D0042F236 /* Frameworks */,
 				BD96EADA2252D90D0042F236 /* Resources */,
@@ -233,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD96EACB2252D90D0042F236 /* LaunchScreen.storyboard in Resources */,
+				185893D622536F36006A5C17 /* GoogleService-Info.plist in Resources */,
 				BD96EAC82252D90D0042F236 /* Assets.xcassets in Resources */,
 				BD96EAC32252D90C0042F236 /* Main.storyboard in Resources */,
 			);
@@ -253,6 +301,103 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		86F492BE9CD2C282CE7A8388 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Shield For Dementia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D15C71A661236E891BDEBAE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Shield For DementiaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D95FCACACA4E9C0A9C13A583 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Shield For Dementia/Pods-Shield For Dementia-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Shield For Dementia/Pods-Shield For Dementia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2D9F04985EE102F11CE56B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Shield For DementiaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BD96EAB62252D90B0042F236 /* Sources */ = {
@@ -434,6 +579,7 @@
 		};
 		BD96EAE62252D90D0042F236 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FBABC181B06B370249B39E1 /* Pods-Shield For Dementia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -451,6 +597,7 @@
 		};
 		BD96EAE72252D90D0042F236 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD6478BC999782C6B294D84F /* Pods-Shield For Dementia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +615,7 @@
 		};
 		BD96EAE92252D90D0042F236 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19B6D2559A4C511B35CB61D9 /* Pods-Shield For DementiaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +636,7 @@
 		};
 		BD96EAEA2252D90D0042F236 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E71CD4C7E2401A330C3684F /* Pods-Shield For DementiaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +657,7 @@
 		};
 		BD96EAEC2252D90D0042F236 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4D6B6FA7D8939F2B516DDA2 /* Pods-Shield For DementiaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +677,7 @@
 		};
 		BD96EAED2252D90D0042F236 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC84541F1BE76BA887CF6AD5 /* Pods-Shield For DementiaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>243666004676-4th0sms3caqrhspoaae31e1bfgiontrv.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.243666004676-4th0sms3caqrhspoaae31e1bfgiontrv</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBgt2nbbHtp7mThSwvravGF180OACe6w7k</string>
+	<key>GCM_SENDER_ID</key>
+	<string>243666004676</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>monash.Shield-For-Dementia</string>
+	<key>PROJECT_ID</key>
+	<string>fit5120</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fit5120.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:243666004676:ios:6432e517b3eb55d8</string>
+	<key>DATABASE_URL</key>
+	<string>https://fit5120.firebaseio.com</string>
+</dict>
+</plist>
