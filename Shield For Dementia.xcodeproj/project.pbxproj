@@ -12,13 +12,16 @@
 		2A5045B1E8B14B86831249A2 /* Pods_Shield_For_DementiaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A9CF3B9C3B479A0488B12D /* Pods_Shield_For_DementiaTests.framework */; };
 		43EF146BCA407CC3B5C555E1 /* Pods_Shield_For_DementiaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB748431E958BFEEF13320BD /* Pods_Shield_For_DementiaUITests.framework */; };
 		BD96EABE2252D90C0042F236 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96EABD2252D90C0042F236 /* AppDelegate.swift */; };
-		BD96EAC02252D90C0042F236 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96EABF2252D90C0042F236 /* ViewController.swift */; };
 		BD96EAC32252D90C0042F236 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD96EAC12252D90C0042F236 /* Main.storyboard */; };
 		BD96EAC62252D90C0042F236 /* Shield_For_Dementia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD96EAC42252D90C0042F236 /* Shield_For_Dementia.xcdatamodeld */; };
 		BD96EAC82252D90D0042F236 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD96EAC72252D90D0042F236 /* Assets.xcassets */; };
 		BD96EACB2252D90D0042F236 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD96EAC92252D90D0042F236 /* LaunchScreen.storyboard */; };
 		BD96EAD62252D90D0042F236 /* Shield_For_DementiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96EAD52252D90D0042F236 /* Shield_For_DementiaTests.swift */; };
 		BD96EAE12252D90D0042F236 /* Shield_For_DementiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96EAE02252D90D0042F236 /* Shield_For_DementiaUITests.swift */; };
+		BD96EB2C22548D820042F236 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96EB2B22548D820042F236 /* LoginViewController.swift */; };
+		BD96EB2F22548EE90042F236 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96EB2E22548EE90042F236 /* WelcomeViewController.swift */; };
+		BD96EB33225497490042F236 /* LoginNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96EB32225497490042F236 /* LoginNavigationController.swift */; };
+		BD96EB392254B4730042F236 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96EB382254B4730042F236 /* SignUpController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +51,6 @@
 		B4D6B6FA7D8939F2B516DDA2 /* Pods-Shield For DementiaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shield For DementiaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shield For DementiaUITests/Pods-Shield For DementiaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BD96EABA2252D90B0042F236 /* Shield For Dementia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shield For Dementia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD96EABD2252D90C0042F236 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BD96EABF2252D90C0042F236 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BD96EAC22252D90C0042F236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD96EAC52252D90C0042F236 /* Shield_For_Dementia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shield_For_Dementia.xcdatamodel; sourceTree = "<group>"; };
 		BD96EAC72252D90D0042F236 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,6 +62,10 @@
 		BD96EADC2252D90D0042F236 /* Shield For DementiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shield For DementiaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD96EAE02252D90D0042F236 /* Shield_For_DementiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shield_For_DementiaUITests.swift; sourceTree = "<group>"; };
 		BD96EAE22252D90D0042F236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD96EB2B22548D820042F236 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BD96EB2E22548EE90042F236 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		BD96EB32225497490042F236 /* LoginNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNavigationController.swift; sourceTree = "<group>"; };
+		BD96EB382254B4730042F236 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		DB748431E958BFEEF13320BD /* Pods_Shield_For_DementiaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shield_For_DementiaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD6478BC999782C6B294D84F /* Pods-Shield For Dementia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shield For Dementia.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shield For Dementia/Pods-Shield For Dementia.release.xcconfig"; sourceTree = "<group>"; };
 		FC84541F1BE76BA887CF6AD5 /* Pods-Shield For DementiaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shield For DementiaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shield For DementiaUITests/Pods-Shield For DementiaUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,8 +137,9 @@
 		BD96EABC2252D90B0042F236 /* Shield For Dementia */ = {
 			isa = PBXGroup;
 			children = (
+				BD96EB3422549C7C0042F236 /* Segue */,
+				BD96EB2D22548D9D0042F236 /* ViewController */,
 				BD96EABD2252D90C0042F236 /* AppDelegate.swift */,
-				BD96EABF2252D90C0042F236 /* ViewController.swift */,
 				BD96EAC12252D90C0042F236 /* Main.storyboard */,
 				185893D522536F36006A5C17 /* GoogleService-Info.plist */,
 				BD96EAC72252D90D0042F236 /* Assets.xcassets */,
@@ -159,6 +166,24 @@
 				BD96EAE22252D90D0042F236 /* Info.plist */,
 			);
 			path = "Shield For DementiaUITests";
+			sourceTree = "<group>";
+		};
+		BD96EB2D22548D9D0042F236 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BD96EB2B22548D820042F236 /* LoginViewController.swift */,
+				BD96EB2E22548EE90042F236 /* WelcomeViewController.swift */,
+				BD96EB32225497490042F236 /* LoginNavigationController.swift */,
+				BD96EB382254B4730042F236 /* SignUpController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BD96EB3422549C7C0042F236 /* Segue */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Segue;
 			sourceTree = "<group>";
 		};
 		E2BF8F72D911A4649FDFDC04 /* Frameworks */ = {
@@ -404,9 +429,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD96EAC02252D90C0042F236 /* ViewController.swift in Sources */,
+				BD96EB2C22548D820042F236 /* LoginViewController.swift in Sources */,
+				BD96EB33225497490042F236 /* LoginNavigationController.swift in Sources */,
+				BD96EB2F22548EE90042F236 /* WelcomeViewController.swift in Sources */,
 				BD96EABE2252D90C0042F236 /* AppDelegate.swift in Sources */,
 				BD96EAC62252D90C0042F236 /* Shield_For_Dementia.xcdatamodeld in Sources */,
+				BD96EB392254B4730042F236 /* SignUpController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +611,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UMYGUF33MZ;
 				INFOPLIST_FILE = "Shield For Dementia/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -601,6 +630,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UMYGUF33MZ;
 				INFOPLIST_FILE = "Shield For Dementia/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
