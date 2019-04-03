@@ -12,10 +12,12 @@ class WelcomeViewController: UIViewController {
 
     @IBOutlet weak var continueButton: UIButton!
     
+    override func viewDidAppear(_ animated: Bool) {
+        self.navigationController!.setNavigationBarHidden(true, animated: true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         continueButton.layer.cornerRadius = 10
-        self.navigationController!.isNavigationBarHidden = true
         // Do any additional setup after loading the view.
     }
     

@@ -10,18 +10,21 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var logInButton: UIButton!
     @IBOutlet weak var userNameTF: UITextField!
     @IBOutlet weak var pswTF: UITextField!
     @IBOutlet weak var blurView: UIView!
     
     override func viewDidAppear(_ animated: Bool) {
         userNameTF.becomeFirstResponder()
+        self.navigationController!.setNavigationBarHidden(false, animated: true)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.blurView.layer.cornerRadius = 20
         self.blurView.clipsToBounds = true
+        logInButton.layer.cornerRadius = 10
         // Do any additional setup after loading the view.
     }
     

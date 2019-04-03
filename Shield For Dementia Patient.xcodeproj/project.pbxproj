@@ -21,7 +21,7 @@
 		BD96EB2C22548D820042F236 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96EB2B22548D820042F236 /* LoginViewController.swift */; };
 		BD96EB2F22548EE90042F236 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96EB2E22548EE90042F236 /* WelcomeViewController.swift */; };
 		BD96EB33225497490042F236 /* LoginNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96EB32225497490042F236 /* LoginNavigationController.swift */; };
-		BD96EB392254B4730042F236 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96EB382254B4730042F236 /* SignUpController.swift */; };
+		BD96EB3D2254DBCA0042F236 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96EB3C2254DBC90042F236 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,23 +49,23 @@
 		6490D335997F1C0E98E8027D /* Pods_Shield_For_Dementia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shield_For_Dementia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86A9CF3B9C3B479A0488B12D /* Pods_Shield_For_DementiaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shield_For_DementiaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4D6B6FA7D8939F2B516DDA2 /* Pods-Shield For DementiaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shield For DementiaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shield For DementiaUITests/Pods-Shield For DementiaUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		BD96EABA2252D90B0042F236 /* Shield For Dementia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shield For Dementia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD96EABA2252D90B0042F236 /* Shield For Dementia Patient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shield For Dementia Patient.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD96EABD2252D90C0042F236 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD96EAC22252D90C0042F236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD96EAC52252D90C0042F236 /* Shield_For_Dementia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shield_For_Dementia.xcdatamodel; sourceTree = "<group>"; };
 		BD96EAC72252D90D0042F236 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD96EACA2252D90D0042F236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD96EACC2252D90D0042F236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BD96EAD12252D90D0042F236 /* Shield For DementiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shield For DementiaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD96EAD12252D90D0042F236 /* Shield For Dementia PatientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shield For Dementia PatientTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD96EAD52252D90D0042F236 /* Shield_For_DementiaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shield_For_DementiaTests.swift; sourceTree = "<group>"; };
 		BD96EAD72252D90D0042F236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BD96EADC2252D90D0042F236 /* Shield For DementiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shield For DementiaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD96EADC2252D90D0042F236 /* Shield For Dementia PatientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shield For Dementia PatientUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD96EAE02252D90D0042F236 /* Shield_For_DementiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shield_For_DementiaUITests.swift; sourceTree = "<group>"; };
 		BD96EAE22252D90D0042F236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD96EB2B22548D820042F236 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BD96EB2E22548EE90042F236 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		BD96EB32225497490042F236 /* LoginNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNavigationController.swift; sourceTree = "<group>"; };
-		BD96EB382254B4730042F236 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		BD96EB3C2254DBC90042F236 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		DB748431E958BFEEF13320BD /* Pods_Shield_For_DementiaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shield_For_DementiaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD6478BC999782C6B294D84F /* Pods-Shield For Dementia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shield For Dementia.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shield For Dementia/Pods-Shield For Dementia.release.xcconfig"; sourceTree = "<group>"; };
 		FC84541F1BE76BA887CF6AD5 /* Pods-Shield For DementiaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shield For DementiaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shield For DementiaUITests/Pods-Shield For DementiaUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -127,9 +127,9 @@
 		BD96EABB2252D90B0042F236 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BD96EABA2252D90B0042F236 /* Shield For Dementia.app */,
-				BD96EAD12252D90D0042F236 /* Shield For DementiaTests.xctest */,
-				BD96EADC2252D90D0042F236 /* Shield For DementiaUITests.xctest */,
+				BD96EABA2252D90B0042F236 /* Shield For Dementia Patient.app */,
+				BD96EAD12252D90D0042F236 /* Shield For Dementia PatientTests.xctest */,
+				BD96EADC2252D90D0042F236 /* Shield For Dementia PatientUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,10 +171,10 @@
 		BD96EB2D22548D9D0042F236 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				BD96EB3C2254DBC90042F236 /* SignUpViewController.swift */,
 				BD96EB2B22548D820042F236 /* LoginViewController.swift */,
 				BD96EB2E22548EE90042F236 /* WelcomeViewController.swift */,
 				BD96EB32225497490042F236 /* LoginNavigationController.swift */,
-				BD96EB382254B4730042F236 /* SignUpController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -199,9 +199,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BD96EAB92252D90B0042F236 /* Shield For Dementia */ = {
+		BD96EAB92252D90B0042F236 /* Shield For Dementia Patient */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BD96EAE52252D90D0042F236 /* Build configuration list for PBXNativeTarget "Shield For Dementia" */;
+			buildConfigurationList = BD96EAE52252D90D0042F236 /* Build configuration list for PBXNativeTarget "Shield For Dementia Patient" */;
 			buildPhases = (
 				86F492BE9CD2C282CE7A8388 /* [CP] Check Pods Manifest.lock */,
 				BD96EAB62252D90B0042F236 /* Sources */,
@@ -213,14 +213,14 @@
 			);
 			dependencies = (
 			);
-			name = "Shield For Dementia";
+			name = "Shield For Dementia Patient";
 			productName = "Shield For Dementia";
-			productReference = BD96EABA2252D90B0042F236 /* Shield For Dementia.app */;
+			productReference = BD96EABA2252D90B0042F236 /* Shield For Dementia Patient.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BD96EAD02252D90D0042F236 /* Shield For DementiaTests */ = {
+		BD96EAD02252D90D0042F236 /* Shield For Dementia PatientTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BD96EAE82252D90D0042F236 /* Build configuration list for PBXNativeTarget "Shield For DementiaTests" */;
+			buildConfigurationList = BD96EAE82252D90D0042F236 /* Build configuration list for PBXNativeTarget "Shield For Dementia PatientTests" */;
 			buildPhases = (
 				E2D9F04985EE102F11CE56B2 /* [CP] Check Pods Manifest.lock */,
 				BD96EACD2252D90D0042F236 /* Sources */,
@@ -232,14 +232,14 @@
 			dependencies = (
 				BD96EAD32252D90D0042F236 /* PBXTargetDependency */,
 			);
-			name = "Shield For DementiaTests";
+			name = "Shield For Dementia PatientTests";
 			productName = "Shield For DementiaTests";
-			productReference = BD96EAD12252D90D0042F236 /* Shield For DementiaTests.xctest */;
+			productReference = BD96EAD12252D90D0042F236 /* Shield For Dementia PatientTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		BD96EADB2252D90D0042F236 /* Shield For DementiaUITests */ = {
+		BD96EADB2252D90D0042F236 /* Shield For Dementia PatientUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BD96EAEB2252D90D0042F236 /* Build configuration list for PBXNativeTarget "Shield For DementiaUITests" */;
+			buildConfigurationList = BD96EAEB2252D90D0042F236 /* Build configuration list for PBXNativeTarget "Shield For Dementia PatientUITests" */;
 			buildPhases = (
 				D15C71A661236E891BDEBAE2 /* [CP] Check Pods Manifest.lock */,
 				BD96EAD82252D90D0042F236 /* Sources */,
@@ -251,9 +251,9 @@
 			dependencies = (
 				BD96EADE2252D90D0042F236 /* PBXTargetDependency */,
 			);
-			name = "Shield For DementiaUITests";
+			name = "Shield For Dementia PatientUITests";
 			productName = "Shield For DementiaUITests";
-			productReference = BD96EADC2252D90D0042F236 /* Shield For DementiaUITests.xctest */;
+			productReference = BD96EADC2252D90D0042F236 /* Shield For Dementia PatientUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -279,7 +279,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BD96EAB52252D90B0042F236 /* Build configuration list for PBXProject "Shield For Dementia" */;
+			buildConfigurationList = BD96EAB52252D90B0042F236 /* Build configuration list for PBXProject "Shield For Dementia Patient" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -292,9 +292,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BD96EAB92252D90B0042F236 /* Shield For Dementia */,
-				BD96EAD02252D90D0042F236 /* Shield For DementiaTests */,
-				BD96EADB2252D90D0042F236 /* Shield For DementiaUITests */,
+				BD96EAB92252D90B0042F236 /* Shield For Dementia Patient */,
+				BD96EAD02252D90D0042F236 /* Shield For Dementia PatientTests */,
+				BD96EADB2252D90D0042F236 /* Shield For Dementia PatientUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -429,12 +429,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD96EB3D2254DBCA0042F236 /* SignUpViewController.swift in Sources */,
 				BD96EB2C22548D820042F236 /* LoginViewController.swift in Sources */,
 				BD96EB33225497490042F236 /* LoginNavigationController.swift in Sources */,
 				BD96EB2F22548EE90042F236 /* WelcomeViewController.swift in Sources */,
 				BD96EABE2252D90C0042F236 /* AppDelegate.swift in Sources */,
 				BD96EAC62252D90C0042F236 /* Shield_For_Dementia.xcdatamodeld in Sources */,
-				BD96EB392254B4730042F236 /* SignUpController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,12 +459,12 @@
 /* Begin PBXTargetDependency section */
 		BD96EAD32252D90D0042F236 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BD96EAB92252D90B0042F236 /* Shield For Dementia */;
+			target = BD96EAB92252D90B0042F236 /* Shield For Dementia Patient */;
 			targetProxy = BD96EAD22252D90D0042F236 /* PBXContainerItemProxy */;
 		};
 		BD96EADE2252D90D0042F236 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BD96EAB92252D90B0042F236 /* Shield For Dementia */;
+			target = BD96EAB92252D90B0042F236 /* Shield For Dementia Patient */;
 			targetProxy = BD96EADD2252D90D0042F236 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -617,7 +617,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "monash.Shield-For-Dementia";
+				PRODUCT_BUNDLE_IDENTIFIER = "monash.Shield-For-Patient";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -636,7 +636,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "monash.Shield-For-Dementia";
+				PRODUCT_BUNDLE_IDENTIFIER = "monash.Shield-For-Patient";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -660,7 +660,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shield For Dementia.app/Shield For Dementia";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shield For Dementia Patient.app/Shield For Dementia Patient";
 			};
 			name = Debug;
 		};
@@ -681,7 +681,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shield For Dementia.app/Shield For Dementia";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shield For Dementia Patient.app/Shield For Dementia Patient";
 			};
 			name = Release;
 		};
@@ -728,7 +728,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BD96EAB52252D90B0042F236 /* Build configuration list for PBXProject "Shield For Dementia" */ = {
+		BD96EAB52252D90B0042F236 /* Build configuration list for PBXProject "Shield For Dementia Patient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BD96EAE32252D90D0042F236 /* Debug */,
@@ -737,7 +737,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BD96EAE52252D90D0042F236 /* Build configuration list for PBXNativeTarget "Shield For Dementia" */ = {
+		BD96EAE52252D90D0042F236 /* Build configuration list for PBXNativeTarget "Shield For Dementia Patient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BD96EAE62252D90D0042F236 /* Debug */,
@@ -746,7 +746,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BD96EAE82252D90D0042F236 /* Build configuration list for PBXNativeTarget "Shield For DementiaTests" */ = {
+		BD96EAE82252D90D0042F236 /* Build configuration list for PBXNativeTarget "Shield For Dementia PatientTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BD96EAE92252D90D0042F236 /* Debug */,
@@ -755,7 +755,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BD96EAEB2252D90D0042F236 /* Build configuration list for PBXNativeTarget "Shield For DementiaUITests" */ = {
+		BD96EAEB2252D90D0042F236 /* Build configuration list for PBXNativeTarget "Shield For Dementia PatientUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BD96EAEC2252D90D0042F236 /* Debug */,
