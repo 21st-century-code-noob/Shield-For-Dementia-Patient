@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/pengxiaocheng/Documents/iOS Projects/Shield-For-Dementia-Patient/Shield For Dementia Patient.xcodeproj">
+      location = "group:Shield For Dementia Carer.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
