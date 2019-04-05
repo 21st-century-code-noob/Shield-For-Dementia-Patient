@@ -1,0 +1,69 @@
+
+/* Class = "UIButton"; normalTitle = "Create a New Account"; ObjectID = "4vN-PU-536"; */
+"4vN-PU-536.normalTitle" = "创建新用户";
+
+/* Class = "UIButton"; normalTitle = "Log In"; ObjectID = "BNf-VU-YCt"; */
+"BNf-VU-YCt.normalTitle" = "登陆";
+
+/* Class = "UILabel"; text = "Welcome, \nplease log in or sign up"; ObjectID = "CHc-tQ-Y02"; */
+"CHc-tQ-Y02.text" = "欢迎， \n请登陆或注册";
+
+/* Class = "UITextField"; placeholder = "password"; ObjectID = "E3t-GT-J9e"; */
+"E3t-GT-J9e.placeholder" = "密码";
+
+/* Class = "UITextField"; placeholder = "Set your password"; ObjectID = "Hhy-pk-UfR"; */
+"Hhy-pk-UfR.placeholder" = "设置密码";
+
+/* Class = "UIViewController"; title = "Welcome"; ObjectID = "Hse-gx-uII"; */
+"Hse-gx-uII.title" = "欢迎";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "JGB-KY-n9G"; */
+"JGB-KY-n9G.text" = "Label";
+
+/* Class = "UILabel"; text = "Please fill in your information to sign up."; ObjectID = "OXx-rw-NCY"; */
+"OXx-rw-NCY.text" = "Please fill in your information to sign up.";
+
+/* Class = "UILabel"; text = "SHIELD"; ObjectID = "Pdz-UD-60y"; */
+"Pdz-UD-60y.text" = "SHIELD";
+
+/* Class = "UITextField"; placeholder = "Your last name"; ObjectID = "RnR-o1-V95"; */
+"RnR-o1-V95.placeholder" = "Your last name";
+
+/* Class = "UIButton"; normalTitle = "Sign Up"; ObjectID = "UFp-Ap-AIW"; */
+"UFp-Ap-AIW.normalTitle" = "Sign Up";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "VAT-W8-UDq"; */
+"VAT-W8-UDq.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Confirm your password"; ObjectID = "Yl6-y8-CnI"; */
+"Yl6-y8-CnI.placeholder" = "Confirm your password";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ZHl-8g-2qF"; */
+"ZHl-8g-2qF.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "username"; ObjectID = "bcq-P9-J2X"; */
+"bcq-P9-J2X.placeholder" = "username";
+
+/* Class = "UILabel"; text = "For Carer"; ObjectID = "bn8-T7-NRk"; */
+"bn8-T7-NRk.text" = "For Carer";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "jqh-W5-MsX"; */
+"jqh-W5-MsX.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "kC4-5k-NaB"; */
+"kC4-5k-NaB.text" = "Label";
+
+/* Class = "UIViewController"; title = "Sign Up"; ObjectID = "qoF-Es-Elo"; */
+"qoF-Es-Elo.title" = "Sign Up";
+
+/* Class = "UIButton"; normalTitle = "Continue"; ObjectID = "sCr-dy-ZFC"; */
+"sCr-dy-ZFC.normalTitle" = "Continue";
+
+/* Class = "UIViewController"; title = "Sign In"; ObjectID = "ufT-3q-4mK"; */
+"ufT-3q-4mK.title" = "Sign In";
+
+/* Class = "UITextField"; placeholder = "Choose a username"; ObjectID = "wv7-KE-FRW"; */
+"wv7-KE-FRW.placeholder" = "Choose a username";
+
+/* Class = "UITextField"; placeholder = "Your first name"; ObjectID = "zRk-za-oO5"; */
+"zRk-za-oO5.placeholder" = "Your first name";
