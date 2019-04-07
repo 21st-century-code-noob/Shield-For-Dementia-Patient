@@ -151,13 +151,17 @@ class ViewController: UIViewController {
                                 self.saveLocalData(fileName: fileName, imageData: data!)
                                 self.imageList.append(image)
                                 self.imageNameList.append(fileName)
+                                self.kenBurnsView.animateWithImages(self.imageList, imageAnimationDuration: 10, initialDelay: 0, shouldLoop: true, randomFirstImage: true)
                                 //self.collectionView?.reloadSections([0])
                             }
                         })
                     }
                 }
             }
-            self.kenBurnsView.animateWithImages(self.imageList, imageAnimationDuration: 10, initialDelay: 0, shouldLoop: true, randomFirstImage: true)
+            if (self.imageList.count != 0){
+                 self.kenBurnsView.animateWithImages(self.imageList, imageAnimationDuration: 10, initialDelay: 0, shouldLoop: true, randomFirstImage: true)
+            }
+           
   
         })
         

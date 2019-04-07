@@ -6,7 +6,6 @@ target 'Shield For Dementia Carer' do
   use_frameworks!
 
   # Pods for Shield For Dementia Carer
-
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
