@@ -22,7 +22,7 @@
 		AB668CE8225A702D0082BEF3 /* RemindersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB668CE7225A702D0082BEF3 /* RemindersViewController.swift */; };
 		AB668CEA225A70A70082BEF3 /* reminderTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB668CE9225A70A70082BEF3 /* reminderTableView.swift */; };
 		AB668CF1225A73FC0082BEF3 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB668CF0225A73FC0082BEF3 /* Reminder.swift */; };
-		AB668CF4225A74720082BEF3 /* CBToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB668CF3225A74720082BEF3 /* CBToast.swift */; };
+		AB668CF6225A8E850082BEF3 /* CBToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB668CF5225A8E850082BEF3 /* CBToast.swift */; };
 		ABB721B7225632FA000EF648 /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB721B6225632FA000EF648 /* SHA1.swift */; };
 		BD96EABE2252D90C0042F236 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96EABD2252D90C0042F236 /* AppDelegate.swift */; };
 		BD96EAC32252D90C0042F236 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD96EAC12252D90C0042F236 /* Main.storyboard */; };
@@ -71,7 +71,7 @@
 		AB668CE7225A702D0082BEF3 /* RemindersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersViewController.swift; sourceTree = "<group>"; };
 		AB668CE9225A70A70082BEF3 /* reminderTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reminderTableView.swift; sourceTree = "<group>"; };
 		AB668CF0225A73FC0082BEF3 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
-		AB668CF3225A74720082BEF3 /* CBToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBToast.swift; sourceTree = "<group>"; };
+		AB668CF5225A8E850082BEF3 /* CBToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBToast.swift; sourceTree = "<group>"; };
 		ABB721B6225632FA000EF648 /* SHA1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA1.swift; sourceTree = "<group>"; };
 		BD96EABA2252D90B0042F236 /* Shield For Dementia Patient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shield For Dementia Patient.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD96EABD2252D90C0042F236 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -155,7 +155,7 @@
 		AB668CF2225A745C0082BEF3 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				AB668CF3225A74720082BEF3 /* CBToast.swift */,
+				AB668CF5225A8E850082BEF3 /* CBToast.swift */,
 			);
 			path = Libraries;
 			sourceTree = "<group>";
@@ -493,8 +493,8 @@
 				18B26E572259BEE0005F024F /* LoginNavigationController.swift in Sources */,
 				18B26E5B2259BEFE005F024F /* MemoryTableViewCell.swift in Sources */,
 				BD96EABE2252D90C0042F236 /* AppDelegate.swift in Sources */,
-				AB668CF4225A74720082BEF3 /* CBToast.swift in Sources */,
 				18B26E5D2259CD6A005F024F /* JBKenBurnsView.swift in Sources */,
+				AB668CF6225A8E850082BEF3 /* CBToast.swift in Sources */,
 				18B26E532259BEE0005F024F /* WelcomeViewController.swift in Sources */,
 				AB668CE8225A702D0082BEF3 /* RemindersViewController.swift in Sources */,
 				18B26E5F2259CDBF005F024F /* ViewController.swift in Sources */,
