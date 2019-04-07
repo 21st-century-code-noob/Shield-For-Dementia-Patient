@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/var/folders/q3/3rgjhgc1709c5fsm5641vxdhwcg1y6/T/tmp.cDZKTQmn/Documents/Shield-For-Dementia-Patient/Shield For Dementia Patient.xcodeproj">
+      location = "group:Shield For Dementia Patient.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

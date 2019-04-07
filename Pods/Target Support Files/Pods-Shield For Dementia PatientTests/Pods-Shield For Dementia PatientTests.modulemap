@@ -1,0 +1,6 @@
+framework module Pods_Shield_For_Dementia_PatientTests {
+  umbrella header "Pods-Shield For Dementia PatientTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

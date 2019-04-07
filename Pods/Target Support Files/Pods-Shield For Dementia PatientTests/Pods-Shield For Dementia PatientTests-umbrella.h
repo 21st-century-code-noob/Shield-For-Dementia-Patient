@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_Shield_For_Dementia_CarerTestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_Shield_For_Dementia_CarerTestsVersionString[];
+FOUNDATION_EXPORT double Pods_Shield_For_Dementia_PatientTestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_Shield_For_Dementia_PatientTestsVersionString[];
 
