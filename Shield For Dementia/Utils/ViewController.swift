@@ -211,6 +211,9 @@ class ViewController: UIViewController {
         super.viewWillAppear(true)
         kenBurnsView.resumeAnimation()
         retrieveReminderData()
+        if (self.imageList.count != 0){
+            self.kenBurnsView.animateWithImages(self.imageList, imageAnimationDuration: 10, initialDelay: 0, shouldLoop: true, randomFirstImage: true)
+        }
     }
     
     //Advance Mobile system, tutorial, (Moodle 2018)
