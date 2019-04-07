@@ -19,6 +19,8 @@ protocol JBKenBurnsViewDelegate {
     func finishedShowingLastImage()
 }
 
+// Johan Basberg, Computer Program, (github, 2019)
+// Speical thanks to him because of this good function
 class JBKenBurnsView: UIView {
     
     // MARK: - Customizable Defaults

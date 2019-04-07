@@ -25,6 +25,7 @@ class ViewController: UIViewController {
     var imagePathList = [String]()
     var imageNameList = [String]()
     
+    
     @IBAction func logOutButtonPressed(_ sender: Any) {
         let alert = UIAlertController(title: "Log Out", message: "Are you sure you want to log out?", preferredStyle: .alert)
         
@@ -49,9 +50,12 @@ class ViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
+    // Johan Basberg, Computer Program, (github, 2019)
     // MARK: - User Interaction
     @IBAction func toggleAnimationTouchUpFrom(_ sender: Any) {
     }
+    
+    // Johan Basberg, Computer Program, (github, 2019)
     @IBAction func valueChangeOfSwitch(_ sender: UISwitch) {
         UIView.setAnimationsEnabled(sender.isOn)
         if !sender.isOn && kenBurnsView.isAnimating {
@@ -61,6 +65,7 @@ class ViewController: UIViewController {
         }
     }
     
+    // Johan Basberg, Computer Program, (github, 2019)
     @IBAction func startTouchUpFrom(_ sender: UIButton) {
 //        let images = [
 //            UIImage(named: "ImageOne")!,
@@ -70,7 +75,8 @@ class ViewController: UIViewController {
         
         kenBurnsView.animateWithImages(imageList, imageAnimationDuration: 10, initialDelay: 0, shouldLoop: true)
     }
-
+    
+    // Johan Basberg, Computer Program, (github, 2019)
     @IBAction func randomStartTouchUpFrom(_ sender: UIButton) {
 //        let images = [
 //            UIImage(named: "ImageOne")!,
@@ -81,6 +87,7 @@ class ViewController: UIViewController {
         kenBurnsView.animateWithImages(imageList, imageAnimationDuration: 10, initialDelay: 0, shouldLoop: true, randomFirstImage: true)
     }
 
+    // Johan Basberg, Computer Program, (github, 2019)
     @IBAction func pauseTouchUpFrom(_ sender: UIButton) {
         if kenBurnsView.isPaused {
             kenBurnsView.resumeAnimation()
@@ -91,6 +98,7 @@ class ViewController: UIViewController {
         }
     }
 
+    //Johan Basberg, Computer Program, (github, 2019)
     @IBAction func stopTouchUpFrom(_ sender: UIButton) {
         kenBurnsView.stopAnimation()
     }
@@ -99,6 +107,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.navigationItem.hidesBackButton = true;
         
+        //The swift guy, Notification tutorial, (youtube, 2016)
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert,.badge,.sound], completionHandler: {didAllow, error in
             
             if didAllow{
@@ -162,6 +171,7 @@ class ViewController: UIViewController {
                 if status == 1{
                     
                     self.displayMessage("You have a new photo in your memory, please check~", "HeHe")
+                    //The swift guy, Notification tutorial, (youtube, 2016)
                     let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
                     let content = UNMutableNotificationContent()
                     content.title = "Notifications"
@@ -184,12 +194,10 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         
-    
         kenBurnsView.resumeAnimation()
-        
-        
     }
     
+    //Advance Mobile system, tutorial, (Moodle 2018)
     func localFileExists(fileName: String) -> Bool{
         
         var localFileExists = false
@@ -203,6 +211,7 @@ class ViewController: UIViewController {
         return localFileExists
     }
     
+    //Advance Mobile system, tutorial, (Moodle 2018)
     func saveLocalData(fileName: String, imageData: Data){
         
         let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true) [0] as String
@@ -214,6 +223,7 @@ class ViewController: UIViewController {
         }
     }
     
+    //Advance Mobile system, tutorial, (Moodle 2018)
     func loadImageData(fileName: String) -> UIImage?{
         let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
         let url = NSURL(fileURLWithPath: path)
@@ -227,6 +237,7 @@ class ViewController: UIViewController {
         return image
     }
     
+    //Advance Mobile system, tutorial, (Moodle 2018)
     func displayMessage(_ message: String,_ title: String){
         let alertController = UIAlertController(title:title, message: message,
                                                 preferredStyle: UIAlertController.Style.alert)
