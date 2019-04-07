@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		00221FFE7EA6F96590DB6A00C399AA8E /* FIRResetPasswordRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 543F9D5C2F012F67ACF46ABCE22FC329 /* FIRResetPasswordRequest.m */; };
-		00698627A7A90D39F5BA27B4FA07F173 /* Pods-Shield For Dementia CarerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F94DF810FE6286E8781F704E5084643 /* Pods-Shield For Dementia CarerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0076BACC2F0AF36E15FB247AA005CF60 /* FWriteRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 440FC4C2584D79CBEE782EFDD9017905 /* FWriteRecord.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		026B25198575F5D92A8B2F8778B692F0 /* iterator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 6FFFDEA65AC65FE41AECEE5A3D65DDE2 /* iterator.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
 		031D55072D59C771E5BEFDB8FEBC9E37 /* FIRDatabaseQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 768696CD5169F71F325D3E4E2F798D4C /* FIRDatabaseQuery.m */; };
@@ -16,10 +15,8 @@
 		039A64D3A22B4084264298EEC6410C2E /* FIRAuth_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 937E5B2D981286781D7879092EC937B3 /* FIRAuth_Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		04409F345CA128E3B13618C252B987EE /* random.h in Headers */ = {isa = PBXBuildFile; fileRef = B498ADA9608962A7ACE359A59C1A7B13 /* random.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		04C115F6DD4B1F9C928CD5883372567B /* FIRVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = D15E371802E64717F98424D2608B3D65 /* FIRVersion.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		0533F0160FDCC2C1F881D32683ADFD96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A85D67015137BE0A17D61F16D8BE9B /* Foundation.framework */; };
 		0560B079AF72DF0DEF86AA778BF3EC91 /* write_batch.cc in Sources */ = {isa = PBXBuildFile; fileRef = 0252D833A7C0AB52EA01940520D19B69 /* write_batch.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
 		0561BCAF5219EB4DCAB2B01DE1A98FFD /* db.h in Headers */ = {isa = PBXBuildFile; fileRef = CB6EC5CDA1730921F4CFDBE1B4FC2181 /* db.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		05CE7733BA4B13FDB8DCE9762FA93800 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A85D67015137BE0A17D61F16D8BE9B /* Foundation.framework */; };
 		073B69B5DDF88F99CF57F0DC75101928 /* FIRLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 054C4F421FD591D770DEE46290E3B335 /* FIRLogger.m */; };
 		07811F8283B1C1D48CA523B08080728F /* FIRAuthWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AC25D82C8101955C7C5F25148A94CAF /* FIRAuthWebViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		07F44E56212E2D97170D5E1D3D78D021 /* FCompoundHash.h in Headers */ = {isa = PBXBuildFile; fileRef = 2722C9351F7DE0BD806FFD7FF4E0B7BE /* FCompoundHash.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -61,6 +58,7 @@
 		16213B273AE1045FD468D9AD02BCCCAF /* block.h in Headers */ = {isa = PBXBuildFile; fileRef = 43DF223B39532B920AB1B75D54DD5D4C /* block.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1682B267A2AAE6A31285049B0E0541CD /* GULReachabilityChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = C02D1D34086FDC9A12E261B18A27489D /* GULReachabilityChecker.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		178A362E008EC7F53C6686A5885A5F37 /* FIRAppAssociationRegistration.m in Sources */ = {isa = PBXBuildFile; fileRef = 85AD509CC43A98AB4EA9DF12E470879B /* FIRAppAssociationRegistration.m */; };
+		17C059D7D60737D4849C2F18053AFBC4 /* Pods-Shield For Dementia PatientUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1486BDB1209DDAFC888A07274235E903 /* Pods-Shield For Dementia PatientUITests-dummy.m */; };
 		17E6E1179A81CB19FBCCED1063E34218 /* FIRDependency.m in Sources */ = {isa = PBXBuildFile; fileRef = F2DD048D60D185074EE39306A51C5C57 /* FIRDependency.m */; };
 		18BC670B95B5A81DBEB11573E9FEDE60 /* FViewProcessorResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 6142484840ACB9AEB61C81A7615CBE76 /* FViewProcessorResult.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		18BCB8F47C26B881F25E69CF28B7A8E6 /* FWebSocketConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8850E4E000BABC6318935EDD8A41B9 /* FWebSocketConnection.m */; };
@@ -77,7 +75,6 @@
 		1C03B9712E9DF949558DD3E600E055EE /* FPruneForest.h in Headers */ = {isa = PBXBuildFile; fileRef = F7B69F57696EF6D437C69B5F81FCDF0D /* FPruneForest.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1C7B88B072932AD3FFBD3B8C57F788D7 /* GULNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1D1B78EB6BAD25D16E4096F89498C8 /* GULNetwork.m */; };
 		1C849F2F93DD4FB0FB09B5622D6B72D5 /* FListenProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0A4674A20C0EAE054B88B825261F94 /* FListenProvider.m */; };
-		1D4000264C68C54D8301C491502E1F5F /* Pods-Shield For Dementia CarerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFC48837CB4EE46CBD268F419A5C421 /* Pods-Shield For Dementia CarerTests-dummy.m */; };
 		1DA821D299BEE1C75D5C685A26A2F4FE /* FIRAuthAppCredential.h in Headers */ = {isa = PBXBuildFile; fileRef = 98E3F2A43447E6F4BF1AC7EA51801838 /* FIRAuthAppCredential.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1DB6126C506586E2DBD217D594174F21 /* FIRConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E50BB7DA9DEB91E10C6F1E1475C4D72 /* FIRConfiguration.m */; };
 		1DCEE046C5FDF642FAE1C09536F72329 /* FTupleSetIdPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 048CCA7592C5375FE04C0E4CBD427A4F /* FTupleSetIdPath.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -103,7 +100,6 @@
 		2693F818AC8E2F7591D1DBA7B31F33A2 /* FNamedNode.h in Headers */ = {isa = PBXBuildFile; fileRef = F2150FC7A70361EB02D168B746B39CD8 /* FNamedNode.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2708BCEE56FB1ACEFF6608A821C20962 /* FIRStorageDownloadTask.h in Headers */ = {isa = PBXBuildFile; fileRef = C12A6B514656746297C98A797D3CCCE5 /* FIRStorageDownloadTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		27148D6D6BBEB59EDDDDA94D680DE2F5 /* FPriorityIndex.h in Headers */ = {isa = PBXBuildFile; fileRef = C5F5B12D2FAC49F4AF651A6D75F155DD /* FPriorityIndex.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		27519498201B16ED38D7AFC8250638E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A85D67015137BE0A17D61F16D8BE9B /* Foundation.framework */; };
 		278DEFDEECD0F4E0836BDA7196CF18AB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 469180EEA42A36FF1697D55FFB293897 /* MobileCoreServices.framework */; };
 		290C595E967ABC4A946A38689ECFCE9F /* FIRDataSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E9DFC98C2E5BEA5DDAA2518BD5F1D0 /* FIRDataSnapshot.m */; };
 		297219514B8DB66E4895E50FE17B866D /* FTrackedQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE2A2FE86FEB82873303273567AAD6C /* FTrackedQuery.m */; };
@@ -112,7 +108,6 @@
 		2AC51CD7B1BA49D20523671C3DBE7DB1 /* port_posix_sse.cc in Sources */ = {isa = PBXBuildFile; fileRef = 7A0233BB53F17F1502D2C584C2D49038 /* port_posix_sse.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
 		2AF2DC1B53EB76E4450C26071668000C /* FIRGoogleAuthProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = F762A3026418F38F93DB376B7D7EE8BC /* FIRGoogleAuthProvider.m */; };
 		2B33033105ADA4F143B04458B93D18B4 /* FOverwrite.m in Sources */ = {isa = PBXBuildFile; fileRef = 0912E65F5E8F696A7F4AEAD49F24C096 /* FOverwrite.m */; };
-		2BACD7601DF39853E451C7C62B460F92 /* Pods-Shield For Dementia Carer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FF758A4EB8761BA82929B16C42B6589 /* Pods-Shield For Dementia Carer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D826FE4A1A56AF3E2611FEB5E7C91EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A85D67015137BE0A17D61F16D8BE9B /* Foundation.framework */; };
 		2DD85E932CFB51F270F8FDBE329976B7 /* FIRGetOOBConfirmationCodeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B33527E76DD69C45F0FE21ECB726BCFC /* FIRGetOOBConfirmationCodeRequest.m */; };
 		2E7BF71DC78FDDEC8A04FDFBA9F2D960 /* FIRComponentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECA3D9C0C7CB18F1DA14EFD8E5E2A0F /* FIRComponentType.m */; };
@@ -164,7 +159,6 @@
 		406FD5D81E7DF855D6D213184F865967 /* FirebaseAuth-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 51BE701F1A42F65EEBFFFC2457634AF8 /* FirebaseAuth-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		40C3FF0CC32D4A73990C150D49550452 /* GULMutableDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 44C42FE1A19FA5CEE7A44691C04DE3A1 /* GULMutableDictionary.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		40EBFB526EFE2237051550143B403E77 /* FIRStorageTaskSnapshot_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = C5E9B908A64FE1393B360FEDCF9D768B /* FIRStorageTaskSnapshot_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		414825AD501F9CE493E9D3AAA914E446 /* Pods-Shield For Dementia CarerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 362D079DC978FFA6746DC97145F05A2F /* Pods-Shield For Dementia CarerUITests-dummy.m */; };
 		416A7760890657DBACC2BF6F6E3242EB /* FIRStorage_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 11E64F253F0DEE25688CF7B0FDA7510E /* FIRStorage_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		416D60FB416C9E3C6908B8BDA70619F0 /* FIRDataSnapshot_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B670C59DF98E8B0425E43278FAC096B /* FIRDataSnapshot_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		422158D5B175F381004EA99605A85B2C /* FirebaseDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 77595740DC385A5674884A2726235D35 /* FirebaseDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -214,12 +208,14 @@
 		506BE1A40E5C8B38216C73D3E957FDFD /* FIRDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = AD55691C9496735E332D4764B962411D /* FIRDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		509A9187F6BC78380E75A0B6EEDD76A2 /* FIRAnalyticsConfiguration+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = D5F07EDBDA80614C9A658933EBF74AAD /* FIRAnalyticsConfiguration+Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		5125945E11F3F5543563077B48E1E0B9 /* FIRGoogleAuthCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A81C1BC49DCBD6E0DCAD970D1B2B68D /* FIRGoogleAuthCredential.m */; };
+		51BDB30CBB8CEBB9948BFDE363105874 /* Pods-Shield For Dementia PatientTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 86005EF03FAFA8A46E7BEC499DDA1019 /* Pods-Shield For Dementia PatientTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		544917F222C3DD9B6BEEC44E96704921 /* FViewProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 089D086B644D59B184E2C9E2611F2F45 /* FViewProcessor.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		5457F6C774471084A19040FC137451D8 /* FWriteTree.h in Headers */ = {isa = PBXBuildFile; fileRef = C40C37713EDC07AC68A31C2248DDF779 /* FWriteTree.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		549F1F62806A9EB7778607B523D8A794 /* FViewCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AC893CE75DBC04C252CD71BEE403090 /* FViewCache.m */; };
 		54B4145C0435EE7CDE1F065BAC73B9B6 /* FIRVerifyAssertionResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E1278E6D26A5D2B5FBF401AC6B55C03 /* FIRVerifyAssertionResponse.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		54C70488D3F1FC1F09B752CFD3508B57 /* FCompoundHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5C768FB3ED9119E766D08E354030C0 /* FCompoundHash.m */; };
 		5520ABF2A9BE6EC67848D42C21F07339 /* FIROptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 244E68B799D3B97C5FCC66AB1BF6EAF3 /* FIROptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5533F125162764F53E126365E3F6CA2B /* Pods-Shield For Dementia PatientTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8351BA2693147B61AB96CC749C354EEC /* Pods-Shield For Dementia PatientTests-dummy.m */; };
 		556D6575AF23491124970D1AB7DB9796 /* FIROptions.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E420B1AC638D22B78ED89A95ADE0BA /* FIROptions.m */; };
 		566AB1033FFDB003391EB4D1BBBEFE0F /* GTMSessionUploadFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E096AFE3D0F6226A6845FDA9F29A662 /* GTMSessionUploadFetcher.m */; };
 		56820010C43E303A9E98276D333F264B /* FIRSecureTokenService.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E5B2B21BB46AC418590F7CB227B6A7 /* FIRSecureTokenService.m */; };
@@ -285,6 +281,7 @@
 		6D7E56A4CC8471B595B4E5096EE598CD /* FIRAuthRPCResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 9016CDA7C0723330883139026E10BDDF /* FIRAuthRPCResponse.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6DA6007E1F09CAF2AB374E7A9D4EC5B8 /* FIRDatabaseConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BB6DB9722FB5DE55B87CA75D6A305A /* FIRDatabaseConfig.m */; };
 		6E1407DC0667E42AE82EFDDFD93E04AE /* FRepoManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C54E2C2C1DB80CB9C86DFB953F7EF9D8 /* FRepoManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6E6BE22046BA1E9260F8FC6F0D2E9892 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A85D67015137BE0A17D61F16D8BE9B /* Foundation.framework */; };
 		6F082805AEBCE165AEB17BEC23F024BA /* GULNetworkURLSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB3DE557F4DF98C79047272167D8DDA /* GULNetworkURLSession.m */; };
 		6F1A594E771B35086C883EC39B939FD8 /* FIRAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FF4CD0A84AF64AEE92CF051957021FE /* FIRAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6FBA112A6D83639F0BB9A49378CD5AED /* env_posix_test_helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 136443287F41B8FF1B85E13C068F51BD /* env_posix_test_helper.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -307,7 +304,6 @@
 		7717B5640053075E16FD82AD2C31FDD7 /* FQuerySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE08A0E239F0527DEC532D2714537D5 /* FQuerySpec.m */; };
 		7746627A6CA05EC5B2354E01704D1472 /* FIRVerifyClientResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF88CFD42B810C112EE32A747858DBC /* FIRVerifyClientResponse.m */; };
 		776327A5FE631C1CFF91B8E1C6F8F00D /* FIRAuthDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C44969BB374F29B4C1EACFDAB8998DA /* FIRAuthDispatcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		77CBE45B329F9D3E50C2C6B899646194 /* Pods-Shield For Dementia CarerUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AA73DCF68557D88B2FEFE7A8EBD9845 /* Pods-Shield For Dementia CarerUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		77E151EDF850C8E4E5183E6FFC11E432 /* FIRAuthWebUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 2570B056454F88F1A3464F520D7B18E3 /* FIRAuthWebUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7812484639D1CEE71D8EB20A5EA3748C /* FIRSetAccountInfoResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B22E7D5EF2E2A95754C1998C9513B9 /* FIRSetAccountInfoResponse.m */; };
 		782B1BDF9311CD0212002103E7338AE5 /* FCachePolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 25809D46BFC0B005F5A8210BE7158542 /* FCachePolicy.m */; };
@@ -315,6 +311,7 @@
 		7938FFB039D3AD110C0581AD57ED722E /* FPersistentConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 814447BBA0EF617BA9597AB73CFFA859 /* FPersistentConnection.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		79508CD6A1C358B128806A6D04318A8E /* FChildChangeAccumulator.h in Headers */ = {isa = PBXBuildFile; fileRef = 9450187CE6C8ED7208E9C9438275B240 /* FChildChangeAccumulator.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		79B24CF3E8F7A866010E648DC3C1CBB3 /* testharness.h in Headers */ = {isa = PBXBuildFile; fileRef = D2470C323F010C90286D4FB811A7BA8F /* testharness.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		79D9D52BEE4A554208A7FA8DEDA0CD6E /* Pods-Shield For Dementia Patient-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D567BA786563E3E0AB2EC64C6EFA7E /* Pods-Shield For Dementia Patient-dummy.m */; };
 		7A142B968132692D56E2EA79E38FBF1A /* FIRStorageDeleteTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A807AF6E03ABEBDA79ECD224E691F9B /* FIRStorageDeleteTask.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7AB0F2056503ED5A9AA257C7BDF45EFC /* FIRMutableData_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 32B6DD956045847949F86D29BFC84524 /* FIRMutableData_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7ABADA701DF41FD418687D69E4BF3F13 /* comparator.cc in Sources */ = {isa = PBXBuildFile; fileRef = CD93CEEC5E01A21C4DD28EFDB8CFDC11 /* comparator.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
@@ -367,6 +364,7 @@
 		8EC83572590661AD6AA4174BAEED6A7A /* FTupleObjectNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 672202ED8A9A21BDB9F7391BF29BBB14 /* FTupleObjectNode.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8F773BB5C17E8A53211A1C0B10707970 /* FKeyIndex.h in Headers */ = {isa = PBXBuildFile; fileRef = 09A9FD91B8E6D141D0C0CB89C5BBCA07 /* FKeyIndex.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		90D08FA76B4CBD9067F349F47CDC5E70 /* FQueryParams.h in Headers */ = {isa = PBXBuildFile; fileRef = 54184A86746CC217DFAA4D1EA81D5D28 /* FQueryParams.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		91387DDB04CD60DC6207F4DEDA253F43 /* Pods-Shield For Dementia Patient-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16DFC9FC4B85817F7B4ACF29F2861638 /* Pods-Shield For Dementia Patient-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		91B3761046884D4CEFD906383EB65E6B /* FIRStorageMetadata_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = A93F88D2CDDD0973418FE54E7CFD3945 /* FIRStorageMetadata_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		923401F17258F1B26EF75B5DCD8545ED /* FEmptyNode.h in Headers */ = {isa = PBXBuildFile; fileRef = D4CC804746015F57DC7F21DD42120B12 /* FEmptyNode.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9338544858377536D6B219A5324405D6 /* FAuthTokenProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 623DA366D9ACD78DDF566341924E5511 /* FAuthTokenProvider.m */; };
@@ -563,9 +561,9 @@
 		CF5CC70A85EAB87DD29344D2BBC8DC41 /* FLimitedFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBFE3527D41D0F1C87F6FDDB7854253 /* FLimitedFilter.m */; };
 		CFE858E7931E654FFD3E3B0D978B8155 /* FIRAuthKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 24013D6CDB6ED4FE02F22BF44764EE93 /* FIRAuthKeychain.m */; };
 		D0284669815C2288E77CEA90BC391CF5 /* FRangedFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFD8DBBD06C46C9B1FFDF13BDDF5706 /* FRangedFilter.m */; };
-		D06CF8C9337889156E39F6C400EE1572 /* Pods-Shield For Dementia Carer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0437092C4E88AF71F939E8AB025BA1AB /* Pods-Shield For Dementia Carer-dummy.m */; };
 		D0F28226DEEF07F3E0E0C14CBAD5B5CF /* FIRGetOOBConfirmationCodeResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5055C30ED8F3977F09DD7C9A34BA8635 /* FIRGetOOBConfirmationCodeResponse.m */; };
 		D143A48E638AFDBD788EBFDC833E04BC /* pb_decode.h in Headers */ = {isa = PBXBuildFile; fileRef = 7826CF4E49DF30D9EB4EB82CF249DCFE /* pb_decode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1716D44C7CD7299215AE7D777545799 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A85D67015137BE0A17D61F16D8BE9B /* Foundation.framework */; };
 		D17205B04EC87A2A1638A50616CDB86C /* FRangedFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C64E12FAC2598E4213FDF7BBED6A7B7 /* FRangedFilter.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D18C7B6FEFDBB7C15515B88451F098AD /* FIRGoogleAuthProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EA3ADB1F47352E107B1FC734DCE0A94 /* FIRGoogleAuthProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D1F29186294D8D50F28742FE142ED4B9 /* FIRUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 290EAB112589B2E94FC8577EB66B312F /* FIRUser.m */; };
@@ -615,6 +613,7 @@
 		E33760696862AA624065EE22A7F7B6C8 /* FirebaseAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = F11948E265D44E2A12EBBF329399A167 /* FirebaseAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E355A143414534F252F6EE7D3ADE2BA5 /* write_batch_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 50DFEF4702F94825CA52A74C6020B75C /* write_batch_internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E4B27F1AEF0C043F26D82A4C4810FA83 /* FIRGetAccountInfoRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E2251CFFF0FED7AC9975B6927035B462 /* FIRGetAccountInfoRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E4C59B84414ED30CE1BD4A4A52C48DC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A85D67015137BE0A17D61F16D8BE9B /* Foundation.framework */; };
 		E51898FC605C53CFAE8A681A96EA2285 /* GULLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = D2DB3346EA1B51F53EDA9D97F205687E /* GULLogger.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E674BE47628CB31E12671D069BCEDDD2 /* crc32c.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5AED61C2B22B0EE1CFE8DBABE33AC173 /* crc32c.cc */; settings = {COMPILER_FLAGS = "-DOS_MACOSX -DLEVELDB_PLATFORM_POSIX -fno-objc-arc"; }; };
 		E6F743BB99C64DB44A53DE22D002066C /* FIRVerifyAssertionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C913434E38CD162F80F1E404156D366 /* FIRVerifyAssertionRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -628,6 +627,7 @@
 		EA560958BF06A5A70E1A214BEEA93B57 /* FClock.h in Headers */ = {isa = PBXBuildFile; fileRef = 75CFE4C0F60837DA87C35A1F33A5A7A8 /* FClock.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		EA5A4BF56526FA14C926D3DC103CAEB1 /* FIRIdentityToolkitRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 3568857E7DFF73D73FDBDA10D0F75732 /* FIRIdentityToolkitRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		EAE5EB688A66D0B11C338789867D1455 /* FChildrenNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EF3223A094D4F18AF6F259F2E8F6DB8 /* FChildrenNode.m */; };
+		EB9ABC524042FAC381736F03A4F70ECF /* Pods-Shield For Dementia PatientUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E8ED90A581F8FF87CCADBBDFA146CF7 /* Pods-Shield For Dementia PatientUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EBB64E8105383D1E162E489FA99D7E9D /* FIRRetryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E70B6320292E2DA4BBADE46F3A76FB /* FIRRetryHelper.m */; };
 		EBC85CEB8215E0B54170AD12278CEBF5 /* FLLRBValueNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB7969EBCD2C419AEE6F0B6A2DE7E83 /* FLLRBValueNode.m */; };
 		EC0B034E74DC1B86A479D2DFF9977138 /* FTransformedEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C04AA1E5064F510D9E2E4729CF22E46 /* FTransformedEnumerator.m */; };
@@ -689,19 +689,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2470E1F9DC4C3B0BEE6DDDD0EFC959F7 /* PBXContainerItemProxy */ = {
+		2E2752F1C775DDA6DD8C1E4A1B00D4EE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DE866D3318A5BE5366041B761F8CD7C2;
-			remoteInfo = "leveldb-library";
-		};
-		24731CA3CD38841A64AD466ED33E2843 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 87FCB7464FD656475D04AF259FF51B76;
-			remoteInfo = "Pods-Shield For Dementia Carer";
+			remoteGlobalIDString = 6DB59EF90054198F7D0A7537D9B483ED;
+			remoteInfo = "Pods-Shield For Dementia Patient";
 		};
 		32DE737A738CB51799F86D98E6F4B5F7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -709,6 +702,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 774012D64416685C9A3C8F547C310CED;
 			remoteInfo = FirebaseCore;
+		};
+		37A8A0CA70E45AC92FE228BDA8F67D96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 263F7002FD4F2FB368F105A900F31A18;
+			remoteInfo = FirebaseStorage;
+		};
+		48A4953A0834B58773AA5EDFA89B62F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE866D3318A5BE5366041B761F8CD7C2;
+			remoteInfo = "leveldb-library";
 		};
 		48B79CA3E37AA085E6280AF28B6908B8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -724,21 +731,7 @@
 			remoteGlobalIDString = FEC39F3E58CEE33F8C1F8453DF5C68D6;
 			remoteInfo = GoogleUtilities;
 		};
-		556E2D4A55B91F5817B2CA2F3BADE60C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 774012D64416685C9A3C8F547C310CED;
-			remoteInfo = FirebaseCore;
-		};
-		72C7016352A929F5BB01DAFE0AF0ACCE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 263F7002FD4F2FB368F105A900F31A18;
-			remoteInfo = FirebaseStorage;
-		};
-		7D9D445CCABB59CB4A6A7E5B54D55BFC /* PBXContainerItemProxy */ = {
+		88E85A9C8B3534E0E4D2328F69C2FFBF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -759,26 +752,26 @@
 			remoteGlobalIDString = 323459A91C8C652B6AAA063F85CE2316;
 			remoteInfo = GTMSessionFetcher;
 		};
-		97E576117C72F94F762318004DFE8AEA /* PBXContainerItemProxy */ = {
+		9EBD9A7E075A44F4CD81F7D660EB7055 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8364BB258018143B83798DE31C13546D;
-			remoteInfo = nanopb;
+			remoteGlobalIDString = FEC39F3E58CEE33F8C1F8453DF5C68D6;
+			remoteInfo = GoogleUtilities;
 		};
-		A1B48A73999EBF671D633E20FF1B839B /* PBXContainerItemProxy */ = {
+		A6E912E81ED8428CB4D909D4D704AF69 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 323459A91C8C652B6AAA063F85CE2316;
 			remoteInfo = GTMSessionFetcher;
 		};
-		A2020BF19F703DC4C2470CB1EECFA647 /* PBXContainerItemProxy */ = {
+		AB28B2C9A39ECA3113DD2FED843A9E2E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 09236661DCC642790FD8DBB2D3878CF2;
-			remoteInfo = FirebaseAuth;
+			remoteGlobalIDString = 774012D64416685C9A3C8F547C310CED;
+			remoteInfo = FirebaseCore;
 		};
 		AD7B51FC1AF1D29DD48BAB8D838C7300 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -801,19 +794,12 @@
 			remoteGlobalIDString = 774012D64416685C9A3C8F547C310CED;
 			remoteInfo = FirebaseCore;
 		};
-		CA970AC4BC551F7D54AD5F148EED9720 /* PBXContainerItemProxy */ = {
+		D59CAC715044416DC7D678916D20F4E8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FEC39F3E58CEE33F8C1F8453DF5C68D6;
-			remoteInfo = GoogleUtilities;
-		};
-		CDF5E75E0E2491AF28BA49AA9195B39A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 87FCB7464FD656475D04AF259FF51B76;
-			remoteInfo = "Pods-Shield For Dementia Carer";
+			remoteGlobalIDString = 6DB59EF90054198F7D0A7537D9B483ED;
+			remoteInfo = "Pods-Shield For Dementia Patient";
 		};
 		D7E20E29847EAD81D627C196DA9AF51C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -822,12 +808,26 @@
 			remoteGlobalIDString = FEC39F3E58CEE33F8C1F8453DF5C68D6;
 			remoteInfo = GoogleUtilities;
 		};
+		DC491C327386E74989711C71CB6A6B9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8364BB258018143B83798DE31C13546D;
+			remoteInfo = nanopb;
+		};
 		DD58CF8BF8707565763D3FBC6BFB60A6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = DE866D3318A5BE5366041B761F8CD7C2;
 			remoteInfo = "leveldb-library";
+		};
+		F646424CAB2782A2188058EA0F21D4F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09236661DCC642790FD8DBB2D3878CF2;
+			remoteInfo = FirebaseAuth;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -839,12 +839,10 @@
 		01D1155B72A56FCB7469C9893ABFE42D /* FView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FView.m; path = Firebase/Database/Core/View/FView.m; sourceTree = "<group>"; };
 		01F047BD2A52FA82C31044FB54435680 /* leveldb-library-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "leveldb-library-umbrella.h"; sourceTree = "<group>"; };
 		0252D833A7C0AB52EA01940520D19B69 /* write_batch.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = write_batch.cc; path = db/write_batch.cc; sourceTree = "<group>"; };
-		02F16D1403213E559B1138F2DA8DEF83 /* Pods_Shield_For_Dementia_CarerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Shield_For_Dementia_CarerUITests.framework; path = "Pods-Shield For Dementia CarerUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0319E33B3245CD2FF2C5716B8114A69C /* FEmptyNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FEmptyNode.m; path = Firebase/Database/Snapshot/FEmptyNode.m; sourceTree = "<group>"; };
 		034E48731B6CB07B3BD42D5BEC116369 /* GULAppEnvironmentUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULAppEnvironmentUtil.h; path = GoogleUtilities/Environment/third_party/GULAppEnvironmentUtil.h; sourceTree = "<group>"; };
 		0383259F053C505174E0812F0C02DDAC /* FPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FPath.h; path = Firebase/Database/Core/Utilities/FPath.h; sourceTree = "<group>"; };
 		040630EAA3A287A8E2C6C3B8CC5FE6E7 /* pb_common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_common.h; sourceTree = "<group>"; };
-		0437092C4E88AF71F939E8AB025BA1AB /* Pods-Shield For Dementia Carer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Shield For Dementia Carer-dummy.m"; sourceTree = "<group>"; };
 		0479EEDAAB12432500812B2DAF0221BA /* GULLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULLogger.m; path = GoogleUtilities/Logger/GULLogger.m; sourceTree = "<group>"; };
 		048CCA7592C5375FE04C0E4CBD427A4F /* FTupleSetIdPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FTupleSetIdPath.h; path = Firebase/Database/Utilities/Tuples/FTupleSetIdPath.h; sourceTree = "<group>"; };
 		04F90CE4C5EA3F31BA4C98455F18D1F0 /* repair.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = repair.cc; path = db/repair.cc; sourceTree = "<group>"; };
@@ -852,12 +850,10 @@
 		054C4F421FD591D770DEE46290E3B335 /* FIRLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRLogger.m; path = Firebase/Core/FIRLogger.m; sourceTree = "<group>"; };
 		06231121BAF51F9ADC1695BBB11458C1 /* crc32c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crc32c.h; path = util/crc32c.h; sourceTree = "<group>"; };
 		07C0B29E13FC993816D64FF63E21291E /* FIRAuthRequestConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRAuthRequestConfiguration.m; path = Firebase/Auth/Source/RPCs/FIRAuthRequestConfiguration.m; sourceTree = "<group>"; };
-		081B99AC809310AD84C8B913BA277BEB /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FirebaseAuth.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		089D086B644D59B184E2C9E2611F2F45 /* FViewProcessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FViewProcessor.h; path = Firebase/Database/FViewProcessor.h; sourceTree = "<group>"; };
 		08F389F985654CA579CD681F43DFD0B8 /* pb_encode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_encode.h; sourceTree = "<group>"; };
 		0912E65F5E8F696A7F4AEAD49F24C096 /* FOverwrite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FOverwrite.m; path = Firebase/Database/Core/Operation/FOverwrite.m; sourceTree = "<group>"; };
 		09189DAEDA317C635E5D15C02EAC976C /* FPersistentConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FPersistentConnection.m; path = Firebase/Database/Core/FPersistentConnection.m; sourceTree = "<group>"; };
-		0973D6BE18765F16FDEF33D26C6D3E02 /* Pods-Shield For Dementia Carer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Shield For Dementia Carer-frameworks.sh"; sourceTree = "<group>"; };
 		09A9FD91B8E6D141D0C0CB89C5BBCA07 /* FKeyIndex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FKeyIndex.h; path = Firebase/Database/FKeyIndex.h; sourceTree = "<group>"; };
 		0A28E2388EBC8DC4D2BB58EFEC6A2199 /* FIRUser_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRUser_Internal.h; path = Firebase/Auth/Source/FIRUser_Internal.h; sourceTree = "<group>"; };
 		0A3FA4099FF246CD0DB88F3510E35680 /* FIRStorageTask_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRStorageTask_Private.h; path = Firebase/Storage/Private/FIRStorageTask_Private.h; sourceTree = "<group>"; };
@@ -873,14 +869,14 @@
 		0DA302A2CF6F834DDF24D90F03C3E479 /* filter_block.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = filter_block.cc; path = table/filter_block.cc; sourceTree = "<group>"; };
 		0DD8303016340CBB95EDA60BA348A261 /* hash.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = hash.cc; path = util/hash.cc; sourceTree = "<group>"; };
 		0E15E130BFA81B82BC6E060797A44733 /* slice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = slice.h; path = include/leveldb/slice.h; sourceTree = "<group>"; };
+		0E3E48F6A1F24FA4B42C5371CE975246 /* Pods_Shield_For_Dementia_PatientUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Shield_For_Dementia_PatientUITests.framework; path = "Pods-Shield For Dementia PatientUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EA3ADB1F47352E107B1FC734DCE0A94 /* FIRGoogleAuthProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRGoogleAuthProvider.h; path = Firebase/Auth/Source/Public/FIRGoogleAuthProvider.h; sourceTree = "<group>"; };
+		0FCFD92895704F3D5C28B8DC9670EADE /* Pods-Shield For Dementia PatientUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Shield For Dementia PatientUITests-frameworks.sh"; sourceTree = "<group>"; };
 		0FF4CD0A84AF64AEE92CF051957021FE /* FIRAuth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRAuth.h; path = Firebase/Auth/Source/Public/FIRAuth.h; sourceTree = "<group>"; };
-		0FF758A4EB8761BA82929B16C42B6589 /* Pods-Shield For Dementia Carer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Shield For Dementia Carer-umbrella.h"; sourceTree = "<group>"; };
 		100A6F8A6A00B4A2FE67BFB57235B8F1 /* FIRStorageTaskSnapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRStorageTaskSnapshot.m; path = Firebase/Storage/FIRStorageTaskSnapshot.m; sourceTree = "<group>"; };
 		10212A3465872A3E552833093D9909D6 /* GULNetworkConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULNetworkConstants.m; path = GoogleUtilities/Network/GULNetworkConstants.m; sourceTree = "<group>"; };
 		106AA9D678FE7F3FC288ED6F9B153584 /* FIRVerifyPasswordRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRVerifyPasswordRequest.h; path = Firebase/Auth/Source/RPCs/FIRVerifyPasswordRequest.h; sourceTree = "<group>"; };
 		107691AD9B2EA2B0484EFD0D93E59562 /* FChange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FChange.h; path = Firebase/Database/Core/View/FChange.h; sourceTree = "<group>"; };
-		110A2560060EA112C2106C7E3ADA312D /* Pods-Shield For Dementia Carer-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Shield For Dementia Carer-resources.sh"; sourceTree = "<group>"; };
 		1162461002F37DBA13BBA07C2511114C /* FKeepSyncedEventRegistration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FKeepSyncedEventRegistration.m; path = Firebase/Database/Core/View/FKeepSyncedEventRegistration.m; sourceTree = "<group>"; };
 		11E64F253F0DEE25688CF7B0FDA7510E /* FIRStorage_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRStorage_Private.h; path = Firebase/Storage/Private/FIRStorage_Private.h; sourceTree = "<group>"; };
 		1205A9E13399DA3738C17278C5B6A266 /* FTupleOnDisconnect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FTupleOnDisconnect.h; path = Firebase/Database/Utilities/Tuples/FTupleOnDisconnect.h; sourceTree = "<group>"; };
@@ -890,13 +886,16 @@
 		136443287F41B8FF1B85E13C068F51BD /* env_posix_test_helper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = env_posix_test_helper.h; path = util/env_posix_test_helper.h; sourceTree = "<group>"; };
 		13887386DA50642C69A27AD384E233B8 /* FIRDataSnapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRDataSnapshot.h; path = Firebase/Database/Public/FIRDataSnapshot.h; sourceTree = "<group>"; };
 		139E7183D04BA6166B2A3AD7F26DF953 /* FIRAuthWebView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRAuthWebView.m; path = Firebase/Auth/Source/FIRAuthWebView.m; sourceTree = "<group>"; };
-		13C3859CDC7168E811635B598A026695 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1486BDB1209DDAFC888A07274235E903 /* Pods-Shield For Dementia PatientUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Shield For Dementia PatientUITests-dummy.m"; sourceTree = "<group>"; };
 		148EA55D7C4A0C1FCEE68C082B87D2DD /* log_reader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = log_reader.h; path = db/log_reader.h; sourceTree = "<group>"; };
+		14D1D6986FFBC46BF5DEF1580D96BE05 /* Pods-Shield For Dementia PatientTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Shield For Dementia PatientTests.modulemap"; sourceTree = "<group>"; };
 		15C41DCC9B942BFD256DB73BA1EC6B6F /* FIRVerifyCustomTokenResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRVerifyCustomTokenResponse.m; path = Firebase/Auth/Source/RPCs/FIRVerifyCustomTokenResponse.m; sourceTree = "<group>"; };
 		15EBE4FE0F8FCBF82AE33CBED9C6414F /* FTupleBoolBlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FTupleBoolBlock.h; path = Firebase/Database/Utilities/Tuples/FTupleBoolBlock.h; sourceTree = "<group>"; };
 		16050493410F2FB8EFD3BAF51B8BD1BD /* FIRSignUpNewUserRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRSignUpNewUserRequest.m; path = Firebase/Auth/Source/RPCs/FIRSignUpNewUserRequest.m; sourceTree = "<group>"; };
+		16A616FA69540928003086BD20EA0825 /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FirebaseCore.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16C3F96B7A7532893AF8A754A777789B /* FIRAuthKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRAuthKeychain.h; path = Firebase/Auth/Source/FIRAuthKeychain.h; sourceTree = "<group>"; };
 		16CF1216F5DA1E4D44498BB6A3E851A9 /* filename.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = filename.h; path = db/filename.h; sourceTree = "<group>"; };
+		16DFC9FC4B85817F7B4ACF29F2861638 /* Pods-Shield For Dementia Patient-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Shield For Dementia Patient-umbrella.h"; sourceTree = "<group>"; };
 		1702754D9F8ECCAEAB74B9FD7B32A72E /* FIRAuth.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRAuth.m; path = Firebase/Auth/Source/FIRAuth.m; sourceTree = "<group>"; };
 		17AC8C917A0307ADFF71B6C766994E9B /* FPriorityIndex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FPriorityIndex.m; path = Firebase/Database/FPriorityIndex.m; sourceTree = "<group>"; };
 		17E84F10618377966D1885468B91F470 /* FIRPhoneAuthCredential_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRPhoneAuthCredential_Internal.h; path = Firebase/Auth/Source/AuthProviders/Phone/FIRPhoneAuthCredential_Internal.h; sourceTree = "<group>"; };
@@ -917,7 +916,11 @@
 		1C5E30F7843FF49B787B044896986CDA /* FKeyIndex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FKeyIndex.m; path = Firebase/Database/FKeyIndex.m; sourceTree = "<group>"; };
 		1CED6A80392A272DC9BC75DC3B25A739 /* FTupleSetIdPath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FTupleSetIdPath.m; path = Firebase/Database/Utilities/Tuples/FTupleSetIdPath.m; sourceTree = "<group>"; };
 		1DC8C59CDA7BDC163F5D9AD233FCF9E1 /* FIRStorageUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRStorageUtils.m; path = Firebase/Storage/FIRStorageUtils.m; sourceTree = "<group>"; };
+		1DE732CB7F4511A3803E3EC4BA00684C /* Pods-Shield For Dementia Patient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Shield For Dementia Patient.debug.xcconfig"; sourceTree = "<group>"; };
 		1DEA905D1E7B325D1DF7A6CDE729FA5C /* FTreeNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FTreeNode.h; path = Firebase/Database/Core/Utilities/FTreeNode.h; sourceTree = "<group>"; };
+		1DF00EDF10905E82D1057835E4FC0775 /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleUtilities.framework; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E02A3151B9C68C827D4C52AF12FA8FD /* Pods-Shield For Dementia Patient-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Shield For Dementia Patient-resources.sh"; sourceTree = "<group>"; };
+		1E61BD86987DC1DF72C81FCCF6894451 /* Pods-Shield For Dementia PatientTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Shield For Dementia PatientTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		1EAFF8DFDE88D24053FADB6F5A9370FD /* FIndexedNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIndexedNode.h; path = Firebase/Database/Snapshot/FIndexedNode.h; sourceTree = "<group>"; };
 		1EBFE3527D41D0F1C87F6FDDB7854253 /* FLimitedFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLimitedFilter.m; path = Firebase/Database/Core/View/Filter/FLimitedFilter.m; sourceTree = "<group>"; };
 		1FE73A59DB393AB13D9A6CE5F73F5603 /* FTrackedQueryManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FTrackedQueryManager.m; path = Firebase/Database/Persistence/FTrackedQueryManager.m; sourceTree = "<group>"; };
@@ -925,7 +928,6 @@
 		20213D2B345BD345D14FEF41F03020DF /* FirebaseAuth.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FirebaseAuth.modulemap; sourceTree = "<group>"; };
 		207FFF49971DB9E277FA9B0A06F7635E /* FPersistenceManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FPersistenceManager.m; path = Firebase/Database/Persistence/FPersistenceManager.m; sourceTree = "<group>"; };
 		20C4DBBB0E5C7A9DB9F9E1B5D2D4F85B /* FIRCreateAuthURIRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRCreateAuthURIRequest.m; path = Firebase/Auth/Source/RPCs/FIRCreateAuthURIRequest.m; sourceTree = "<group>"; };
-		2159E422BDB35354498AC1A355AD73F3 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FirebaseDatabase.framework; path = FirebaseDatabase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21D2DF9F129C51B2EA3AEFA88D52C29E /* FTupleTSN.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FTupleTSN.h; path = Firebase/Database/Utilities/Tuples/FTupleTSN.h; sourceTree = "<group>"; };
 		21F1AC836DA42206B3E29A2F18E2539C /* FViewProcessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FViewProcessor.m; path = Firebase/Database/FViewProcessor.m; sourceTree = "<group>"; };
 		222C613697C74DCFFA650E46DDC92CB1 /* options.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = options.h; path = include/leveldb/options.h; sourceTree = "<group>"; };
@@ -934,11 +936,10 @@
 		24013D6CDB6ED4FE02F22BF44764EE93 /* FIRAuthKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRAuthKeychain.m; path = Firebase/Auth/Source/FIRAuthKeychain.m; sourceTree = "<group>"; };
 		244E68B799D3B97C5FCC66AB1BF6EAF3 /* FIROptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIROptions.h; path = Firebase/Core/Public/FIROptions.h; sourceTree = "<group>"; };
 		2480ED18B10C25D68B2C14BE7A513291 /* FNextPushId.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FNextPushId.m; path = Firebase/Database/Utilities/FNextPushId.m; sourceTree = "<group>"; };
-		24A7CD2CFB6D28A12ECB47212912D253 /* Pods_Shield_For_Dementia_Carer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Shield_For_Dementia_Carer.framework; path = "Pods-Shield For Dementia Carer.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24BE38EED4C5929D87868511E45AA298 /* FNodeFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FNodeFilter.h; path = Firebase/Database/Core/View/Filter/FNodeFilter.h; sourceTree = "<group>"; };
+		24C97F5D851775224904D07D51F6EA63 /* leveldb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = leveldb.framework; path = "leveldb-library.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2570B056454F88F1A3464F520D7B18E3 /* FIRAuthWebUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRAuthWebUtils.h; path = Firebase/Auth/Source/FIRAuthWebUtils.h; sourceTree = "<group>"; };
 		25809D46BFC0B005F5A8210BE7158542 /* FCachePolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FCachePolicy.m; path = Firebase/Database/Persistence/FCachePolicy.m; sourceTree = "<group>"; };
-		264A8B3198A248A6E58DE51CAF3C7C2F /* Pods-Shield For Dementia Carer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Shield For Dementia Carer.debug.xcconfig"; sourceTree = "<group>"; };
 		26B4C40B1807ADAB682C4EBE4CDDAE11 /* builder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = builder.h; path = db/builder.h; sourceTree = "<group>"; };
 		26ECF2BC4EE58040D76003B8735AACB5 /* FIRComponentRegistrant.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRComponentRegistrant.h; path = Firebase/Core/Private/FIRComponentRegistrant.h; sourceTree = "<group>"; };
 		2722C9351F7DE0BD806FFD7FF4E0B7BE /* FCompoundHash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FCompoundHash.h; path = Firebase/Database/Core/FCompoundHash.h; sourceTree = "<group>"; };
@@ -953,6 +954,7 @@
 		2AA1B2A9B9FE1427018273F23B651F5B /* version_edit.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = version_edit.cc; path = db/version_edit.cc; sourceTree = "<group>"; };
 		2B11C902109302BF1E935320496E947E /* FIRSetAccountInfoRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRSetAccountInfoRequest.h; path = Firebase/Auth/Source/RPCs/FIRSetAccountInfoRequest.h; sourceTree = "<group>"; };
 		2C36DC4FBE63F8B301518ADD050F1E4D /* FIRStorageTokenAuthorizer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRStorageTokenAuthorizer.m; path = Firebase/Storage/FIRStorageTokenAuthorizer.m; sourceTree = "<group>"; };
+		2CA6DD4C41DEF26B2511FD09526189A8 /* Pods_Shield_For_Dementia_PatientTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Shield_For_Dementia_PatientTests.framework; path = "Pods-Shield For Dementia PatientTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D408F1F615D7CF9F0E4AA68ABC4A92F /* FLLRBValueNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLLRBValueNode.h; path = Firebase/Database/third_party/FImmutableSortedDictionary/FImmutableSortedDictionary/FLLRBValueNode.h; sourceTree = "<group>"; };
 		2E060BA7CB7475E5CB812B3F006FF3DB /* FMerge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FMerge.m; path = Firebase/Database/Core/Operation/FMerge.m; sourceTree = "<group>"; };
 		2E1278E6D26A5D2B5FBF401AC6B55C03 /* FIRVerifyAssertionResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRVerifyAssertionResponse.h; path = Firebase/Auth/Source/RPCs/FIRVerifyAssertionResponse.h; sourceTree = "<group>"; };
@@ -966,7 +968,7 @@
 		3153E09AD9D91A10667F14A01ECAD5E9 /* options.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = options.cc; path = util/options.cc; sourceTree = "<group>"; };
 		318CD1965C15234FBE3DD3562ABA6A02 /* FKeepSyncedEventRegistration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FKeepSyncedEventRegistration.h; path = Firebase/Database/Core/View/FKeepSyncedEventRegistration.h; sourceTree = "<group>"; };
 		31976D603944B61C0ACBC069A9995673 /* FirebaseStorage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FirebaseStorage.modulemap; sourceTree = "<group>"; };
-		31B4B73776010D74E38AEF1693BB1A72 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31A68100EC22CFCC6EFEC0448F057481 /* Pods-Shield For Dementia PatientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Shield For Dementia PatientTests.release.xcconfig"; sourceTree = "<group>"; };
 		3204B5D25045EE8C36A193A75585E507 /* FRepoInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FRepoInfo.m; path = Firebase/Database/Core/FRepoInfo.m; sourceTree = "<group>"; };
 		32206B471F0DAD6272F4DF938FADF016 /* FIRAuthTokenResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRAuthTokenResult.m; path = Firebase/Auth/Source/FIRAuthTokenResult.m; sourceTree = "<group>"; };
 		32763F91D7D33775C4D3CEDE01B86CB3 /* FIRSecureTokenService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRSecureTokenService.h; path = Firebase/Auth/Source/FIRSecureTokenService.h; sourceTree = "<group>"; };
@@ -989,7 +991,6 @@
 		35ABF11D9B233AC266B5885BE953AEA1 /* FIndexedFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIndexedFilter.h; path = Firebase/Database/Core/View/Filter/FIndexedFilter.h; sourceTree = "<group>"; };
 		35B22E7D5EF2E2A95754C1998C9513B9 /* FIRSetAccountInfoResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRSetAccountInfoResponse.m; path = Firebase/Auth/Source/RPCs/FIRSetAccountInfoResponse.m; sourceTree = "<group>"; };
 		361877243443E2F8220EE932AA14090E /* FIRCreateAuthURIRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRCreateAuthURIRequest.h; path = Firebase/Auth/Source/RPCs/FIRCreateAuthURIRequest.h; sourceTree = "<group>"; };
-		362D079DC978FFA6746DC97145F05A2F /* Pods-Shield For Dementia CarerUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Shield For Dementia CarerUITests-dummy.m"; sourceTree = "<group>"; };
 		36A85D67015137BE0A17D61F16D8BE9B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		36F3427FBFBC4D105F70D44FC1ED62E6 /* FIRSendVerificationCodeResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRSendVerificationCodeResponse.h; path = Firebase/Auth/Source/RPCs/FIRSendVerificationCodeResponse.h; sourceTree = "<group>"; };
 		3787F48F4C2821E0832F3FBB7A098AD3 /* FEventRegistration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FEventRegistration.h; path = Firebase/Database/Core/View/FEventRegistration.h; sourceTree = "<group>"; };
@@ -1007,7 +1008,6 @@
 		3C0484FB72053B19272F49FD0D7C7E64 /* FIRVerifyClientRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRVerifyClientRequest.m; path = Firebase/Auth/Source/RPCs/FIRVerifyClientRequest.m; sourceTree = "<group>"; };
 		3C054A5A95CD18E3DC582E276B756050 /* FTuplePathValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FTuplePathValue.m; path = Firebase/Database/Utilities/Tuples/FTuplePathValue.m; sourceTree = "<group>"; };
 		3CA4E1B4FEA6A74657D350D42048A7DB /* FIRStorageTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRStorageTask.m; path = Firebase/Storage/FIRStorageTask.m; sourceTree = "<group>"; };
-		3D6CB77C12D137C7027C1C69D7A91C00 /* Pods-Shield For Dementia CarerUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Shield For Dementia CarerUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		3D90D035648DEF3834259643AFB02D8A /* FTreeSortedDictionaryEnumerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FTreeSortedDictionaryEnumerator.h; path = Firebase/Database/third_party/FImmutableSortedDictionary/FImmutableSortedDictionary/FTreeSortedDictionaryEnumerator.h; sourceTree = "<group>"; };
 		3DE6B8AE76A78207616A60B054797A31 /* status.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = status.cc; path = util/status.cc; sourceTree = "<group>"; };
 		3E331B12894832567051D01A0D9B8085 /* FIREmailAuthProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIREmailAuthProvider.m; path = Firebase/Auth/Source/AuthProviders/EmailPassword/FIREmailAuthProvider.m; sourceTree = "<group>"; };
@@ -1015,9 +1015,8 @@
 		3ECA3D9C0C7CB18F1DA14EFD8E5E2A0F /* FIRComponentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRComponentType.m; path = Firebase/Core/FIRComponentType.m; sourceTree = "<group>"; };
 		3F78561F016EC930B2521E839F8AE624 /* FIRRetryHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRRetryHelper.h; path = Firebase/Database/Core/Utilities/FIRRetryHelper.h; sourceTree = "<group>"; };
 		3F8FAE735F637A582FD8AD54DDEC426D /* FIRStorageDownloadTask_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRStorageDownloadTask_Private.h; path = Firebase/Storage/Private/FIRStorageDownloadTask_Private.h; sourceTree = "<group>"; };
-		3FFC48837CB4EE46CBD268F419A5C421 /* Pods-Shield For Dementia CarerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Shield For Dementia CarerTests-dummy.m"; sourceTree = "<group>"; };
 		401A38F4A7D94A1EFF5AB968FF7EDDC9 /* FirebaseDatabase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FirebaseDatabase-umbrella.h"; sourceTree = "<group>"; };
-		40BD5141C0A6EFD96B8AF70B3A3A876E /* Pods-Shield For Dementia CarerUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Shield For Dementia CarerUITests.modulemap"; sourceTree = "<group>"; };
+		40441A21CA2C52E34CC76CFB5082499A /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GTMSessionFetcher.framework; path = GTMSessionFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40F64C3F0F522E2BC47327E1FCAFA818 /* FTupleFirebase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FTupleFirebase.m; path = Firebase/Database/Utilities/Tuples/FTupleFirebase.m; sourceTree = "<group>"; };
 		41C0CBC2017EFCB1BCEB32AFC828DEC5 /* arena.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = arena.cc; path = util/arena.cc; sourceTree = "<group>"; };
 		4240DC5FFEB93B21795964B27DFDF046 /* FLeafNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLeafNode.h; path = Firebase/Database/Snapshot/FLeafNode.h; sourceTree = "<group>"; };
@@ -1025,6 +1024,7 @@
 		4334565BA587E31BB8006516705ACFB2 /* FIRCreateAuthURIResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRCreateAuthURIResponse.m; path = Firebase/Auth/Source/RPCs/FIRCreateAuthURIResponse.m; sourceTree = "<group>"; };
 		43617D790F01E5E89CD8C37EDF5836A7 /* FIRSetAccountInfoResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRSetAccountInfoResponse.h; path = Firebase/Auth/Source/RPCs/FIRSetAccountInfoResponse.h; sourceTree = "<group>"; };
 		437B4DB10108F2BF2CBFCB296BA1F979 /* FIRAuthCredential.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRAuthCredential.m; path = Firebase/Auth/Source/FIRAuthCredential.m; sourceTree = "<group>"; };
+		43AECCA4072C34603859DC111683B2D0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43DF223B39532B920AB1B75D54DD5D4C /* block.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = block.h; path = table/block.h; sourceTree = "<group>"; };
 		440FC4C2584D79CBEE782EFDD9017905 /* FWriteRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FWriteRecord.h; path = Firebase/Database/Core/FWriteRecord.h; sourceTree = "<group>"; };
 		443D240EDC90BA3478FBCA9C49AD1323 /* FIRComponentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRComponentType.h; path = Firebase/Core/Private/FIRComponentType.h; sourceTree = "<group>"; };
@@ -1045,10 +1045,8 @@
 		48828D99FE8B0C510909EB0151736D57 /* FSyncTree.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSyncTree.h; path = Firebase/Database/Core/FSyncTree.h; sourceTree = "<group>"; };
 		48AAA448E68F55ECF7CA7BB2FA46E313 /* builder.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = builder.cc; path = db/builder.cc; sourceTree = "<group>"; };
 		4A0D2223540601DEB2D8C69DBBDC61C2 /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppMeasurement.framework; path = Frameworks/GoogleAppMeasurement.framework; sourceTree = "<group>"; };
-		4A1FE00C4C3BF694B35C33E8B33905E7 /* Pods-Shield For Dementia CarerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Shield For Dementia CarerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4AAF15E64863A2991873850B86E35A22 /* thread_annotations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = thread_annotations.h; path = port/thread_annotations.h; sourceTree = "<group>"; };
 		4AEDE6B4DD2526BBD3C6405C8C4ACACE /* FIRVerifyClientResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRVerifyClientResponse.h; path = Firebase/Auth/Source/RPCs/FIRVerifyClientResponse.h; sourceTree = "<group>"; };
-		4B9E2B979FA2D3FF6F9572A8B6B187B9 /* Pods-Shield For Dementia CarerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Shield For Dementia CarerTests.release.xcconfig"; sourceTree = "<group>"; };
 		4BCE864E55FECD1F7DA2819675CE945F /* FIRFacebookAuthProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRFacebookAuthProvider.m; path = Firebase/Auth/Source/AuthProviders/Facebook/FIRFacebookAuthProvider.m; sourceTree = "<group>"; };
 		4BE9C45773D5F8C097222CBD8C1FAE90 /* FIRStorageTokenAuthorizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRStorageTokenAuthorizer.h; path = Firebase/Storage/Private/FIRStorageTokenAuthorizer.h; sourceTree = "<group>"; };
 		4BEB72A8892964E01E707DDD134E0B88 /* FIRStorageReference.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRStorageReference.h; path = Firebase/Storage/Public/FIRStorageReference.h; sourceTree = "<group>"; };
@@ -1064,13 +1062,13 @@
 		4E5C768FB3ED9119E766D08E354030C0 /* FCompoundHash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FCompoundHash.m; path = Firebase/Database/Core/FCompoundHash.m; sourceTree = "<group>"; };
 		4E748D18BFA10F55DDDE07D24901423B /* GULReachabilityChecker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULReachabilityChecker.m; path = GoogleUtilities/Reachability/GULReachabilityChecker.m; sourceTree = "<group>"; };
 		4F403A9EC7FFBA4756E5484BA12CF1A5 /* GoogleUtilities.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleUtilities.xcconfig; sourceTree = "<group>"; };
+		4F5570E97E764136D14A6BEEFE4CE12F /* Pods-Shield For Dementia PatientUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Shield For Dementia PatientUITests-resources.sh"; sourceTree = "<group>"; };
 		4F8F3D18AC2998611906E91FEDD0C44A /* FSRWebSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSRWebSocket.h; path = Firebase/Database/third_party/SocketRocket/FSRWebSocket.h; sourceTree = "<group>"; };
 		4F9FDB87E3DDBCB1EA693D7C04993B19 /* FIRSecureTokenRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRSecureTokenRequest.h; path = Firebase/Auth/Source/RPCs/FIRSecureTokenRequest.h; sourceTree = "<group>"; };
 		500A5D0E120DF730D61BF0416DBEF7EA /* FCancelEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FCancelEvent.m; path = Firebase/Database/Core/View/FCancelEvent.m; sourceTree = "<group>"; };
 		5055C30ED8F3977F09DD7C9A34BA8635 /* FIRGetOOBConfirmationCodeResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRGetOOBConfirmationCodeResponse.m; path = Firebase/Auth/Source/RPCs/FIRGetOOBConfirmationCodeResponse.m; sourceTree = "<group>"; };
 		50DFEF4702F94825CA52A74C6020B75C /* write_batch_internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = write_batch_internal.h; path = db/write_batch_internal.h; sourceTree = "<group>"; };
 		51160D8AE158D0433A0A2B6D336F7CAB /* FImmutableSortedDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FImmutableSortedDictionary.h; path = Firebase/Database/third_party/FImmutableSortedDictionary/FImmutableSortedDictionary/FImmutableSortedDictionary.h; sourceTree = "<group>"; };
-		51536199D5B434D39429E001BF28A4AB /* Pods-Shield For Dementia CarerTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Shield For Dementia CarerTests-frameworks.sh"; sourceTree = "<group>"; };
 		51BE701F1A42F65EEBFFFC2457634AF8 /* FirebaseAuth-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FirebaseAuth-umbrella.h"; sourceTree = "<group>"; };
 		52218B6CCB18C80A6B6CB7839572FD62 /* FCacheNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FCacheNode.m; path = Firebase/Database/Core/View/FCacheNode.m; sourceTree = "<group>"; };
 		52CF508505B35ADBE3C84A0FD2FA1602 /* FIRSendVerificationCodeRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRSendVerificationCodeRequest.h; path = Firebase/Auth/Source/RPCs/FIRSendVerificationCodeRequest.h; sourceTree = "<group>"; };
@@ -1082,14 +1080,13 @@
 		5421CC5A91E4BA921FF6745416913810 /* FIRResetPasswordRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRResetPasswordRequest.h; path = Firebase/Auth/Source/RPCs/FIRResetPasswordRequest.h; sourceTree = "<group>"; };
 		54326A97EC57ACA888D763626BC079E1 /* FAtomicNumber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FAtomicNumber.h; path = Firebase/Database/Utilities/FAtomicNumber.h; sourceTree = "<group>"; };
 		543F9D5C2F012F67ACF46ABCE22FC329 /* FIRResetPasswordRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRResetPasswordRequest.m; path = Firebase/Auth/Source/RPCs/FIRResetPasswordRequest.m; sourceTree = "<group>"; };
+		545F9FBF76DC5908E0EC6051726FC7D0 /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FirebaseAuth.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5462A1C012B6DFC3742EC6A1C58A20A4 /* FIndex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIndex.h; path = Firebase/Database/FIndex.h; sourceTree = "<group>"; };
 		5506C874BE9F78D0354737DE3D14929E /* FAckUserWrite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FAckUserWrite.h; path = Firebase/Database/Core/Operation/FAckUserWrite.h; sourceTree = "<group>"; };
 		55142B3F46694B7E63A1D0157CC494BF /* log_format.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = log_format.h; path = db/log_format.h; sourceTree = "<group>"; };
-		55A833FC8FBBDF4D6760BFF06E07A658 /* Pods-Shield For Dementia Carer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Shield For Dementia Carer-acknowledgements.plist"; sourceTree = "<group>"; };
 		55F070D1044E1595C13CD6C7290D2E93 /* FIRStorageTaskSnapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRStorageTaskSnapshot.h; path = Firebase/Storage/Public/FIRStorageTaskSnapshot.h; sourceTree = "<group>"; };
 		567E796CB3BCE6A3090DC4AF933B2DBA /* filter_block.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = filter_block.h; path = table/filter_block.h; sourceTree = "<group>"; };
 		56E0AFB6F77C37623A37EE29D274FD33 /* GULLoggerLevel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULLoggerLevel.h; path = GoogleUtilities/Logger/Public/GULLoggerLevel.h; sourceTree = "<group>"; };
-		57741DB18263FF92DF200E6187213EA3 /* FirebaseStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FirebaseStorage.framework; path = FirebaseStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57E84A3D4136AF031635237DC7005C36 /* FIRSetAccountInfoRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRSetAccountInfoRequest.m; path = Firebase/Auth/Source/RPCs/FIRSetAccountInfoRequest.m; sourceTree = "<group>"; };
 		5802CA17335DC17F67235EB05956F84F /* FRepo_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FRepo_Private.h; path = Firebase/Database/Core/FRepo_Private.h; sourceTree = "<group>"; };
 		592CF6C9C0E476F5CF404EF2736BE75C /* FIRAuthErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRAuthErrors.h; path = Firebase/Auth/Source/Public/FIRAuthErrors.h; sourceTree = "<group>"; };
@@ -1122,26 +1119,24 @@
 		5ED39C3728737392818DCDEC1D8FED8C /* FIRActionCodeSettings.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRActionCodeSettings.m; path = Firebase/Auth/Source/FIRActionCodeSettings.m; sourceTree = "<group>"; };
 		5EE08A2B4A6C896255287D942C3E3B90 /* port_posix.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = port_posix.cc; path = port/port_posix.cc; sourceTree = "<group>"; };
 		5F296DB8ED837F211AD28657B909EC27 /* FConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FConstants.h; path = Firebase/Database/Constants/FConstants.h; sourceTree = "<group>"; };
-		5F94DF810FE6286E8781F704E5084643 /* Pods-Shield For Dementia CarerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Shield For Dementia CarerTests-umbrella.h"; sourceTree = "<group>"; };
 		600A4057331198C22E393E08D8A4291F /* FAuthTokenProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FAuthTokenProvider.h; path = Firebase/Database/Login/FAuthTokenProvider.h; sourceTree = "<group>"; };
+		60172882DABAE66FEF70F73409A374E1 /* Pods-Shield For Dementia Patient.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Shield For Dementia Patient.modulemap"; sourceTree = "<group>"; };
 		605051866A6D26B386D5E134A85EEE31 /* FIRAuthSerialTaskQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRAuthSerialTaskQueue.h; path = Firebase/Auth/Source/FIRAuthSerialTaskQueue.h; sourceTree = "<group>"; };
-		6061BDAAC12932A048E1C81F259B150D /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = nanopb.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60C39833909AA24C8F8C9BFAEB4AD1F5 /* FIRPhoneAuthCredential.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRPhoneAuthCredential.h; path = Firebase/Auth/Source/Public/FIRPhoneAuthCredential.h; sourceTree = "<group>"; };
 		613F7364F547832DE45E37CDDE38358D /* FTupleNodePath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FTupleNodePath.h; path = Firebase/Database/Utilities/Tuples/FTupleNodePath.h; sourceTree = "<group>"; };
 		6142484840ACB9AEB61C81A7615CBE76 /* FViewProcessorResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FViewProcessorResult.h; path = Firebase/Database/FViewProcessorResult.h; sourceTree = "<group>"; };
 		615584513FED8362A32369571888AD15 /* NSData+SRB64Additions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+SRB64Additions.m"; path = "Firebase/Database/third_party/SocketRocket/NSData+SRB64Additions.m"; sourceTree = "<group>"; };
-		61849891BE1EC545005F045283460F03 /* Pods-Shield For Dementia CarerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Shield For Dementia CarerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6190028CB47D310BEB695E735876D1C0 /* nanopb-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nanopb-prefix.pch"; sourceTree = "<group>"; };
 		623DA366D9ACD78DDF566341924E5511 /* FAuthTokenProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FAuthTokenProvider.m; path = Firebase/Database/Login/FAuthTokenProvider.m; sourceTree = "<group>"; };
 		6288EFD64BF667FE13DEE6242B686086 /* env_posix.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = env_posix.cc; path = util/env_posix.cc; sourceTree = "<group>"; };
 		62A79C2557F5B91CF70148C17C23B990 /* FDataEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FDataEvent.h; path = Firebase/Database/Core/View/FDataEvent.h; sourceTree = "<group>"; };
+		631CBDD41EDCC08D861ECFFA0D7984B8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6342C1280704EE766CC749FFB3FEC340 /* GTMSessionFetcher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GTMSessionFetcher.modulemap; sourceTree = "<group>"; };
 		6364E3D50AC1A2C25624AE631A76853E /* logging.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = logging.cc; path = util/logging.cc; sourceTree = "<group>"; };
 		640A4CEDFBF8C3D4BCBCF6CCF45EC0AB /* GoogleUtilities-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleUtilities-dummy.m"; sourceTree = "<group>"; };
 		640E8D1A8115330AAEA16ED42DF3ACF7 /* FIRAuthDefaultUIDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRAuthDefaultUIDelegate.m; path = Firebase/Auth/Source/FIRAuthDefaultUIDelegate.m; sourceTree = "<group>"; };
 		642A1266429E8D47BE8228B5C45B6E9B /* APLevelDB.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = APLevelDB.mm; path = "Firebase/Database/third_party/Wrap-leveldb/APLevelDB.mm"; sourceTree = "<group>"; };
 		64A6308F41869BC3010D84EA6B4FEBDE /* FIRAuthDataResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRAuthDataResult.m; path = Firebase/Auth/Source/FIRAuthDataResult.m; sourceTree = "<group>"; };
-		6507DD0909D61B931A86ED02B1B49840 /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FirebaseCore.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		650DE4CFA1ACF40C5130934B315C82CF /* FIRAuthAppDelegateProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRAuthAppDelegateProxy.h; path = Firebase/Auth/Source/FIRAuthAppDelegateProxy.h; sourceTree = "<group>"; };
 		6517306C3F8018D14676D45AE3D74D69 /* two_level_iterator.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = two_level_iterator.cc; path = table/two_level_iterator.cc; sourceTree = "<group>"; };
 		652BCE5E57FF7BC6741FDA88CED3CCB5 /* FCacheNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FCacheNode.h; path = Firebase/Database/Core/View/FCacheNode.h; sourceTree = "<group>"; };
@@ -1150,6 +1145,7 @@
 		66C8E782F180B09FD34515B4C66BFD35 /* FIRFacebookAuthCredential.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRFacebookAuthCredential.m; path = Firebase/Auth/Source/AuthProviders/Facebook/FIRFacebookAuthCredential.m; sourceTree = "<group>"; };
 		66D0E3993BEF93CD575B01AFB4A657B4 /* block_builder.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = block_builder.cc; path = table/block_builder.cc; sourceTree = "<group>"; };
 		672202ED8A9A21BDB9F7391BF29BBB14 /* FTupleObjectNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FTupleObjectNode.h; path = Firebase/Database/Utilities/Tuples/FTupleObjectNode.h; sourceTree = "<group>"; };
+		6732264987AA81B76457F39D0C29FD8F /* FirebaseStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FirebaseStorage.framework; path = FirebaseStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6840D7B3ABE91EC863FA3EE799D27B57 /* FIRAuthSettings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRAuthSettings.h; path = Firebase/Auth/Source/Public/FIRAuthSettings.h; sourceTree = "<group>"; };
 		685F9A6F72C0179483E2D88ED7553EF8 /* FIRStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRStorage.m; path = Firebase/Storage/FIRStorage.m; sourceTree = "<group>"; };
 		6B4EFF10BE64BB0D9F302D451A86A770 /* FIRUserMetadata.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRUserMetadata.h; path = Firebase/Auth/Source/Public/FIRUserMetadata.h; sourceTree = "<group>"; };
@@ -1167,8 +1163,6 @@
 		6E8F89FC7496BD806D243412E02F7A02 /* FIRAuthAppCredential.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRAuthAppCredential.m; path = Firebase/Auth/Source/FIRAuthAppCredential.m; sourceTree = "<group>"; };
 		6FA0B005531F707E1F1916953000C0E1 /* FIRAuthDataResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRAuthDataResult.h; path = Firebase/Auth/Source/Public/FIRAuthDataResult.h; sourceTree = "<group>"; };
 		6FFFDEA65AC65FE41AECEE5A3D65DDE2 /* iterator.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = iterator.cc; path = table/iterator.cc; sourceTree = "<group>"; };
-		70F52F833E775F018E6A5281C5060129 /* Pods-Shield For Dementia CarerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Shield For Dementia CarerUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		717665469439308724CA40CA33C87301 /* Pods-Shield For Dementia CarerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Shield For Dementia CarerTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		71AFBA893DBCF266817EA9162A3BA3F0 /* GTMSessionFetcherService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcherService.m; path = Source/GTMSessionFetcherService.m; sourceTree = "<group>"; };
 		71F67741A8285DB7BE20A22C8AE57870 /* env.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = env.h; path = include/leveldb/env.h; sourceTree = "<group>"; };
 		72519666DDBABD89BF020F7BC3A2885F /* iterator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = iterator.h; path = include/leveldb/iterator.h; sourceTree = "<group>"; };
@@ -1176,20 +1170,20 @@
 		73452C51ECCFCA42B3358770DFB33EF2 /* FTupleBoolBlock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FTupleBoolBlock.m; path = Firebase/Database/Utilities/Tuples/FTupleBoolBlock.m; sourceTree = "<group>"; };
 		7416E5C991114682DEF3A66F7BB34612 /* pb_encode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_encode.c; sourceTree = "<group>"; };
 		749FBA732E3644805E61FC71452AC143 /* status.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = status.h; path = include/leveldb/status.h; sourceTree = "<group>"; };
+		74A46636C0F08CB49DC4713275E1EF1C /* Pods-Shield For Dementia PatientUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Shield For Dementia PatientUITests.modulemap"; sourceTree = "<group>"; };
 		74B0EF222B2A57BDA546A9F33F28396D /* FIRPhoneAuthProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRPhoneAuthProvider.h; path = Firebase/Auth/Source/Public/FIRPhoneAuthProvider.h; sourceTree = "<group>"; };
+		74D567BA786563E3E0AB2EC64C6EFA7E /* Pods-Shield For Dementia Patient-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Shield For Dementia Patient-dummy.m"; sourceTree = "<group>"; };
 		754AE2F8EB7F7A6FD3398F852904C0ED /* FIRAuthErrorUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRAuthErrorUtils.h; path = Firebase/Auth/Source/FIRAuthErrorUtils.h; sourceTree = "<group>"; };
 		75B2EAE7E00F87C915A4B4CFF235498E /* db_iter.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = db_iter.cc; path = db/db_iter.cc; sourceTree = "<group>"; };
 		75CFE4C0F60837DA87C35A1F33A5A7A8 /* FClock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FClock.h; path = Firebase/Database/FClock.h; sourceTree = "<group>"; };
 		768696CD5169F71F325D3E4E2F798D4C /* FIRDatabaseQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRDatabaseQuery.m; path = Firebase/Database/Api/FIRDatabaseQuery.m; sourceTree = "<group>"; };
 		76FEB7BB233B483FD5C4431BBB85249D /* FIRAuthGlobalWorkQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRAuthGlobalWorkQueue.m; path = Firebase/Auth/Source/FIRAuthGlobalWorkQueue.m; sourceTree = "<group>"; };
-		771FFF9F10759BB571473AFC3C5D3D39 /* Pods-Shield For Dementia CarerUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Shield For Dementia CarerUITests-frameworks.sh"; sourceTree = "<group>"; };
 		77595740DC385A5674884A2726235D35 /* FirebaseDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FirebaseDatabase.h; path = Firebase/Database/Public/FirebaseDatabase.h; sourceTree = "<group>"; };
 		777B85DE70E4D1AA49F24230CD884825 /* FIRVerifyPhoneNumberRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRVerifyPhoneNumberRequest.h; path = Firebase/Auth/Source/RPCs/FIRVerifyPhoneNumberRequest.h; sourceTree = "<group>"; };
 		779A575D079F83924FD2B77849E58A16 /* arena.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = arena.h; path = util/arena.h; sourceTree = "<group>"; };
-		77B364B7DA6FF0438E60C70AA2799F92 /* Pods-Shield For Dementia CarerUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Shield For Dementia CarerUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		77A9A37C6EEB499CFF8B1BB96814E13E /* FirebaseDatabase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FirebaseDatabase.framework; path = FirebaseDatabase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7826CF4E49DF30D9EB4EB82CF249DCFE /* pb_decode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_decode.h; sourceTree = "<group>"; };
 		785740A1EE8DF23C82E211ACEF20EE5B /* FWriteTreeRef.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FWriteTreeRef.m; path = Firebase/Database/Core/FWriteTreeRef.m; sourceTree = "<group>"; };
-		78AC604180A72A3E48E3BB51102098E2 /* Pods-Shield For Dementia Carer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Shield For Dementia Carer-acknowledgements.markdown"; sourceTree = "<group>"; };
 		79C6C367CCDD1FFB570FBA3A02C4CC47 /* FTupleCallbackStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FTupleCallbackStatus.h; path = Firebase/Database/Utilities/Tuples/FTupleCallbackStatus.h; sourceTree = "<group>"; };
 		79E1926AB9B5073AD0562B09C5E745AF /* GULAppDelegateSwizzler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULAppDelegateSwizzler.h; path = GoogleUtilities/AppDelegateSwizzler/Private/GULAppDelegateSwizzler.h; sourceTree = "<group>"; };
 		7A0233BB53F17F1502D2C584C2D49038 /* port_posix_sse.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = port_posix_sse.cc; path = port/port_posix_sse.cc; sourceTree = "<group>"; };
@@ -1207,6 +1201,7 @@
 		7E09E4AAE0657335B94E7E90DDA3F54C /* FIROptionsInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIROptionsInternal.h; path = Firebase/Core/Private/FIROptionsInternal.h; sourceTree = "<group>"; };
 		7E0EBC1C97C632ACE04B6B209A9A84A6 /* FIRSecureTokenResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRSecureTokenResponse.m; path = Firebase/Auth/Source/RPCs/FIRSecureTokenResponse.m; sourceTree = "<group>"; };
 		7E1BC665E36976B7D73C4DB6C4818A61 /* GULMutableDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULMutableDictionary.m; path = GoogleUtilities/Network/GULMutableDictionary.m; sourceTree = "<group>"; };
+		7E8ED90A581F8FF87CCADBBDFA146CF7 /* Pods-Shield For Dementia PatientUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Shield For Dementia PatientUITests-umbrella.h"; sourceTree = "<group>"; };
 		7EE37492208358496709DB0040B64A54 /* FIRApp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRApp.m; path = Firebase/Core/FIRApp.m; sourceTree = "<group>"; };
 		7F29C2C3FFF6664172BF163F4EE7AFAB /* FIRStorageConstants_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRStorageConstants_Private.h; path = Firebase/Storage/Private/FIRStorageConstants_Private.h; sourceTree = "<group>"; };
 		7FE3F1C49CF806C74A33ACBCC6C2EB0D /* FIRComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRComponent.h; path = Firebase/Core/Private/FIRComponent.h; sourceTree = "<group>"; };
@@ -1218,6 +1213,7 @@
 		81F9268FB6EF0771457AA49C9354A431 /* table_builder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = table_builder.h; path = include/leveldb/table_builder.h; sourceTree = "<group>"; };
 		82643B7BCB9ECAA896CCE1F878FCEDA8 /* FIREmailPasswordAuthCredential.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIREmailPasswordAuthCredential.h; path = Firebase/Auth/Source/AuthProviders/EmailPassword/FIREmailPasswordAuthCredential.h; sourceTree = "<group>"; };
 		82F7F316CCC13BD1770B984466C10A7B /* FIRGetOOBConfirmationCodeRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRGetOOBConfirmationCodeRequest.h; path = Firebase/Auth/Source/RPCs/FIRGetOOBConfirmationCodeRequest.h; sourceTree = "<group>"; };
+		8351BA2693147B61AB96CC749C354EEC /* Pods-Shield For Dementia PatientTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Shield For Dementia PatientTests-dummy.m"; sourceTree = "<group>"; };
 		84001AD6DD178BA5AD7A83C2CA07B484 /* FIRDatabaseConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRDatabaseConfig.h; path = Firebase/Database/Api/FIRDatabaseConfig.h; sourceTree = "<group>"; };
 		8417DD239E61FACA3EC76A2EE02609CA /* FIRComponentContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRComponentContainer.h; path = Firebase/Core/Private/FIRComponentContainer.h; sourceTree = "<group>"; };
 		842B95402C8449D6386C1D55B25894F1 /* FStringUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FStringUtilities.h; path = Firebase/Database/Utilities/FStringUtilities.h; sourceTree = "<group>"; };
@@ -1226,6 +1222,7 @@
 		852B2BF86C6EB4DE972BF13E2FD11975 /* FIRGetProjectConfigRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRGetProjectConfigRequest.m; path = Firebase/Auth/Source/RPCs/FIRGetProjectConfigRequest.m; sourceTree = "<group>"; };
 		85390838B60050FBF9C709E4522CD5E3 /* FImmutableSortedSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FImmutableSortedSet.m; path = Firebase/Database/third_party/FImmutableSortedDictionary/FImmutableSortedDictionary/FImmutableSortedSet.m; sourceTree = "<group>"; };
 		85AD509CC43A98AB4EA9DF12E470879B /* FIRAppAssociationRegistration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRAppAssociationRegistration.m; path = Firebase/Core/FIRAppAssociationRegistration.m; sourceTree = "<group>"; };
+		86005EF03FAFA8A46E7BEC499DDA1019 /* Pods-Shield For Dementia PatientTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Shield For Dementia PatientTests-umbrella.h"; sourceTree = "<group>"; };
 		8635DA25F8493329C70629D0D7FC0B38 /* FIRStorageObservableTask_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRStorageObservableTask_Private.h; path = Firebase/Storage/Private/FIRStorageObservableTask_Private.h; sourceTree = "<group>"; };
 		871C0138F279EF65565692C79A0EAE7C /* APLevelDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APLevelDB.h; path = "Firebase/Database/third_party/Wrap-leveldb/APLevelDB.h"; sourceTree = "<group>"; };
 		87423C852D74C42F46B5F757297D6183 /* table.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = table.cc; path = table/table.cc; sourceTree = "<group>"; };
@@ -1238,8 +1235,8 @@
 		89D175A40D0417DBBA2D398C18B4DAFD /* FIRAuthBackend.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRAuthBackend.m; path = Firebase/Auth/Source/RPCs/FIRAuthBackend.m; sourceTree = "<group>"; };
 		8A1DCE0946FFBA94747CCA26648DA25B /* FRepo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FRepo.h; path = Firebase/Database/Core/FRepo.h; sourceTree = "<group>"; };
 		8A81C1BC49DCBD6E0DCAD970D1B2B68D /* FIRGoogleAuthCredential.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRGoogleAuthCredential.m; path = Firebase/Auth/Source/AuthProviders/Google/FIRGoogleAuthCredential.m; sourceTree = "<group>"; };
-		8AA73DCF68557D88B2FEFE7A8EBD9845 /* Pods-Shield For Dementia CarerUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Shield For Dementia CarerUITests-umbrella.h"; sourceTree = "<group>"; };
 		8B269062C13E7ECB56C87B419A625131 /* GULAppDelegateSwizzler_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULAppDelegateSwizzler_Private.h; path = GoogleUtilities/AppDelegateSwizzler/Internal/GULAppDelegateSwizzler_Private.h; sourceTree = "<group>"; };
+		8B5E644B471D5AFDA8F55414F06C9623 /* Pods-Shield For Dementia PatientTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Shield For Dementia PatientTests-frameworks.sh"; sourceTree = "<group>"; };
 		8B670C59DF98E8B0425E43278FAC096B /* FIRDataSnapshot_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRDataSnapshot_Private.h; path = Firebase/Database/Api/Private/FIRDataSnapshot_Private.h; sourceTree = "<group>"; };
 		8B7A63D79AE1E105D4B55A5251A64BE2 /* FWebSocketConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FWebSocketConnection.h; path = Firebase/Database/Realtime/FWebSocketConnection.h; sourceTree = "<group>"; };
 		8BB7969EBCD2C419AEE6F0B6A2DE7E83 /* FLLRBValueNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLLRBValueNode.m; path = Firebase/Database/third_party/FImmutableSortedDictionary/FImmutableSortedDictionary/FLLRBValueNode.m; sourceTree = "<group>"; };
@@ -1255,7 +1252,6 @@
 		901B6B6C3DEF044EFB6F3DD349452003 /* FIRAuthExceptionUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRAuthExceptionUtils.h; path = Firebase/Auth/Source/FIRAuthExceptionUtils.h; sourceTree = "<group>"; };
 		90680BF7B8FA17FEADAA6FB3886B389C /* table_cache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = table_cache.h; path = db/table_cache.h; sourceTree = "<group>"; };
 		90D091B64F875FEB73EC896E00FFDE52 /* FIRAuthURLPresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRAuthURLPresenter.h; path = Firebase/Auth/Source/FIRAuthURLPresenter.h; sourceTree = "<group>"; };
-		90E8183FF7AB32FECC6827A400935520 /* Pods-Shield For Dementia CarerUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Shield For Dementia CarerUITests-resources.sh"; sourceTree = "<group>"; };
 		9138BB43C4BEC6791F9A44652A79D0AA /* testharness.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = testharness.cc; path = util/testharness.cc; sourceTree = "<group>"; };
 		913AD0229B6843BEB97734B9B2C5ECEF /* nanopb.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = nanopb.xcconfig; sourceTree = "<group>"; };
 		915B4FE391CCD575FEDD31152556AD67 /* FIRDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRDatabase.m; path = Firebase/Database/Api/FIRDatabase.m; sourceTree = "<group>"; };
@@ -1281,6 +1277,7 @@
 		98244E85F781A399CD418F3387394846 /* FChildrenNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FChildrenNode.h; path = Firebase/Database/Snapshot/FChildrenNode.h; sourceTree = "<group>"; };
 		989121BDD302339941FE92BC48CFC950 /* FRangeMerge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FRangeMerge.h; path = Firebase/Database/Core/FRangeMerge.h; sourceTree = "<group>"; };
 		98A93D8EE7CB316911AE31B4418D668F /* FIRIdentityToolkitRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRIdentityToolkitRequest.m; path = Firebase/Auth/Source/RPCs/FIRIdentityToolkitRequest.m; sourceTree = "<group>"; };
+		98DC0F3851662DAC231B6F0EB849D2B2 /* Pods-Shield For Dementia PatientUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Shield For Dementia PatientUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		98E3F2A43447E6F4BF1AC7EA51801838 /* FIRAuthAppCredential.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRAuthAppCredential.h; path = Firebase/Auth/Source/FIRAuthAppCredential.h; sourceTree = "<group>"; };
 		995240E88B5869193AE3BB629008F6AB /* FIRStorageMetadata.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRStorageMetadata.h; path = Firebase/Storage/Public/FIRStorageMetadata.h; sourceTree = "<group>"; };
 		9A3126C86B89D054A75459FF15DAEB50 /* FIRAuthAPNSToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRAuthAPNSToken.h; path = Firebase/Auth/Source/FIRAuthAPNSToken.h; sourceTree = "<group>"; };
@@ -1315,7 +1312,6 @@
 		A5143ED9EE1BC3A5DFFEC6AD688145C4 /* FIRAuthGlobalWorkQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRAuthGlobalWorkQueue.h; path = Firebase/Auth/Source/FIRAuthGlobalWorkQueue.h; sourceTree = "<group>"; };
 		A52E6A3398DC3FEDC10E394ABF84A64C /* FIRAdditionalUserInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRAdditionalUserInfo.h; path = Firebase/Auth/Source/Public/FIRAdditionalUserInfo.h; sourceTree = "<group>"; };
 		A53CD8CE1B3C2862F7BA76439E752801 /* FParsedUrl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FParsedUrl.h; path = Firebase/Database/Utilities/FParsedUrl.h; sourceTree = "<group>"; };
-		A5B18372E8110149AE6A68D45D0D5589 /* Pods-Shield For Dementia Carer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Shield For Dementia Carer.release.xcconfig"; sourceTree = "<group>"; };
 		A5C994471A07C04FD170A73D089F2A9D /* FRangeMerge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FRangeMerge.m; path = Firebase/Database/Core/FRangeMerge.m; sourceTree = "<group>"; };
 		A67E3E25842F6D7F79476AAFD7D394BB /* FEventRaiser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FEventRaiser.h; path = Firebase/Database/Core/View/FEventRaiser.h; sourceTree = "<group>"; };
 		A690011DAD30B9266DEC08B0436F542E /* FEventRaiser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FEventRaiser.m; path = Firebase/Database/Core/View/FEventRaiser.m; sourceTree = "<group>"; };
@@ -1346,6 +1342,7 @@
 		ADD66910BC0A85EFE745F6BCCA02D6C4 /* FIRStorageUploadTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRStorageUploadTask.m; path = Firebase/Storage/FIRStorageUploadTask.m; sourceTree = "<group>"; };
 		AE2C5827299B33256490DFE8EA0E3ACF /* memtable.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = memtable.cc; path = db/memtable.cc; sourceTree = "<group>"; };
 		AEB20C5EDD149D40314C8A7698DB5D52 /* FIRAdditionalUserInfo_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRAdditionalUserInfo_Internal.h; path = Firebase/Auth/Source/FIRAdditionalUserInfo_Internal.h; sourceTree = "<group>"; };
+		AEDE12DBEE4B73263F47168C58C5A91B /* Pods-Shield For Dementia PatientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Shield For Dementia PatientTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AF7DF7D456DD621877EF0BA10850B83B /* FIRGitHubAuthCredential.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRGitHubAuthCredential.m; path = Firebase/Auth/Source/AuthProviders/GitHub/FIRGitHubAuthCredential.m; sourceTree = "<group>"; };
 		AF8EE8926865CE03310415D9687E5C4B /* FIRTwitterAuthCredential.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRTwitterAuthCredential.h; path = Firebase/Auth/Source/AuthProviders/Twitter/FIRTwitterAuthCredential.h; sourceTree = "<group>"; };
 		B04DD7A977430FFE3227C7C710F34FC3 /* GULNetworkConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULNetworkConstants.h; path = GoogleUtilities/Network/Private/GULNetworkConstants.h; sourceTree = "<group>"; };
@@ -1360,23 +1357,20 @@
 		B3B2A68D11060905BF585C5D188CBBBC /* nanopb.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = nanopb.modulemap; sourceTree = "<group>"; };
 		B3B88F457CC609EF21483ADF0F57DA42 /* leveldb-library.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "leveldb-library.modulemap"; sourceTree = "<group>"; };
 		B3D570EC360A8DDD7DD7CFDE12895175 /* FIRGetAccountInfoRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRGetAccountInfoRequest.m; path = Firebase/Auth/Source/RPCs/FIRGetAccountInfoRequest.m; sourceTree = "<group>"; };
-		B3E396125A48E8378FE4217C6B05D593 /* Pods-Shield For Dementia CarerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Shield For Dementia CarerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B468846D80206E7CF5EC20AF4468A998 /* FIRVerifyCustomTokenRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRVerifyCustomTokenRequest.h; path = Firebase/Auth/Source/RPCs/FIRVerifyCustomTokenRequest.h; sourceTree = "<group>"; };
 		B498ADA9608962A7ACE359A59C1A7B13 /* random.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = random.h; path = util/random.h; sourceTree = "<group>"; };
-		B5122473A6D2E243A1E195613C1EC824 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B520ECABF4EE1ABE754795CD4F06E7ED /* FIRAuthUserDefaultsStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRAuthUserDefaultsStorage.m; path = Firebase/Auth/Source/FIRAuthUserDefaultsStorage.m; sourceTree = "<group>"; };
 		B5E70B6320292E2DA4BBADE46F3A76FB /* FIRRetryHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRRetryHelper.m; path = Firebase/Database/Core/Utilities/FIRRetryHelper.m; sourceTree = "<group>"; };
 		B5F599906CD5BDC02C6CF661EFE04121 /* FRepoInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FRepoInfo.h; path = Firebase/Database/Core/FRepoInfo.h; sourceTree = "<group>"; };
 		B6D74DF2A5F6BB22A4A880EA606937B7 /* FAckUserWrite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FAckUserWrite.m; path = Firebase/Database/Core/Operation/FAckUserWrite.m; sourceTree = "<group>"; };
 		B75DCC65CB8905755B7E39182925A12A /* FIRStorageComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRStorageComponent.h; path = Firebase/Storage/Private/FIRStorageComponent.h; sourceTree = "<group>"; };
-		B7D44FA1714C49F50ACC07941B657BE8 /* Pods-Shield For Dementia Carer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Shield For Dementia Carer.modulemap"; sourceTree = "<group>"; };
-		B803D3148C7161E82437E3AEA9EAAE53 /* leveldb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = leveldb.framework; path = "leveldb-library.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B858E29E6CA221CAE14583847CEB4D69 /* FIRAuthURLPresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRAuthURLPresenter.m; path = Firebase/Auth/Source/FIRAuthURLPresenter.m; sourceTree = "<group>"; };
 		B86440D6044FCA71C7463A66908CE2C1 /* FTupleTransaction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FTupleTransaction.m; path = Firebase/Database/Utilities/Tuples/FTupleTransaction.m; sourceTree = "<group>"; };
 		B87C8FD317EFF2D80FBDFE3C7DBB0A51 /* histogram.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = histogram.cc; path = util/histogram.cc; sourceTree = "<group>"; };
 		B8BF49501DFB29BBBD158463D56062ED /* FAtomicNumber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FAtomicNumber.m; path = Firebase/Database/Utilities/FAtomicNumber.m; sourceTree = "<group>"; };
 		B8E4520DEACF5285DE2B8249D372DD88 /* FIRAuthUIDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRAuthUIDelegate.h; path = Firebase/Auth/Source/Public/FIRAuthUIDelegate.h; sourceTree = "<group>"; };
 		B900F95A7530443C496E5EFAB470D362 /* FChildEventRegistration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FChildEventRegistration.m; path = Firebase/Database/Core/View/FChildEventRegistration.m; sourceTree = "<group>"; };
+		B931726F03294D520DA7C01539760712 /* Pods-Shield For Dementia PatientUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Shield For Dementia PatientUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B9F34B13FE06554A300D5E0259B26196 /* FRepoManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FRepoManager.m; path = Firebase/Database/Core/FRepoManager.m; sourceTree = "<group>"; };
 		BADAC7DC8B8EF8E6962EC1DFEEA07FA3 /* GTMSessionFetcherLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcherLogging.h; path = Source/GTMSessionFetcherLogging.h; sourceTree = "<group>"; };
 		BC2706696A33A5DDE8B62221703BCDE0 /* FIRStorageErrors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRStorageErrors.m; path = Firebase/Storage/FIRStorageErrors.m; sourceTree = "<group>"; };
@@ -1395,6 +1389,7 @@
 		C19FEADE57CB6D082F966B15EACE39B9 /* FIRVerifyPasswordResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRVerifyPasswordResponse.h; path = Firebase/Auth/Source/RPCs/FIRVerifyPasswordResponse.h; sourceTree = "<group>"; };
 		C1E53365D8AB4912C160B19A85D66BBA /* FIndexedFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIndexedFilter.m; path = Firebase/Database/Core/View/Filter/FIndexedFilter.m; sourceTree = "<group>"; };
 		C1F6AEB72E6F4FE9BCDD6C44E78F09A5 /* FIRAuthInternalErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRAuthInternalErrors.h; path = Firebase/Auth/Source/FIRAuthInternalErrors.h; sourceTree = "<group>"; };
+		C263B08F9210A594771468CD0D53D88B /* Pods-Shield For Dementia PatientUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Shield For Dementia PatientUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C283ED1C7B51D4CB9F01A04211B8D03B /* FIRAuthWebViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRAuthWebViewController.m; path = Firebase/Auth/Source/FIRAuthWebViewController.m; sourceTree = "<group>"; };
 		C2C8B0DC45EC52002D7FF9DE9AE26B38 /* FIRCoreConfigurable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRCoreConfigurable.h; path = Firebase/Core/Private/FIRCoreConfigurable.h; sourceTree = "<group>"; };
 		C365F8453D643B4FBF6376A61C68006F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -1419,10 +1414,11 @@
 		CA660A81508BFE1762D56A0CBC1760CB /* FSnapshotUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSnapshotUtilities.m; path = Firebase/Database/Snapshot/FSnapshotUtilities.m; sourceTree = "<group>"; };
 		CA6DB27A199F3D769AC836E7FCB64EE2 /* GTMSessionFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcher.m; path = Source/GTMSessionFetcher.m; sourceTree = "<group>"; };
 		CAA517FCC856E8ECD7DF794DFB571F57 /* FIRApp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRApp.h; path = Firebase/Core/Public/FIRApp.h; sourceTree = "<group>"; };
+		CB076F1AB20AF8E4529BFB3460507BE5 /* Pods-Shield For Dementia Patient-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Shield For Dementia Patient-acknowledgements.plist"; sourceTree = "<group>"; };
 		CB1540FABAD2136A85F3B371C144F6EF /* FNamedNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FNamedNode.m; path = Firebase/Database/FNamedNode.m; sourceTree = "<group>"; };
-		CB6909E2A874BD00FFE06FCF80516778 /* Pods_Shield_For_Dementia_CarerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Shield_For_Dementia_CarerTests.framework; path = "Pods-Shield For Dementia CarerTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB6EC5CDA1730921F4CFDBE1B4FC2181 /* db.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = db.h; path = include/leveldb/db.h; sourceTree = "<group>"; };
 		CBF00A9059D30B9BDBF5B4519DEAB4B3 /* FMerge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMerge.h; path = Firebase/Database/Core/Operation/FMerge.h; sourceTree = "<group>"; };
+		CC23244883067F87A163F793C6D1906C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC4AC5EDCE3DBE49B2A5880E1D73ED0B /* log_writer.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = log_writer.cc; path = db/log_writer.cc; sourceTree = "<group>"; };
 		CC9216396B2BF5CF2802A500E830B4B8 /* hash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hash.h; path = util/hash.h; sourceTree = "<group>"; };
 		CCC33C0A4783F13061AE88FBA7044EAA /* FirebaseDatabase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FirebaseDatabase.xcconfig; sourceTree = "<group>"; };
@@ -1451,7 +1447,6 @@
 		D3EBD5CE42EC221FD777F6850FFCF03C /* FTupleRemovedQueriesEvents.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FTupleRemovedQueriesEvents.m; path = Firebase/Database/Utilities/Tuples/FTupleRemovedQueriesEvents.m; sourceTree = "<group>"; };
 		D4006CD6243B0508DF3D938CCC65BB9E /* FIRStorageConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRStorageConstants.m; path = Firebase/Storage/FIRStorageConstants.m; sourceTree = "<group>"; };
 		D4219BBF044FFBADC01AAD94D341DEF1 /* FTupleStringNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FTupleStringNode.h; path = Firebase/Database/Utilities/Tuples/FTupleStringNode.h; sourceTree = "<group>"; };
-		D4B8B7B49A786302A91BAB882DFA6823 /* Pods-Shield For Dementia CarerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Shield For Dementia CarerTests.modulemap"; sourceTree = "<group>"; };
 		D4CC804746015F57DC7F21DD42120B12 /* FEmptyNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FEmptyNode.h; path = Firebase/Database/Snapshot/FEmptyNode.h; sourceTree = "<group>"; };
 		D4FC8AF1CDF54FFB2FC8618FD97A75F4 /* FirebaseDatabase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FirebaseDatabase.modulemap; sourceTree = "<group>"; };
 		D54325BEA00AD028F4773981921786DE /* FIRPhoneAuthProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRPhoneAuthProvider.m; path = Firebase/Auth/Source/AuthProviders/Phone/FIRPhoneAuthProvider.m; sourceTree = "<group>"; };
@@ -1468,7 +1463,6 @@
 		D76368431204699E10A88CD461C37439 /* FTupleTransaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FTupleTransaction.h; path = Firebase/Database/Utilities/Tuples/FTupleTransaction.h; sourceTree = "<group>"; };
 		D7CDC94BB755958936C324D740B28C23 /* FIRVerifyPhoneNumberRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRVerifyPhoneNumberRequest.m; path = Firebase/Auth/Source/RPCs/FIRVerifyPhoneNumberRequest.m; sourceTree = "<group>"; };
 		D7DE756F290B43A2FD79C93389C0CB3C /* testutil.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = testutil.cc; path = util/testutil.cc; sourceTree = "<group>"; };
-		D80218FD5371BC8507BA3B78435CF757 /* Pods-Shield For Dementia CarerTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Shield For Dementia CarerTests-resources.sh"; sourceTree = "<group>"; };
 		D819F7F3C4A95F5D5A5E7E694B85CA0A /* FIRStoragePath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRStoragePath.m; path = Firebase/Storage/FIRStoragePath.m; sourceTree = "<group>"; };
 		D9707DA1324F6CAAA499AAD96422BF5E /* FIRAnalyticsConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRAnalyticsConfiguration.h; path = Firebase/Core/Public/FIRAnalyticsConfiguration.h; sourceTree = "<group>"; };
 		D9B2BB97062F8473046A7753823365B8 /* FIRStorageUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRStorageUtils.h; path = Firebase/Storage/Private/FIRStorageUtils.h; sourceTree = "<group>"; };
@@ -1484,10 +1478,12 @@
 		DC173D3C28B62D2B7A10B2D9C22285BC /* FIRAuthCredential.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRAuthCredential.h; path = Firebase/Auth/Source/Public/FIRAuthCredential.h; sourceTree = "<group>"; };
 		DC1D1B78EB6BAD25D16E4096F89498C8 /* GULNetwork.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULNetwork.m; path = GoogleUtilities/Network/GULNetwork.m; sourceTree = "<group>"; };
 		DC36049BCA6A174DAE00E68BFE252BE9 /* FIRSecureTokenRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRSecureTokenRequest.m; path = Firebase/Auth/Source/RPCs/FIRSecureTokenRequest.m; sourceTree = "<group>"; };
+		DC6E4A02344DD2CA57C3F280B60654EF /* Pods-Shield For Dementia PatientTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Shield For Dementia PatientTests-resources.sh"; sourceTree = "<group>"; };
 		DCDF1A9277B90BE5F07E5BE78C7DB74F /* log_writer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = log_writer.h; path = db/log_writer.h; sourceTree = "<group>"; };
 		DE8AFCB50A094166B471585853CEB7FC /* GULReachabilityMessageCode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULReachabilityMessageCode.h; path = GoogleUtilities/Reachability/Private/GULReachabilityMessageCode.h; sourceTree = "<group>"; };
 		DF77E1861C229FF2824743418967698E /* FIRStorageObservableTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRStorageObservableTask.h; path = Firebase/Storage/Public/FIRStorageObservableTask.h; sourceTree = "<group>"; };
 		DF86C6662BAD86E4B700D07A193F005B /* FIRGitHubAuthProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRGitHubAuthProvider.h; path = Firebase/Auth/Source/Public/FIRGitHubAuthProvider.h; sourceTree = "<group>"; };
+		DFE3B8C26B64F4C43C6D4933FA6EE587 /* Pods-Shield For Dementia Patient-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Shield For Dementia Patient-frameworks.sh"; sourceTree = "<group>"; };
 		E042FF98FDD211657460D534FF0A2A38 /* FValidation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FValidation.h; path = Firebase/Database/Utilities/FValidation.h; sourceTree = "<group>"; };
 		E0A0CEEE88C093799B3AC204C49E5B69 /* filter_policy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = filter_policy.h; path = include/leveldb/filter_policy.h; sourceTree = "<group>"; };
 		E0BC162E2402B18B3862115A88CF807D /* FLimitedFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FLimitedFilter.h; path = Firebase/Database/Core/View/Filter/FLimitedFilter.h; sourceTree = "<group>"; };
@@ -1501,7 +1497,6 @@
 		E2251CFFF0FED7AC9975B6927035B462 /* FIRGetAccountInfoRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRGetAccountInfoRequest.h; path = Firebase/Auth/Source/RPCs/FIRGetAccountInfoRequest.h; sourceTree = "<group>"; };
 		E26508C38C1BE8C9069D7272950D0ECB /* FIRStorageReference.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRStorageReference.m; path = Firebase/Storage/FIRStorageReference.m; sourceTree = "<group>"; };
 		E2D84B5930D6047101A54E9A21F5D5ED /* snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = snapshot.h; path = db/snapshot.h; sourceTree = "<group>"; };
-		E42F1585C059E28BDEFB10D24118E317 /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleUtilities.framework; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4BFD8F08FC030AA3D86EDC664186406 /* FArraySortedDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FArraySortedDictionary.h; path = Firebase/Database/third_party/FImmutableSortedDictionary/FImmutableSortedDictionary/FArraySortedDictionary.h; sourceTree = "<group>"; };
 		E4C9AF27BCAD4A77758867A671121A07 /* filter_policy.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = filter_policy.cc; path = util/filter_policy.cc; sourceTree = "<group>"; };
 		E5252C8EB42C5FC79B83B3AB98B7E391 /* FLevelDBStorageEngine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FLevelDBStorageEngine.m; path = Firebase/Database/Persistence/FLevelDBStorageEngine.m; sourceTree = "<group>"; };
@@ -1515,7 +1510,9 @@
 		E8A6ABC8C3A41D37115F7A4EFB6557FD /* FIRNoopAuthTokenProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRNoopAuthTokenProvider.h; path = Firebase/Database/Login/FIRNoopAuthTokenProvider.h; sourceTree = "<group>"; };
 		E8E5B2B21BB46AC418590F7CB227B6A7 /* FIRSecureTokenService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRSecureTokenService.m; path = Firebase/Auth/Source/FIRSecureTokenService.m; sourceTree = "<group>"; };
 		E8F30A4D0A05859F0C903A6DFDD7E6FA /* FIRVerifyPhoneNumberResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRVerifyPhoneNumberResponse.m; path = Firebase/Auth/Source/RPCs/FIRVerifyPhoneNumberResponse.m; sourceTree = "<group>"; };
+		E900E623EE9057C0D253B5C5B8D76A32 /* Pods-Shield For Dementia PatientUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Shield For Dementia PatientUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E9E1E1A28DBCDC952F7175112C73C0B3 /* FWriteTree.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FWriteTree.m; path = Firebase/Database/Core/FWriteTree.m; sourceTree = "<group>"; };
+		EA598F13627A5680529E4A75E8BB7C66 /* Pods-Shield For Dementia PatientTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Shield For Dementia PatientTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EAC6BF78FC17B6B76D4BB9A8E90D4F42 /* GULNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GULNSData+zlib.m"; path = "GoogleUtilities/NSData+zlib/GULNSData+zlib.m"; sourceTree = "<group>"; };
 		EAD724FFF56246EDA46209951D4EE159 /* FCancelEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FCancelEvent.h; path = Firebase/Database/Core/View/FCancelEvent.h; sourceTree = "<group>"; };
 		EC4CFB0E5D973E0437D042A1C9503ACD /* GULLoggerCodes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULLoggerCodes.h; path = GoogleUtilities/Common/GULLoggerCodes.h; sourceTree = "<group>"; };
@@ -1531,6 +1528,7 @@
 		EFB6F0605F0C07B9E4CF44CDD84B947D /* db_impl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = db_impl.h; path = db/db_impl.h; sourceTree = "<group>"; };
 		EFCE38DBAD994CBB7B541922827C60DA /* FImmutableTree.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FImmutableTree.h; path = Firebase/Database/Core/Utilities/FImmutableTree.h; sourceTree = "<group>"; };
 		F11948E265D44E2A12EBBF329399A167 /* FirebaseAuth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FirebaseAuth.h; path = Firebase/Auth/Source/Public/FirebaseAuth.h; sourceTree = "<group>"; };
+		F1800B46F0B0A3BA1E7038EBF49B3460 /* Pods-Shield For Dementia Patient-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Shield For Dementia Patient-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F201F31966F3EC3256B11C44BED1E9F5 /* FIRStorageTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRStorageTask.h; path = Firebase/Storage/Public/FIRStorageTask.h; sourceTree = "<group>"; };
 		F2150FC7A70361EB02D168B746B39CD8 /* FNamedNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FNamedNode.h; path = Firebase/Database/FNamedNode.h; sourceTree = "<group>"; };
 		F2DD048D60D185074EE39306A51C5C57 /* FIRDependency.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRDependency.m; path = Firebase/Core/FIRDependency.m; sourceTree = "<group>"; };
@@ -1545,9 +1543,9 @@
 		F5805D35EA47D32009D5ED24FBEECE3F /* FIRGetOOBConfirmationCodeResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRGetOOBConfirmationCodeResponse.h; path = Firebase/Auth/Source/RPCs/FIRGetOOBConfirmationCodeResponse.h; sourceTree = "<group>"; };
 		F5AA1F867D0399417E3F16C71E8BBEF8 /* leveldb-library-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "leveldb-library-prefix.pch"; sourceTree = "<group>"; };
 		F5BF1A6549A9D047B63F4F84CE926019 /* FTupleNodePath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FTupleNodePath.m; path = Firebase/Database/Utilities/Tuples/FTupleNodePath.m; sourceTree = "<group>"; };
-		F5C01CD1D9DA87DBA36CFA0AAC49AFFE /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GTMSessionFetcher.framework; path = GTMSessionFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F66839B178E4048E5806D23A0ABE8E74 /* FSnapshotHolder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSnapshotHolder.h; path = Firebase/Database/Core/FSnapshotHolder.h; sourceTree = "<group>"; };
 		F7015778B2F29F18526AD6A9878D499E /* FIRDeleteAccountResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRDeleteAccountResponse.h; path = Firebase/Auth/Source/RPCs/FIRDeleteAccountResponse.h; sourceTree = "<group>"; };
+		F7147DF8E49C1D118D3DF2A7E20AD762 /* Pods_Shield_For_Dementia_Patient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Shield_For_Dementia_Patient.framework; path = "Pods-Shield For Dementia Patient.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F762A3026418F38F93DB376B7D7EE8BC /* FIRGoogleAuthProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRGoogleAuthProvider.m; path = Firebase/Auth/Source/AuthProviders/Google/FIRGoogleAuthProvider.m; sourceTree = "<group>"; };
 		F7B69F57696EF6D437C69B5F81FCDF0D /* FPruneForest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FPruneForest.h; path = Firebase/Database/Persistence/FPruneForest.h; sourceTree = "<group>"; };
 		F914CE3794B70F373CB89FC9DFB21522 /* FIRBundleUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRBundleUtil.h; path = Firebase/Core/Private/FIRBundleUtil.h; sourceTree = "<group>"; };
@@ -1555,12 +1553,14 @@
 		FA10B79E94F8CA51FD96C642CDD6F84E /* FIREmailLinkSignInRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIREmailLinkSignInRequest.h; path = Firebase/Auth/Source/RPCs/FIREmailLinkSignInRequest.h; sourceTree = "<group>"; };
 		FB776B94B45B08E427D67E02CA4B3734 /* FIRSendVerificationCodeRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRSendVerificationCodeRequest.m; path = Firebase/Auth/Source/RPCs/FIRSendVerificationCodeRequest.m; sourceTree = "<group>"; };
 		FBF3CF466A803B6561C7D0971C5F1133 /* NSData+SRB64Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+SRB64Additions.h"; path = "Firebase/Database/third_party/SocketRocket/NSData+SRB64Additions.h"; sourceTree = "<group>"; };
+		FD27DF9B79CD81746E072810690C53A4 /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = nanopb.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDE28B819F0D6FE9AF34176B2CFF6A76 /* FMaxNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FMaxNode.h; path = Firebase/Database/FMaxNode.h; sourceTree = "<group>"; };
 		FE816087F1CCAE37BA3861B6F9064099 /* FIRCreateAuthURIResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRCreateAuthURIResponse.h; path = Firebase/Auth/Source/RPCs/FIRCreateAuthURIResponse.h; sourceTree = "<group>"; };
 		FEEA32CD77243C75D552DEB8E9FB41C1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEF1E0C5B6D1D15022D8FDAFB93A25C8 /* FIRAuthDefaultUIDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRAuthDefaultUIDelegate.h; path = Firebase/Auth/Source/FIRAuthDefaultUIDelegate.h; sourceTree = "<group>"; };
 		FF2FC6ABBFABBDAAED50B2FF20AF86A0 /* FIRStorageDeleteTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRStorageDeleteTask.m; path = Firebase/Storage/FIRStorageDeleteTask.m; sourceTree = "<group>"; };
 		FF6EE0253F6D9C2A18645FD56D7FACCF /* table_cache.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = table_cache.cc; path = db/table_cache.cc; sourceTree = "<group>"; };
+		FF8D8D2A00AB339C44857C46AB3C44FB /* Pods-Shield For Dementia Patient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Shield For Dementia Patient.release.xcconfig"; sourceTree = "<group>"; };
 		FFE40CB1E6A4A61F25A0C9CD9B40048A /* FIRStorageErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRStorageErrors.h; path = Firebase/Storage/Private/FIRStorageErrors.h; sourceTree = "<group>"; };
 		FFE893083EDA3BEE2DA7DDC94C2B5B41 /* GTMSessionUploadFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionUploadFetcher.h; path = Source/GTMSessionUploadFetcher.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1583,11 +1583,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2AA2EC6FC36010B8B667B4D0BE41A529 /* Frameworks */ = {
+		403B690C79440C82A943A0237E843916 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27519498201B16ED38D7AFC8250638E1 /* Foundation.framework in Frameworks */,
+				6E6BE22046BA1E9260F8FC6F0D2E9892 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1598,14 +1598,6 @@
 				CBD406DB2B51973EDD00B5E916CFC35E /* Foundation.framework in Frameworks */,
 				C88581CEC44E4F0A2486190CB0BDADF7 /* Security.framework in Frameworks */,
 				A499003B76A7DF9A95CDB4CD387A72FB /* SystemConfiguration.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5C41CEFBFA74E5A262CFF3DFF72697D1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				05CE7733BA4B13FDB8DCE9762FA93800 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1626,6 +1618,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6F976B3C4BBEF940AFA2D81636FD3D31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4C59B84414ED30CE1BD4A4A52C48DC3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7FBD6622DCB639112D1855B766319E7A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1637,20 +1637,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BFA191F7EB063A70E25D1CB6BF303013 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1716D44C7CD7299215AE7D777545799 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE33C54DF5DB61D9669BEB4C03781675 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EE6A2206BAABB315741C363E707457C4 /* Foundation.framework in Frameworks */,
 				278DEFDEECD0F4E0836BDA7196CF18AB /* MobileCoreServices.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D96CB33890B69FB2A45788CA2CB2DEA3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0533F0160FDCC2C1F881D32683ADFD96 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1665,12 +1665,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		070A8AE68F7567CE316448086B23BBC0 /* Targets Support Files */ = {
+		01175D1FD0BF22EBE9CC411AF8C515DD /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				38592590B05545949C406272D29410AF /* Pods-Shield For Dementia Carer */,
-				BA0EC74F7EE41D41D24F9232205D8233 /* Pods-Shield For Dementia CarerTests */,
-				412E83897A1E4AD8F3DFF8045E86224A /* Pods-Shield For Dementia CarerUITests */,
+				C7EFD234833ED28ECEB232483F1BED75 /* Pods-Shield For Dementia Patient */,
+				8094A9A19EDC968CFD06C82EC6F4BA39 /* Pods-Shield For Dementia PatientTests */,
+				E69C007BDDE62C877E031CAFEA9C86B4 /* Pods-Shield For Dementia PatientUITests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -2131,24 +2131,6 @@
 			path = FirebaseDatabase;
 			sourceTree = "<group>";
 		};
-		38592590B05545949C406272D29410AF /* Pods-Shield For Dementia Carer */ = {
-			isa = PBXGroup;
-			children = (
-				B5122473A6D2E243A1E195613C1EC824 /* Info.plist */,
-				B7D44FA1714C49F50ACC07941B657BE8 /* Pods-Shield For Dementia Carer.modulemap */,
-				78AC604180A72A3E48E3BB51102098E2 /* Pods-Shield For Dementia Carer-acknowledgements.markdown */,
-				55A833FC8FBBDF4D6760BFF06E07A658 /* Pods-Shield For Dementia Carer-acknowledgements.plist */,
-				0437092C4E88AF71F939E8AB025BA1AB /* Pods-Shield For Dementia Carer-dummy.m */,
-				0973D6BE18765F16FDEF33D26C6D3E02 /* Pods-Shield For Dementia Carer-frameworks.sh */,
-				110A2560060EA112C2106C7E3ADA312D /* Pods-Shield For Dementia Carer-resources.sh */,
-				0FF758A4EB8761BA82929B16C42B6589 /* Pods-Shield For Dementia Carer-umbrella.h */,
-				264A8B3198A248A6E58DE51CAF3C7C2F /* Pods-Shield For Dementia Carer.debug.xcconfig */,
-				A5B18372E8110149AE6A68D45D0D5589 /* Pods-Shield For Dementia Carer.release.xcconfig */,
-			);
-			name = "Pods-Shield For Dementia Carer";
-			path = "Target Support Files/Pods-Shield For Dementia Carer";
-			sourceTree = "<group>";
-		};
 		39DD0B09E70365E353E8B830D012BC25 /* Logger */ = {
 			isa = PBXGroup;
 			children = (
@@ -2157,42 +2139,6 @@
 				56E0AFB6F77C37623A37EE29D274FD33 /* GULLoggerLevel.h */,
 			);
 			name = Logger;
-			sourceTree = "<group>";
-		};
-		412E83897A1E4AD8F3DFF8045E86224A /* Pods-Shield For Dementia CarerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				13C3859CDC7168E811635B598A026695 /* Info.plist */,
-				40BD5141C0A6EFD96B8AF70B3A3A876E /* Pods-Shield For Dementia CarerUITests.modulemap */,
-				77B364B7DA6FF0438E60C70AA2799F92 /* Pods-Shield For Dementia CarerUITests-acknowledgements.markdown */,
-				3D6CB77C12D137C7027C1C69D7A91C00 /* Pods-Shield For Dementia CarerUITests-acknowledgements.plist */,
-				362D079DC978FFA6746DC97145F05A2F /* Pods-Shield For Dementia CarerUITests-dummy.m */,
-				771FFF9F10759BB571473AFC3C5D3D39 /* Pods-Shield For Dementia CarerUITests-frameworks.sh */,
-				90E8183FF7AB32FECC6827A400935520 /* Pods-Shield For Dementia CarerUITests-resources.sh */,
-				8AA73DCF68557D88B2FEFE7A8EBD9845 /* Pods-Shield For Dementia CarerUITests-umbrella.h */,
-				70F52F833E775F018E6A5281C5060129 /* Pods-Shield For Dementia CarerUITests.debug.xcconfig */,
-				61849891BE1EC545005F045283460F03 /* Pods-Shield For Dementia CarerUITests.release.xcconfig */,
-			);
-			name = "Pods-Shield For Dementia CarerUITests";
-			path = "Target Support Files/Pods-Shield For Dementia CarerUITests";
-			sourceTree = "<group>";
-		};
-		431E8EBD449FE8FA03069EC58645C19B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				081B99AC809310AD84C8B913BA277BEB /* FirebaseAuth.framework */,
-				6507DD0909D61B931A86ED02B1B49840 /* FirebaseCore.framework */,
-				2159E422BDB35354498AC1A355AD73F3 /* FirebaseDatabase.framework */,
-				57741DB18263FF92DF200E6187213EA3 /* FirebaseStorage.framework */,
-				E42F1585C059E28BDEFB10D24118E317 /* GoogleUtilities.framework */,
-				F5C01CD1D9DA87DBA36CFA0AAC49AFFE /* GTMSessionFetcher.framework */,
-				B803D3148C7161E82437E3AEA9EAAE53 /* leveldb.framework */,
-				6061BDAAC12932A048E1C81F259B150D /* nanopb.framework */,
-				24A7CD2CFB6D28A12ECB47212912D253 /* Pods_Shield_For_Dementia_Carer.framework */,
-				CB6909E2A874BD00FFE06FCF80516778 /* Pods_Shield_For_Dementia_CarerTests.framework */,
-				02F16D1403213E559B1138F2DA8DEF83 /* Pods_Shield_For_Dementia_CarerUITests.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		4DEC9824FBB094FD9E6B45AFEB39CAFE /* FirebaseInstanceID */ = {
@@ -2278,8 +2224,8 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
 				E31AD880B4558D88AA7AE3E08EA0CFB0 /* Pods */,
-				431E8EBD449FE8FA03069EC58645C19B /* Products */,
-				070A8AE68F7567CE316448086B23BBC0 /* Targets Support Files */,
+				AD2216B4641AA2263B51D0AB77A2F38D /* Products */,
+				01175D1FD0BF22EBE9CC411AF8C515DD /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -2293,6 +2239,24 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/FirebaseDatabase";
+			sourceTree = "<group>";
+		};
+		8094A9A19EDC968CFD06C82EC6F4BA39 /* Pods-Shield For Dementia PatientTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC23244883067F87A163F793C6D1906C /* Info.plist */,
+				14D1D6986FFBC46BF5DEF1580D96BE05 /* Pods-Shield For Dementia PatientTests.modulemap */,
+				EA598F13627A5680529E4A75E8BB7C66 /* Pods-Shield For Dementia PatientTests-acknowledgements.markdown */,
+				1E61BD86987DC1DF72C81FCCF6894451 /* Pods-Shield For Dementia PatientTests-acknowledgements.plist */,
+				8351BA2693147B61AB96CC749C354EEC /* Pods-Shield For Dementia PatientTests-dummy.m */,
+				8B5E644B471D5AFDA8F55414F06C9623 /* Pods-Shield For Dementia PatientTests-frameworks.sh */,
+				DC6E4A02344DD2CA57C3F280B60654EF /* Pods-Shield For Dementia PatientTests-resources.sh */,
+				86005EF03FAFA8A46E7BEC499DDA1019 /* Pods-Shield For Dementia PatientTests-umbrella.h */,
+				AEDE12DBEE4B73263F47168C58C5A91B /* Pods-Shield For Dementia PatientTests.debug.xcconfig */,
+				31A68100EC22CFCC6EFEC0448F057481 /* Pods-Shield For Dementia PatientTests.release.xcconfig */,
+			);
+			name = "Pods-Shield For Dementia PatientTests";
+			path = "Target Support Files/Pods-Shield For Dementia PatientTests";
 			sourceTree = "<group>";
 		};
 		85B45ADE8D27D7052310A0F501B01A87 /* Support Files */ = {
@@ -2553,22 +2517,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BA0EC74F7EE41D41D24F9232205D8233 /* Pods-Shield For Dementia CarerTests */ = {
+		AD2216B4641AA2263B51D0AB77A2F38D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				31B4B73776010D74E38AEF1693BB1A72 /* Info.plist */,
-				D4B8B7B49A786302A91BAB882DFA6823 /* Pods-Shield For Dementia CarerTests.modulemap */,
-				B3E396125A48E8378FE4217C6B05D593 /* Pods-Shield For Dementia CarerTests-acknowledgements.markdown */,
-				717665469439308724CA40CA33C87301 /* Pods-Shield For Dementia CarerTests-acknowledgements.plist */,
-				3FFC48837CB4EE46CBD268F419A5C421 /* Pods-Shield For Dementia CarerTests-dummy.m */,
-				51536199D5B434D39429E001BF28A4AB /* Pods-Shield For Dementia CarerTests-frameworks.sh */,
-				D80218FD5371BC8507BA3B78435CF757 /* Pods-Shield For Dementia CarerTests-resources.sh */,
-				5F94DF810FE6286E8781F704E5084643 /* Pods-Shield For Dementia CarerTests-umbrella.h */,
-				4A1FE00C4C3BF694B35C33E8B33905E7 /* Pods-Shield For Dementia CarerTests.debug.xcconfig */,
-				4B9E2B979FA2D3FF6F9572A8B6B187B9 /* Pods-Shield For Dementia CarerTests.release.xcconfig */,
+				545F9FBF76DC5908E0EC6051726FC7D0 /* FirebaseAuth.framework */,
+				16A616FA69540928003086BD20EA0825 /* FirebaseCore.framework */,
+				77A9A37C6EEB499CFF8B1BB96814E13E /* FirebaseDatabase.framework */,
+				6732264987AA81B76457F39D0C29FD8F /* FirebaseStorage.framework */,
+				1DF00EDF10905E82D1057835E4FC0775 /* GoogleUtilities.framework */,
+				40441A21CA2C52E34CC76CFB5082499A /* GTMSessionFetcher.framework */,
+				24C97F5D851775224904D07D51F6EA63 /* leveldb.framework */,
+				FD27DF9B79CD81746E072810690C53A4 /* nanopb.framework */,
+				F7147DF8E49C1D118D3DF2A7E20AD762 /* Pods_Shield_For_Dementia_Patient.framework */,
+				2CA6DD4C41DEF26B2511FD09526189A8 /* Pods_Shield_For_Dementia_PatientTests.framework */,
+				0E3E48F6A1F24FA4B42C5371CE975246 /* Pods_Shield_For_Dementia_PatientUITests.framework */,
 			);
-			name = "Pods-Shield For Dementia CarerTests";
-			path = "Target Support Files/Pods-Shield For Dementia CarerTests";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		BCB429258775686F74052B60B5B190A4 /* nanopb */ = {
@@ -2624,6 +2588,24 @@
 			);
 			name = FirebaseAuthInterop;
 			path = FirebaseAuthInterop;
+			sourceTree = "<group>";
+		};
+		C7EFD234833ED28ECEB232483F1BED75 /* Pods-Shield For Dementia Patient */ = {
+			isa = PBXGroup;
+			children = (
+				43AECCA4072C34603859DC111683B2D0 /* Info.plist */,
+				60172882DABAE66FEF70F73409A374E1 /* Pods-Shield For Dementia Patient.modulemap */,
+				F1800B46F0B0A3BA1E7038EBF49B3460 /* Pods-Shield For Dementia Patient-acknowledgements.markdown */,
+				CB076F1AB20AF8E4529BFB3460507BE5 /* Pods-Shield For Dementia Patient-acknowledgements.plist */,
+				74D567BA786563E3E0AB2EC64C6EFA7E /* Pods-Shield For Dementia Patient-dummy.m */,
+				DFE3B8C26B64F4C43C6D4933FA6EE587 /* Pods-Shield For Dementia Patient-frameworks.sh */,
+				1E02A3151B9C68C827D4C52AF12FA8FD /* Pods-Shield For Dementia Patient-resources.sh */,
+				16DFC9FC4B85817F7B4ACF29F2861638 /* Pods-Shield For Dementia Patient-umbrella.h */,
+				1DE732CB7F4511A3803E3EC4BA00684C /* Pods-Shield For Dementia Patient.debug.xcconfig */,
+				FF8D8D2A00AB339C44857C46AB3C44FB /* Pods-Shield For Dementia Patient.release.xcconfig */,
+			);
+			name = "Pods-Shield For Dementia Patient";
+			path = "Target Support Files/Pods-Shield For Dementia Patient";
 			sourceTree = "<group>";
 		};
 		CFC7A9495F3D6C611A1EC46D49A3F6DF /* MethodSwizzler */ = {
@@ -2695,6 +2677,24 @@
 				BCB429258775686F74052B60B5B190A4 /* nanopb */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		E69C007BDDE62C877E031CAFEA9C86B4 /* Pods-Shield For Dementia PatientUITests */ = {
+			isa = PBXGroup;
+			children = (
+				631CBDD41EDCC08D861ECFFA0D7984B8 /* Info.plist */,
+				74A46636C0F08CB49DC4713275E1EF1C /* Pods-Shield For Dementia PatientUITests.modulemap */,
+				B931726F03294D520DA7C01539760712 /* Pods-Shield For Dementia PatientUITests-acknowledgements.markdown */,
+				98DC0F3851662DAC231B6F0EB849D2B2 /* Pods-Shield For Dementia PatientUITests-acknowledgements.plist */,
+				1486BDB1209DDAFC888A07274235E903 /* Pods-Shield For Dementia PatientUITests-dummy.m */,
+				0FCFD92895704F3D5C28B8DC9670EADE /* Pods-Shield For Dementia PatientUITests-frameworks.sh */,
+				4F5570E97E764136D14A6BEEFE4CE12F /* Pods-Shield For Dementia PatientUITests-resources.sh */,
+				7E8ED90A581F8FF87CCADBBDFA146CF7 /* Pods-Shield For Dementia PatientUITests-umbrella.h */,
+				C263B08F9210A594771468CD0D53D88B /* Pods-Shield For Dementia PatientUITests.debug.xcconfig */,
+				E900E623EE9057C0D253B5C5B8D76A32 /* Pods-Shield For Dementia PatientUITests.release.xcconfig */,
+			);
+			name = "Pods-Shield For Dementia PatientUITests";
+			path = "Target Support Files/Pods-Shield For Dementia PatientUITests";
 			sourceTree = "<group>";
 		};
 		E95F02DB1FA139C4A0851A271033BB9F /* Support Files */ = {
@@ -2773,6 +2773,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		02D1002B7B92E5308B429CA0E4C2AC96 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB9ABC524042FAC381736F03A4F70ECF /* Pods-Shield For Dementia PatientUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1E89F06F8F2B41C9A892221CC0BA19CA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -2924,6 +2932,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		63D881B12C25F21A3FB8A52B0B222B4C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91387DDB04CD60DC6207F4DEDA253F43 /* Pods-Shield For Dementia Patient-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		65DDDD53201F2DA9B64189AEED845C60 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -2951,14 +2967,6 @@
 				5520ABF2A9BE6EC67848D42C21F07339 /* FIROptions.h in Headers */,
 				9C9672148EA30F59193A29A26C89EDFC /* FIROptionsInternal.h in Headers */,
 				04C115F6DD4B1F9C928CD5883372567B /* FIRVersion.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7091B7E3C108A6E77FA64770BE8D277F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				77CBE45B329F9D3E50C2C6B899646194 /* Pods-Shield For Dementia CarerUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3103,14 +3111,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A0BB3643EA178B2256043A3308EEE516 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				00698627A7A90D39F5BA27B4FA07F173 /* Pods-Shield For Dementia CarerTests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		ABC4DC8083879759721A1CC48922AFC8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -3198,14 +3198,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BB8BE1577653A4CCE57A93C0F2B96CE3 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2BACD7601DF39853E451C7C62B460F92 /* Pods-Shield For Dementia Carer-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F1F26E0F4EA32EB93B375FC91E6CE73F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -3215,6 +3207,14 @@
 				ADB7135CA049C94F1FDD10B6395EB87C /* GTMSessionFetcherLogging.h in Headers */,
 				9641A4B1535D21E799998BD2635662A3 /* GTMSessionFetcherService.h in Headers */,
 				1104872C704724D5107F0C20447AAAC2 /* GTMSessionUploadFetcher.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF7A8B73B2E56BF62D876E402E9A2F1C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51BDB30CBB8CEBB9948BFDE363105874 /* Pods-Shield For Dementia PatientTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3239,7 +3239,7 @@
 			);
 			name = FirebaseAuth;
 			productName = FirebaseAuth;
-			productReference = 081B99AC809310AD84C8B913BA277BEB /* FirebaseAuth.framework */;
+			productReference = 545F9FBF76DC5908E0EC6051726FC7D0 /* FirebaseAuth.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		263F7002FD4F2FB368F105A900F31A18 /* FirebaseStorage */ = {
@@ -3260,26 +3260,7 @@
 			);
 			name = FirebaseStorage;
 			productName = FirebaseStorage;
-			productReference = 57741DB18263FF92DF200E6187213EA3 /* FirebaseStorage.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		3005CAA8920A2D52360178755B058A90 /* Pods-Shield For Dementia CarerUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9E08AEFDE504F0705C66AE79F1CAB523 /* Build configuration list for PBXNativeTarget "Pods-Shield For Dementia CarerUITests" */;
-			buildPhases = (
-				7091B7E3C108A6E77FA64770BE8D277F /* Headers */,
-				A21E1FB84576A547DA38C9D773C0C2A1 /* Sources */,
-				5C41CEFBFA74E5A262CFF3DFF72697D1 /* Frameworks */,
-				B64D42079D6731F65624A8A4B9B7E406 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				720EA4ADCFFAB1A58F31C7BE3D5AAC9F /* PBXTargetDependency */,
-			);
-			name = "Pods-Shield For Dementia CarerUITests";
-			productName = "Pods-Shield For Dementia CarerUITests";
-			productReference = 02F16D1403213E559B1138F2DA8DEF83 /* Pods_Shield_For_Dementia_CarerUITests.framework */;
+			productReference = 6732264987AA81B76457F39D0C29FD8F /* FirebaseStorage.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		323459A91C8C652B6AAA063F85CE2316 /* GTMSessionFetcher */ = {
@@ -3297,7 +3278,52 @@
 			);
 			name = GTMSessionFetcher;
 			productName = GTMSessionFetcher;
-			productReference = F5C01CD1D9DA87DBA36CFA0AAC49AFFE /* GTMSessionFetcher.framework */;
+			productReference = 40441A21CA2C52E34CC76CFB5082499A /* GTMSessionFetcher.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		375F5BE8879807AC41136765C093D65E /* Pods-Shield For Dementia PatientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0647457C00960FEDCADF39AA41278C3D /* Build configuration list for PBXNativeTarget "Pods-Shield For Dementia PatientTests" */;
+			buildPhases = (
+				FF7A8B73B2E56BF62D876E402E9A2F1C /* Headers */,
+				074A6A9E54FE5D0110469A5D38A19127 /* Sources */,
+				6F976B3C4BBEF940AFA2D81636FD3D31 /* Frameworks */,
+				D273AD88A9EC99DE8BA690470ED58DF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				157A0C4FDC89824AB2DFA1066EA9C5D2 /* PBXTargetDependency */,
+			);
+			name = "Pods-Shield For Dementia PatientTests";
+			productName = "Pods-Shield For Dementia PatientTests";
+			productReference = 2CA6DD4C41DEF26B2511FD09526189A8 /* Pods_Shield_For_Dementia_PatientTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6DB59EF90054198F7D0A7537D9B483ED /* Pods-Shield For Dementia Patient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E16AF2F591545CA5DE6343C90AB82BDB /* Build configuration list for PBXNativeTarget "Pods-Shield For Dementia Patient" */;
+			buildPhases = (
+				63D881B12C25F21A3FB8A52B0B222B4C /* Headers */,
+				13A249D330AFB04FEC4E0E3BA51DF445 /* Sources */,
+				403B690C79440C82A943A0237E843916 /* Frameworks */,
+				C5498DC676472065152FDE3FB43935F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96CF3972BD6061B040322E87DD5F256C /* PBXTargetDependency */,
+				3A8A1996701588A81D8F3FF0A951A57E /* PBXTargetDependency */,
+				900A5573F96B95DC792DBDC29C998CE7 /* PBXTargetDependency */,
+				125A246BF926A92749BA2AADB912D2C7 /* PBXTargetDependency */,
+				11AA37DACFA1CA4AED7A6A12DA48A357 /* PBXTargetDependency */,
+				0DA281122D6D93E3D9EA3FD5A8C168A7 /* PBXTargetDependency */,
+				6A27EB9DA44B6AF1A443CBA9626E3966 /* PBXTargetDependency */,
+				2AE3A5718109D9ABC3466FB820371A4C /* PBXTargetDependency */,
+			);
+			name = "Pods-Shield For Dementia Patient";
+			productName = "Pods-Shield For Dementia Patient";
+			productReference = F7147DF8E49C1D118D3DF2A7E20AD762 /* Pods_Shield_For_Dementia_Patient.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		774012D64416685C9A3C8F547C310CED /* FirebaseCore */ = {
@@ -3316,7 +3342,26 @@
 			);
 			name = FirebaseCore;
 			productName = FirebaseCore;
-			productReference = 6507DD0909D61B931A86ED02B1B49840 /* FirebaseCore.framework */;
+			productReference = 16A616FA69540928003086BD20EA0825 /* FirebaseCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		80AD69C7231AF7AD2D35BD9E18B01FF7 /* Pods-Shield For Dementia PatientUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB6D25D951BF5256829FA6E3D3E02CE2 /* Build configuration list for PBXNativeTarget "Pods-Shield For Dementia PatientUITests" */;
+			buildPhases = (
+				02D1002B7B92E5308B429CA0E4C2AC96 /* Headers */,
+				2D9683606F45A8CEBA64BD437E6FA9FB /* Sources */,
+				BFA191F7EB063A70E25D1CB6BF303013 /* Frameworks */,
+				622C86F7B6A8E2A494122A4D48226C68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D622C7793AFF4D495A5B7C1F16F053DE /* PBXTargetDependency */,
+			);
+			name = "Pods-Shield For Dementia PatientUITests";
+			productName = "Pods-Shield For Dementia PatientUITests";
+			productReference = 0E3E48F6A1F24FA4B42C5371CE975246 /* Pods_Shield_For_Dementia_PatientUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		8364BB258018143B83798DE31C13546D /* nanopb */ = {
@@ -3334,33 +3379,7 @@
 			);
 			name = nanopb;
 			productName = nanopb;
-			productReference = 6061BDAAC12932A048E1C81F259B150D /* nanopb.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		87FCB7464FD656475D04AF259FF51B76 /* Pods-Shield For Dementia Carer */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4E824D9D0CAE955F3AD1F026969927D3 /* Build configuration list for PBXNativeTarget "Pods-Shield For Dementia Carer" */;
-			buildPhases = (
-				BB8BE1577653A4CCE57A93C0F2B96CE3 /* Headers */,
-				D02DCE8384A6E992CD1107AB19241971 /* Sources */,
-				2AA2EC6FC36010B8B667B4D0BE41A529 /* Frameworks */,
-				FB5157CE1B31A0ED45E78F35C330314C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D1BD3DD3D304DF2935E1C1F52E0A859A /* PBXTargetDependency */,
-				3BCA7CFBC38E1FC9F841A1E87F53A5F6 /* PBXTargetDependency */,
-				01162C1D7B41D48E7922B2F7EF570CC0 /* PBXTargetDependency */,
-				D6BED7D187EE99D35DAADB9897E0EBF6 /* PBXTargetDependency */,
-				81300D7B9E9625BA5A985666313162BC /* PBXTargetDependency */,
-				FB22CA612BF6FE8ECC2204B3DAE069CA /* PBXTargetDependency */,
-				3CEFA077064BF30287ED34F1476AA77B /* PBXTargetDependency */,
-				3A386401C492E8EE16284C68D3512FB2 /* PBXTargetDependency */,
-			);
-			name = "Pods-Shield For Dementia Carer";
-			productName = "Pods-Shield For Dementia Carer";
-			productReference = 24A7CD2CFB6D28A12ECB47212912D253 /* Pods_Shield_For_Dementia_Carer.framework */;
+			productReference = FD27DF9B79CD81746E072810690C53A4 /* nanopb.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B8841C1CB84C43236CF55B42F805BE06 /* FirebaseDatabase */ = {
@@ -3381,26 +3400,7 @@
 			);
 			name = FirebaseDatabase;
 			productName = FirebaseDatabase;
-			productReference = 2159E422BDB35354498AC1A355AD73F3 /* FirebaseDatabase.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C6FCB8ABCF24FE724B8D848D7415132B /* Pods-Shield For Dementia CarerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D397475B7531966F7DA4C80C018FA88E /* Build configuration list for PBXNativeTarget "Pods-Shield For Dementia CarerTests" */;
-			buildPhases = (
-				A0BB3643EA178B2256043A3308EEE516 /* Headers */,
-				A4AE3181E3DC5AC410A622CBAA0C3D6D /* Sources */,
-				D96CB33890B69FB2A45788CA2CB2DEA3 /* Frameworks */,
-				F76E08B5A42EEECA3EC58300481C4CF7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				84C5E9CEDB8F89A2A7550DE1A73047DA /* PBXTargetDependency */,
-			);
-			name = "Pods-Shield For Dementia CarerTests";
-			productName = "Pods-Shield For Dementia CarerTests";
-			productReference = CB6909E2A874BD00FFE06FCF80516778 /* Pods_Shield_For_Dementia_CarerTests.framework */;
+			productReference = 77A9A37C6EEB499CFF8B1BB96814E13E /* FirebaseDatabase.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		DE866D3318A5BE5366041B761F8CD7C2 /* leveldb-library */ = {
@@ -3418,7 +3418,7 @@
 			);
 			name = "leveldb-library";
 			productName = "leveldb-library";
-			productReference = B803D3148C7161E82437E3AEA9EAAE53 /* leveldb.framework */;
+			productReference = 24C97F5D851775224904D07D51F6EA63 /* leveldb.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		FEC39F3E58CEE33F8C1F8453DF5C68D6 /* GoogleUtilities */ = {
@@ -3436,7 +3436,7 @@
 			);
 			name = GoogleUtilities;
 			productName = GoogleUtilities;
-			productReference = E42F1585C059E28BDEFB10D24118E317 /* GoogleUtilities.framework */;
+			productReference = 1DF00EDF10905E82D1057835E4FC0775 /* GoogleUtilities.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -3456,7 +3456,7 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 431E8EBD449FE8FA03069EC58645C19B /* Products */;
+			productRefGroup = AD2216B4641AA2263B51D0AB77A2F38D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -3468,9 +3468,9 @@
 				323459A91C8C652B6AAA063F85CE2316 /* GTMSessionFetcher */,
 				DE866D3318A5BE5366041B761F8CD7C2 /* leveldb-library */,
 				8364BB258018143B83798DE31C13546D /* nanopb */,
-				87FCB7464FD656475D04AF259FF51B76 /* Pods-Shield For Dementia Carer */,
-				C6FCB8ABCF24FE724B8D848D7415132B /* Pods-Shield For Dementia CarerTests */,
-				3005CAA8920A2D52360178755B058A90 /* Pods-Shield For Dementia CarerUITests */,
+				6DB59EF90054198F7D0A7537D9B483ED /* Pods-Shield For Dementia Patient */,
+				375F5BE8879807AC41136765C093D65E /* Pods-Shield For Dementia PatientTests */,
+				80AD69C7231AF7AD2D35BD9E18B01FF7 /* Pods-Shield For Dementia PatientUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -3484,6 +3484,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		29679BCEB561F14735E99AA96E380411 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		622C86F7B6A8E2A494122A4D48226C68 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -3511,7 +3518,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B64D42079D6731F65624A8A4B9B7E406 /* Resources */ = {
+		C5498DC676472065152FDE3FB43935F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D273AD88A9EC99DE8BA690470ED58DF2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -3519,20 +3533,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F663F05F3A6CD3780F3EE8549199869E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F76E08B5A42EEECA3EC58300481C4CF7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FB5157CE1B31A0ED45E78F35C330314C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -3574,6 +3574,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		074A6A9E54FE5D0110469A5D38A19127 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5533F125162764F53E126365E3F6CA2B /* Pods-Shield For Dementia PatientTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		12D3F587AEF7D8BD85FB723377576392 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -3582,6 +3590,14 @@
 				3552218D2E421ECA1909B93DE2FB959A /* pb_common.c in Sources */,
 				E1331724A7D92526AA8714A62C353932 /* pb_decode.c in Sources */,
 				C46B7BDE25252D8EB990DEB9FE7CD98A /* pb_encode.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13A249D330AFB04FEC4E0E3BA51DF445 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79D9D52BEE4A554208A7FA8DEDA0CD6E /* Pods-Shield For Dementia Patient-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3670,6 +3686,14 @@
 				4CAA81084A6F24E794A1D910D74BDC70 /* FIRVerifyPasswordResponse.m in Sources */,
 				0CD359CC1F201CF2EAE368AD6CBF005D /* FIRVerifyPhoneNumberRequest.m in Sources */,
 				315905EAD0EE57E4A2A45249238B3AA4 /* FIRVerifyPhoneNumberResponse.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D9683606F45A8CEBA64BD437E6FA9FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17C059D7D60737D4849C2F18053AFBC4 /* Pods-Shield For Dementia PatientUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3839,22 +3863,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A21E1FB84576A547DA38C9D773C0C2A1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				414825AD501F9CE493E9D3AAA914E446 /* Pods-Shield For Dementia CarerUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A4AE3181E3DC5AC410A622CBAA0C3D6D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1D4000264C68C54D8301C491502E1F5F /* Pods-Shield For Dementia CarerTests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BD92B6A6691AF19354E045BDEB751825 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -3905,14 +3913,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D02DCE8384A6E992CD1107AB19241971 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D06CF8C9337889156E39F6C400EE1572 /* Pods-Shield For Dementia Carer-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EE9160E90314746E2B8E7CB6DD745E0B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -3928,11 +3928,29 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		01162C1D7B41D48E7922B2F7EF570CC0 /* PBXTargetDependency */ = {
+		0DA281122D6D93E3D9EA3FD5A8C168A7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = FirebaseDatabase;
-			target = B8841C1CB84C43236CF55B42F805BE06 /* FirebaseDatabase */;
-			targetProxy = 7D9D445CCABB59CB4A6A7E5B54D55BFC /* PBXContainerItemProxy */;
+			name = GoogleUtilities;
+			target = FEC39F3E58CEE33F8C1F8453DF5C68D6 /* GoogleUtilities */;
+			targetProxy = 9EBD9A7E075A44F4CD81F7D660EB7055 /* PBXContainerItemProxy */;
+		};
+		11AA37DACFA1CA4AED7A6A12DA48A357 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GTMSessionFetcher;
+			target = 323459A91C8C652B6AAA063F85CE2316 /* GTMSessionFetcher */;
+			targetProxy = A6E912E81ED8428CB4D909D4D704AF69 /* PBXContainerItemProxy */;
+		};
+		125A246BF926A92749BA2AADB912D2C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FirebaseStorage;
+			target = 263F7002FD4F2FB368F105A900F31A18 /* FirebaseStorage */;
+			targetProxy = 37A8A0CA70E45AC92FE228BDA8F67D96 /* PBXContainerItemProxy */;
+		};
+		157A0C4FDC89824AB2DFA1066EA9C5D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Shield For Dementia Patient";
+			target = 6DB59EF90054198F7D0A7537D9B483ED /* Pods-Shield For Dementia Patient */;
+			targetProxy = 2E2752F1C775DDA6DD8C1E4A1B00D4EE /* PBXContainerItemProxy */;
 		};
 		18A7B4D807BA93465D33AECE4BADB172 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -3940,29 +3958,23 @@
 			target = 323459A91C8C652B6AAA063F85CE2316 /* GTMSessionFetcher */;
 			targetProxy = 9331C1C35F1F0A1B8516D0F2CA2273B3 /* PBXContainerItemProxy */;
 		};
+		2AE3A5718109D9ABC3466FB820371A4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = nanopb;
+			target = 8364BB258018143B83798DE31C13546D /* nanopb */;
+			targetProxy = DC491C327386E74989711C71CB6A6B9D /* PBXContainerItemProxy */;
+		};
 		39E3CE214EAF1AB84C3CDEDB6ACBF864 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GoogleUtilities;
 			target = FEC39F3E58CEE33F8C1F8453DF5C68D6 /* GoogleUtilities */;
 			targetProxy = 918B7951E94C0D0BB95694107E027073 /* PBXContainerItemProxy */;
 		};
-		3A386401C492E8EE16284C68D3512FB2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = nanopb;
-			target = 8364BB258018143B83798DE31C13546D /* nanopb */;
-			targetProxy = 97E576117C72F94F762318004DFE8AEA /* PBXContainerItemProxy */;
-		};
-		3BCA7CFBC38E1FC9F841A1E87F53A5F6 /* PBXTargetDependency */ = {
+		3A8A1996701588A81D8F3FF0A951A57E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FirebaseCore;
 			target = 774012D64416685C9A3C8F547C310CED /* FirebaseCore */;
-			targetProxy = 556E2D4A55B91F5817B2CA2F3BADE60C /* PBXContainerItemProxy */;
-		};
-		3CEFA077064BF30287ED34F1476AA77B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "leveldb-library";
-			target = DE866D3318A5BE5366041B761F8CD7C2 /* leveldb-library */;
-			targetProxy = 2470E1F9DC4C3B0BEE6DDDD0EFC959F7 /* PBXContainerItemProxy */;
+			targetProxy = AB28B2C9A39ECA3113DD2FED843A9E2E /* PBXContainerItemProxy */;
 		};
 		3CFDFC9D728C57ABC0BA72CF2ECBD0F7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -3994,23 +4006,23 @@
 			target = 774012D64416685C9A3C8F547C310CED /* FirebaseCore */;
 			targetProxy = 32DE737A738CB51799F86D98E6F4B5F7 /* PBXContainerItemProxy */;
 		};
-		720EA4ADCFFAB1A58F31C7BE3D5AAC9F /* PBXTargetDependency */ = {
+		6A27EB9DA44B6AF1A443CBA9626E3966 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-Shield For Dementia Carer";
-			target = 87FCB7464FD656475D04AF259FF51B76 /* Pods-Shield For Dementia Carer */;
-			targetProxy = CDF5E75E0E2491AF28BA49AA9195B39A /* PBXContainerItemProxy */;
+			name = "leveldb-library";
+			target = DE866D3318A5BE5366041B761F8CD7C2 /* leveldb-library */;
+			targetProxy = 48A4953A0834B58773AA5EDFA89B62F0 /* PBXContainerItemProxy */;
 		};
-		81300D7B9E9625BA5A985666313162BC /* PBXTargetDependency */ = {
+		900A5573F96B95DC792DBDC29C998CE7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = GTMSessionFetcher;
-			target = 323459A91C8C652B6AAA063F85CE2316 /* GTMSessionFetcher */;
-			targetProxy = A1B48A73999EBF671D633E20FF1B839B /* PBXContainerItemProxy */;
+			name = FirebaseDatabase;
+			target = B8841C1CB84C43236CF55B42F805BE06 /* FirebaseDatabase */;
+			targetProxy = 88E85A9C8B3534E0E4D2328F69C2FFBF /* PBXContainerItemProxy */;
 		};
-		84C5E9CEDB8F89A2A7550DE1A73047DA /* PBXTargetDependency */ = {
+		96CF3972BD6061B040322E87DD5F256C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-Shield For Dementia Carer";
-			target = 87FCB7464FD656475D04AF259FF51B76 /* Pods-Shield For Dementia Carer */;
-			targetProxy = 24731CA3CD38841A64AD466ED33E2843 /* PBXContainerItemProxy */;
+			name = FirebaseAuth;
+			target = 09236661DCC642790FD8DBB2D3878CF2 /* FirebaseAuth */;
+			targetProxy = F646424CAB2782A2188058EA0F21D4F5 /* PBXContainerItemProxy */;
 		};
 		B9C4A7E8D4D60EB0E1D4C1A9A0CC7D6D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -4024,29 +4036,17 @@
 			target = 323459A91C8C652B6AAA063F85CE2316 /* GTMSessionFetcher */;
 			targetProxy = 48B79CA3E37AA085E6280AF28B6908B8 /* PBXContainerItemProxy */;
 		};
-		D1BD3DD3D304DF2935E1C1F52E0A859A /* PBXTargetDependency */ = {
+		D622C7793AFF4D495A5B7C1F16F053DE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = FirebaseAuth;
-			target = 09236661DCC642790FD8DBB2D3878CF2 /* FirebaseAuth */;
-			targetProxy = A2020BF19F703DC4C2470CB1EECFA647 /* PBXContainerItemProxy */;
-		};
-		D6BED7D187EE99D35DAADB9897E0EBF6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FirebaseStorage;
-			target = 263F7002FD4F2FB368F105A900F31A18 /* FirebaseStorage */;
-			targetProxy = 72C7016352A929F5BB01DAFE0AF0ACCE /* PBXContainerItemProxy */;
+			name = "Pods-Shield For Dementia Patient";
+			target = 6DB59EF90054198F7D0A7537D9B483ED /* Pods-Shield For Dementia Patient */;
+			targetProxy = D59CAC715044416DC7D678916D20F4E8 /* PBXContainerItemProxy */;
 		};
 		E27550191B45B717652640F19FAE72B1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GoogleUtilities;
 			target = FEC39F3E58CEE33F8C1F8453DF5C68D6 /* GoogleUtilities */;
 			targetProxy = 553A9D135C36DB5CE08961D0A33F8443 /* PBXContainerItemProxy */;
-		};
-		FB22CA612BF6FE8ECC2204B3DAE069CA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GoogleUtilities;
-			target = FEC39F3E58CEE33F8C1F8453DF5C68D6 /* GoogleUtilities */;
-			targetProxy = CA970AC4BC551F7D54AD5F148EED9720 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -4121,44 +4121,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		33E12B6AFEFA985B96B94526C49512C8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70F52F833E775F018E6A5281C5060129 /* Pods-Shield For Dementia CarerUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Shield For Dementia CarerUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Shield For Dementia CarerUITests/Pods-Shield For Dementia CarerUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		3E54C925E38597ED245235E86E26193E /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -4258,6 +4220,44 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4BB3AFA6C206C1A84A4623E70AE5ED16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C263B08F9210A594771468CD0D53D88B /* Pods-Shield For Dementia PatientUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Shield For Dementia PatientUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Shield For Dementia PatientUITests/Pods-Shield For Dementia PatientUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -4404,122 +4404,6 @@
 			};
 			name = Release;
 		};
-		69266CA995439F3A344575B567A3AA53 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 264A8B3198A248A6E58DE51CAF3C7C2F /* Pods-Shield For Dementia Carer.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Shield For Dementia Carer/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Shield For Dementia Carer/Pods-Shield For Dementia Carer.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6F0EB3AA2BFD768EDF1EAFA71A0B1DDD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A5B18372E8110149AE6A68D45D0D5589 /* Pods-Shield For Dementia Carer.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Shield For Dementia Carer/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Shield For Dementia Carer/Pods-Shield For Dementia Carer.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		78C79D8EA3AB4B8BB294CF07879859B3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61849891BE1EC545005F045283460F03 /* Pods-Shield For Dementia CarerUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Shield For Dementia CarerUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Shield For Dementia CarerUITests/Pods-Shield For Dementia CarerUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		8322AE3FB6DF16A80BCBA121575DBB8A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -4583,6 +4467,83 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
+		};
+		86AEA38045947AA8750BAB132B84687D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DE732CB7F4511A3803E3EC4BA00684C /* Pods-Shield For Dementia Patient.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Shield For Dementia Patient/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Shield For Dementia Patient/Pods-Shield For Dementia Patient.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8B713AE2A5393B5286BCA31D168AECB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31A68100EC22CFCC6EFEC0448F057481 /* Pods-Shield For Dementia PatientTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Shield For Dementia PatientTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Shield For Dementia PatientTests/Pods-Shield For Dementia PatientTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		8DC861F53B471F106BC8ACC4475EFA12 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -4678,44 +4639,6 @@
 			};
 			name = Debug;
 		};
-		AE801B2D83EDE3AF3611BEB4AB387D7E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A1FE00C4C3BF694B35C33E8B33905E7 /* Pods-Shield For Dementia CarerTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Shield For Dementia CarerTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Shield For Dementia CarerTests/Pods-Shield For Dementia CarerTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		AF42C735A0504D11ACF8157298358A84 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 53BCFD4D78744CFD8C88B7CB9C6C551C /* FirebaseStorage.xcconfig */;
@@ -4786,6 +4709,45 @@
 			};
 			name = Debug;
 		};
+		BF078F7B36862237400BE14CFCC5AE67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF8D8D2A00AB339C44857C46AB3C44FB /* Pods-Shield For Dementia Patient.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Shield For Dementia Patient/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Shield For Dementia Patient/Pods-Shield For Dementia Patient.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		DDCB232895EA3BEC091CDFAFFB8FFBAA /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CCC33C0A4783F13061AE88FBA7044EAA /* FirebaseDatabase.xcconfig */;
@@ -4821,9 +4783,9 @@
 			};
 			name = Release;
 		};
-		E59741F4CA4A63F05B234C218608A2C8 /* Release */ = {
+		E6114349A493040B0AFD5FC5959AE2B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B9E2B979FA2D3FF6F9572A8B6B187B9 /* Pods-Shield For Dementia CarerTests.release.xcconfig */;
+			baseConfigurationReference = AEDE12DBEE4B73263F47168C58C5A91B /* Pods-Shield For Dementia PatientTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -4836,7 +4798,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Shield For Dementia CarerTests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Shield For Dementia PatientTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -4845,7 +4807,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Shield For Dementia CarerTests/Pods-Shield For Dementia CarerTests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Shield For Dementia PatientTests/Pods-Shield For Dementia PatientTests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -4854,11 +4816,10 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		F1E96AD1952A4A1864CD6871B41D91D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -4965,9 +4926,57 @@
 			};
 			name = Release;
 		};
+		FDDB1C97DCA7ABEE776467E26654999B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E900E623EE9057C0D253B5C5B8D76A32 /* Pods-Shield For Dementia PatientUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Shield For Dementia PatientUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Shield For Dementia PatientUITests/Pods-Shield For Dementia PatientUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0647457C00960FEDCADF39AA41278C3D /* Build configuration list for PBXNativeTarget "Pods-Shield For Dementia PatientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6114349A493040B0AFD5FC5959AE2B4 /* Debug */,
+				8B713AE2A5393B5286BCA31D168AECB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1D4C4993074864813948172DE9AAA3FB /* Build configuration list for PBXNativeTarget "FirebaseAuth" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -5004,15 +5013,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4E824D9D0CAE955F3AD1F026969927D3 /* Build configuration list for PBXNativeTarget "Pods-Shield For Dementia Carer" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				69266CA995439F3A344575B567A3AA53 /* Debug */,
-				6F0EB3AA2BFD768EDF1EAFA71A0B1DDD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		5E580E7D6A5835667CDA921601D7BD15 /* Build configuration list for PBXNativeTarget "FirebaseCore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -5027,15 +5027,6 @@
 			buildConfigurations = (
 				0C65322E6A4831F6EE9EA49919380020 /* Debug */,
 				110E0ADAAD1AAC062992C20635DBB2C9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9E08AEFDE504F0705C66AE79F1CAB523 /* Build configuration list for PBXNativeTarget "Pods-Shield For Dementia CarerUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				33E12B6AFEFA985B96B94526C49512C8 /* Debug */,
-				78C79D8EA3AB4B8BB294CF07879859B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -5067,11 +5058,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D397475B7531966F7DA4C80C018FA88E /* Build configuration list for PBXNativeTarget "Pods-Shield For Dementia CarerTests" */ = {
+		E16AF2F591545CA5DE6343C90AB82BDB /* Build configuration list for PBXNativeTarget "Pods-Shield For Dementia Patient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AE801B2D83EDE3AF3611BEB4AB387D7E /* Debug */,
-				E59741F4CA4A63F05B234C218608A2C8 /* Release */,
+				86AEA38045947AA8750BAB132B84687D /* Debug */,
+				BF078F7B36862237400BE14CFCC5AE67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB6D25D951BF5256829FA6E3D3E02CE2 /* Build configuration list for PBXNativeTarget "Pods-Shield For Dementia PatientUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BB3AFA6C206C1A84A4623E70AE5ED16 /* Debug */,
+				FDDB1C97DCA7ABEE776467E26654999B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

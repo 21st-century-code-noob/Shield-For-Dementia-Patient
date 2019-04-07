@@ -102,6 +102,11 @@ class ViewController: UIViewController {
     }
     
     override func viewDidLoad() {
+        
+        Auth.auth().signIn(withEmail: "123@123.com", password: "123456789"){(user,error) in
+        if error != nil{
+            print(123456789)
+            }}
         super.viewDidLoad()
         self.greetingLabel.alpha = 0
         self.nameLabel.alpha = 0
