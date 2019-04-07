@@ -11,13 +11,17 @@ import UIKit
 class WelcomeViewController: UIViewController {
 
     @IBOutlet weak var continueButton: UIButton!
-    
+    @IBAction func unwindToWelcome(segue:UIStoryboardSegue) { }
+
     override func viewDidAppear(_ animated: Bool) {
+        continueButton.layer.cornerRadius = 10
         self.navigationController!.setNavigationBarHidden(true, animated: true)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        continueButton.layer.cornerRadius = 10
+        if UserDefaults.standard.object(forKey: "username") != nil{
+            performSegue(withIdentifier: "loggedIn", sender: self)
+        }
         // Do any additional setup after loading the view.
     }
     

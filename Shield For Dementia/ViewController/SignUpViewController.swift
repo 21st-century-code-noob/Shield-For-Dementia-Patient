@@ -191,7 +191,7 @@ class SignUpViewController: UIViewController {
             else{
                 let responseString = String(data: data!, encoding: String.Encoding.utf8) as String?
                 DispatchQueue.main.sync{
-                    if "true" == responseString{
+                    if "[]" != responseString{
                         self.displayAlert(title: "Username Already Exists", message: "Please try another username.")
                     }
                     else{

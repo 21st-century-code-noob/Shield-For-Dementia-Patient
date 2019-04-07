@@ -71,15 +71,13 @@ class LoginViewController: UIViewController {
                     if resultString == "true"{
                         //Going to main page. Save password into userPreference
                         DispatchQueue.main.sync{
-                           // UserDefaults.standard.set(username!, forKey: "username")
-                          //  UserDefaults.standard.set(passwordHash!, forKey: "password")
                             self.loginButton.setTitle("Log In", for: .normal)
                             self.loginButton.isEnabled = true
                             self.loginIndicator.stopAnimating()
-                            self.displayAlert(title: "success", message: "login success")
-                            
+                            UserDefaults.standard.set(username, forKey: "username")
+                            UserDefaults.standard.set(passwordHash, forKey: "carerPassword")
+                            self.performSegue(withIdentifier: "LoginSegue", sender: self)
                         }
-
                     }
                     else{
                         DispatchQueue.main.sync {
