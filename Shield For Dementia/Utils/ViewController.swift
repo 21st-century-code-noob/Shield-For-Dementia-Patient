@@ -57,6 +57,7 @@ class ViewController: UIViewController {
     }
     
     // Johan Basberg, Computer Program, (github, 2019)
+
     @IBAction func valueChangeOfSwitch(_ sender: UISwitch) {
         UIView.setAnimationsEnabled(sender.isOn)
         if !sender.isOn && kenBurnsView.isAnimating {

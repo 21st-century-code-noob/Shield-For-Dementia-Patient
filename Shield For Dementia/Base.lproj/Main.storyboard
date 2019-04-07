@@ -343,13 +343,6 @@ please log in or sign up</string>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EDp-Fk-5wh" customClass="JBKenBurnsView" customModule="Shield_For_Dementia_Patient" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="68" width="414" height="828"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rb2-k2-wiL">
-                                        <rect key="frame" x="186" y="575" width="42" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Pause"/>
-                                    </button>
-                                </subviews>
                                 <color key="backgroundColor" red="0.66666668650000005" green="0.66666668650000005" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nvi-HM-YU0">
@@ -360,7 +353,7 @@ please log in or sign up</string>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0t1-if-oAk">
-                                            <rect key="frame" x="0.0" y="138" width="205" height="37"/>
+                                            <rect key="frame" x="8" y="138" width="136" height="37"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="Reminders"/>
                                             <connections>
@@ -368,7 +361,7 @@ please log in or sign up</string>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r2H-mf-VwY">
-                                            <rect key="frame" x="213" y="138" width="205" height="37"/>
+                                            <rect key="frame" x="283" y="138" width="127" height="37"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="Setting"/>
                                         </button>
@@ -386,6 +379,14 @@ please log in or sign up</string>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rb2-k2-wiL">
+                                            <rect key="frame" x="165" y="141" width="87" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Pause"/>
+                                            <connections>
+                                                <action selector="pauseTouchUpFrom:" destination="yeM-td-zrE" eventType="touchUpInside" id="u9s-No-Nhm"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                 </view>
                                 <blurEffect style="extraLight"/>
@@ -411,7 +412,7 @@ please log in or sign up</string>
                         <outlet property="greetingLabel" destination="wlg-nb-hIf" id="ER2-fH-3xj"/>
                         <outlet property="kenBurnsView" destination="EDp-Fk-5wh" id="wLP-oL-rsV"/>
                         <outlet property="nameLabel" destination="hq3-ii-lN7" id="Pvq-PC-vog"/>
-                        <outlet property="pauseButton" destination="Rb2-k2-wiL" id="t5L-fU-nat"/>
+                        <outlet property="pauseButton" destination="Rb2-k2-wiL" id="k13-nx-9cY"/>
                         <segue destination="mVt-ic-y1M" kind="unwind" identifier="logoutUnwindSegue" unwindAction="unwindToWelcomeWithSegue:" id="GcW-kg-2Q7"/>
                         <segue destination="fvc-eV-5LV" kind="show" identifier="reminderSegue" id="yc0-ux-35f"/>
                     </connections>
