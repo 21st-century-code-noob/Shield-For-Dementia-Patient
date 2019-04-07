@@ -13,12 +13,11 @@ import UserNotifications
 class ViewController: UIViewController {
 
     @IBOutlet weak var kenBurnsView: JBKenBurnsView!
-    
-    @IBOutlet weak var startButton: UIButton!
-    @IBOutlet weak var startRandomButton: UIButton!
+    @IBOutlet weak var greetingLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var pauseButton: UIButton!
-    @IBOutlet weak var stopButton: UIButton!
-
+    
+    var reminders:[Reminder] = []
     var databaseRef = Database.database().reference()
     var storageRef = Storage.storage()
     var imageList = [UIImage]()
@@ -34,7 +33,6 @@ class ViewController: UIViewController {
             // Present dialog message to user
             UserDefaults.standard.removeObject(forKey: "username")
             UserDefaults.standard.removeObject(forKey: "password")
-            UserDefaults.standard.removeObject(forKey: "patientId")
             UserDefaults.standard.removeObject(forKey: "lastName")
             self.performSegue(withIdentifier: "logoutUnwindSegue", sender: self)
         })
@@ -105,8 +103,16 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.greetingLabel.alpha = 0
+        self.nameLabel.alpha = 0
+
         self.navigationItem.hidesBackButton = true;
-        
+        if UserDefaults.standard.value(forKey: "patientName") == nil{
+            getPatientName()
+        }
+        else{
+            setWelcomeLabel()
+        }
         //The swift guy, Notification tutorial, (youtube, 2016)
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert,.badge,.sound], completionHandler: {didAllow, error in
             
@@ -197,8 +203,9 @@ class ViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
+        super.viewWillAppear(true)
         kenBurnsView.resumeAnimation()
+        retrieveReminderData()
     }
     
     //Advance Mobile system, tutorial, (Moodle 2018)
@@ -248,7 +255,106 @@ class ViewController: UIViewController {
         alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.default, handler: nil))
         self.present(alertController, animated: true, completion: nil)
     }
+    
+    func getPatientName(){
+        let requestURL = "https://sqbk9h1frd.execute-api.us-east-2.amazonaws.com/IEProject/ieproject/patient/checkpatientid?patientId=" + (UserDefaults.standard.value(forKey: "username") as! String)
+        let task = URLSession.shared.dataTask(with: URL(string: requestURL)!){ data, response, error in
+            if error != nil{
+                print("error occured")
+                DispatchQueue.main.sync{
+                    print(error!)
+                }
+            }
+            else{
+                DispatchQueue.main.sync{
+                    do{
+                        let jsonArray = try JSONSerialization.jsonObject(with: data!) as! [Any]
+                        let jsonItem = jsonArray[0] as! [String: Any]
+                        let patientName = jsonItem["first_name"]
+                        UserDefaults.standard.set(patientName,forKey: "patientName")
+                        self.setWelcomeLabel()
+                    }
+                    catch{
+                        print(error)
+                    }
+                }
+            }
+        }
+        task.resume()
+    }
 
+    func getTimeOfTheDay() -> String{
+        let dateComponents = Calendar.current.dateComponents([.hour], from: Date())
+        var timeOfDay: String = ""
+        if let hour = dateComponents.hour {
+            switch hour {
+            case 0..<12:
+                timeOfDay = "Morning"
+            case 12..<17:
+                timeOfDay = "Afternoon"
+            default:
+                timeOfDay = "Night"
+            }
+        }
+        return timeOfDay
+    }
+    
+    func setWelcomeLabel(){
+        greetingLabel.text = "Good " + getTimeOfTheDay() + ","
+        UIView.animate(withDuration: 1, animations: {
+            self.greetingLabel.alpha = 1
+        })
+        
+        nameLabel.text = (UserDefaults.standard.value(forKey: "patientName") as! String)
+        UIView.animate(withDuration: 1, delay:0.5, animations: {
+            self.nameLabel.alpha = 1
+        })
+    }
+    
+    
+    func retrieveReminderData(){
+        CBToast.showToastAction()
+        reminders.removeAll()
+        let requestURL = "https://sqbk9h1frd.execute-api.us-east-2.amazonaws.com/IEProject/ieproject/reminder/selectreminderbypatientid?patientId=" + (UserDefaults.standard.object(forKey: "username") as! String)
+        let task = URLSession.shared.dataTask(with: URL(string: requestURL)!){ data, response, error in
+            if error != nil{
+                CBToast.hiddenToastAction()
+                print("error occured")
+            }
+            else{
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data!) as? [Any]
+                    for item in json!{
+                        let reminderJson = item as? [String: Any]
+                        let reminderId = reminderJson!["reminder_id"] as! Int
+                        let reminderTime = reminderJson!["time"] as! String
+                        let drugName = reminderJson!["drug_name"] as! String
+                        let startDate = reminderJson!["dates"] as! String
+                        let lastTime = reminderJson!["lasts"] as! Int
+                        let reminder: Reminder = Reminder(reminderId: reminderId, reminderTime: reminderTime, drugName: drugName, startDate: startDate, lastTime: lastTime)
+                        self.reminders.append(reminder)
+                    }
+                }
+                catch{
+                    print(error)
+                }
+                DispatchQueue.main.sync{
+                    CBToast.hiddenToastAction()
+                }
+            }
+        }
+        task.resume()
+    }
+    
+    @IBAction func remindersButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "reminderSegue", sender: reminders)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? RemindersViewController, let reminderToSend = sender as? [Reminder] {
+            vc.reminders = reminderToSend
+        }
+    }
     
 }
 
