@@ -1,0 +1,6 @@
+framework module Pods_Shield_For_Dementia_CarerUITests {
+  umbrella header "Pods-Shield For Dementia CarerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

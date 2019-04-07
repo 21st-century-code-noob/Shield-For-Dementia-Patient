@@ -7,13 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07EF44B991DE70A77E587D2A /* Pods_Shield_For_Dementia_Carer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A302B97CDDD730ED83F0AED9 /* Pods_Shield_For_Dementia_Carer.framework */; };
 		185893D622536F36006A5C17 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 185893D522536F36006A5C17 /* GoogleService-Info.plist */; };
-		1CD7C18F83F7034E22BA15FB /* Pods_Shield_For_Dementia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6490D335997F1C0E98E8027D /* Pods_Shield_For_Dementia.framework */; };
-		2A5045B1E8B14B86831249A2 /* Pods_Shield_For_DementiaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A9CF3B9C3B479A0488B12D /* Pods_Shield_For_DementiaTests.framework */; };
-		43EF146BCA407CC3B5C555E1 /* Pods_Shield_For_DementiaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB748431E958BFEEF13320BD /* Pods_Shield_For_DementiaUITests.framework */; };
+		18B26E4D2259BEE0005F024F /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B26E422259BEDD005F024F /* ImageCollectionViewCell.swift */; };
+		18B26E4E2259BEE0005F024F /* GalleryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B26E432259BEDD005F024F /* GalleryCollectionViewController.swift */; };
+		18B26E4F2259BEE0005F024F /* MemoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B26E442259BEDD005F024F /* MemoryTableViewController.swift */; };
+		18B26E502259BEE0005F024F /* ReminderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B26E452259BEDE005F024F /* ReminderTableViewController.swift */; };
+		18B26E512259BEE0005F024F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B26E462259BEDE005F024F /* SignUpViewController.swift */; };
+		18B26E522259BEE0005F024F /* PictureDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B26E472259BEDE005F024F /* PictureDetailViewController.swift */; };
+		18B26E532259BEE0005F024F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B26E482259BEDF005F024F /* WelcomeViewController.swift */; };
+		18B26E542259BEE0005F024F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B26E492259BEDF005F024F /* LoginViewController.swift */; };
+		18B26E552259BEE0005F024F /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B26E4A2259BEDF005F024F /* CameraViewController.swift */; };
+		18B26E562259BEE0005F024F /* CarerPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B26E4B2259BEE0005F024F /* CarerPanelViewController.swift */; };
+		18B26E572259BEE0005F024F /* LoginNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B26E4C2259BEE0005F024F /* LoginNavigationController.swift */; };
+		18B26E5A2259BEFE005F024F /* ReminderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B26E582259BEFE005F024F /* ReminderTableViewCell.swift */; };
+		18B26E5B2259BEFE005F024F /* MemoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B26E592259BEFE005F024F /* MemoryTableViewCell.swift */; };
+		8AFDE46CFB66B3C21B87E906 /* Pods_Shield_For_Dementia_CarerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B95660601786FF398BA96429 /* Pods_Shield_For_Dementia_CarerUITests.framework */; };
 		ABB721B7225632FA000EF648 /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB721B6225632FA000EF648 /* SHA1.swift */; };
-		ABC91E3422575E3300964626 /* CarerPanelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC91E3322575E3300964626 /* CarerPanelCollectionViewCell.swift */; };
-		ABC91E362257615800964626 /* CarerPanelCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC91E352257615800964626 /* CarerPanelCollectionViewController.swift */; };
 		BD96EABE2252D90C0042F236 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96EABD2252D90C0042F236 /* AppDelegate.swift */; };
 		BD96EAC32252D90C0042F236 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD96EAC12252D90C0042F236 /* Main.storyboard */; };
 		BD96EAC62252D90C0042F236 /* Shield_For_Dementia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD96EAC42252D90C0042F236 /* Shield_For_Dementia.xcdatamodeld */; };
@@ -21,11 +31,8 @@
 		BD96EACB2252D90D0042F236 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD96EAC92252D90D0042F236 /* LaunchScreen.storyboard */; };
 		BD96EAD62252D90D0042F236 /* Shield_For_DementiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96EAD52252D90D0042F236 /* Shield_For_DementiaTests.swift */; };
 		BD96EAE12252D90D0042F236 /* Shield_For_DementiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96EAE02252D90D0042F236 /* Shield_For_DementiaUITests.swift */; };
-		BD96EB2C22548D820042F236 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96EB2B22548D820042F236 /* LoginViewController.swift */; };
-		BD96EB2F22548EE90042F236 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96EB2E22548EE90042F236 /* WelcomeViewController.swift */; };
-		BD96EB33225497490042F236 /* LoginNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96EB32225497490042F236 /* LoginNavigationController.swift */; };
-		BD96EB3B2254B4FE0042F236 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96EB3A2254B4FE0042F236 /* SignUpViewController.swift */; };
 		BD96EB402254E07A0042F236 /* ValidationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96EB3F2254E07A0042F236 /* ValidationUtils.swift */; };
+		D5A12CADE66E261BE126A942 /* Pods_Shield_For_Dementia_CarerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4860B47BB14FEA6B864CB99 /* Pods_Shield_For_Dementia_CarerTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,16 +53,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0FBABC181B06B370249B39E1 /* Pods-Shield For Dementia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shield For Dementia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shield For Dementia/Pods-Shield For Dementia.debug.xcconfig"; sourceTree = "<group>"; };
 		185893D522536F36006A5C17 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		19B6D2559A4C511B35CB61D9 /* Pods-Shield For DementiaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shield For DementiaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shield For DementiaTests/Pods-Shield For DementiaTests.debug.xcconfig"; sourceTree = "<group>"; };
-		3E71CD4C7E2401A330C3684F /* Pods-Shield For DementiaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shield For DementiaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shield For DementiaTests/Pods-Shield For DementiaTests.release.xcconfig"; sourceTree = "<group>"; };
-		6490D335997F1C0E98E8027D /* Pods_Shield_For_Dementia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shield_For_Dementia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		86A9CF3B9C3B479A0488B12D /* Pods_Shield_For_DementiaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shield_For_DementiaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B26E422259BEDD005F024F /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		18B26E432259BEDD005F024F /* GalleryCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewController.swift; sourceTree = "<group>"; };
+		18B26E442259BEDD005F024F /* MemoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryTableViewController.swift; sourceTree = "<group>"; };
+		18B26E452259BEDE005F024F /* ReminderTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderTableViewController.swift; sourceTree = "<group>"; };
+		18B26E462259BEDE005F024F /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		18B26E472259BEDE005F024F /* PictureDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureDetailViewController.swift; sourceTree = "<group>"; };
+		18B26E482259BEDF005F024F /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		18B26E492259BEDF005F024F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		18B26E4A2259BEDF005F024F /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		18B26E4B2259BEE0005F024F /* CarerPanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarerPanelViewController.swift; sourceTree = "<group>"; };
+		18B26E4C2259BEE0005F024F /* LoginNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginNavigationController.swift; sourceTree = "<group>"; };
+		18B26E582259BEFE005F024F /* ReminderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderTableViewCell.swift; sourceTree = "<group>"; };
+		18B26E592259BEFE005F024F /* MemoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryTableViewCell.swift; sourceTree = "<group>"; };
+		1B882A6BB7AB2B2681AEF060 /* Pods-Shield For Dementia Carer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shield For Dementia Carer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shield For Dementia Carer/Pods-Shield For Dementia Carer.debug.xcconfig"; sourceTree = "<group>"; };
+		21E1AAFDA419D33840A2CEF0 /* Pods-Shield For Dementia CarerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shield For Dementia CarerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shield For Dementia CarerTests/Pods-Shield For Dementia CarerTests.release.xcconfig"; sourceTree = "<group>"; };
+		7512C1B2369F0A8453E20E38 /* Pods-Shield For Dementia CarerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shield For Dementia CarerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shield For Dementia CarerTests/Pods-Shield For Dementia CarerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A302B97CDDD730ED83F0AED9 /* Pods_Shield_For_Dementia_Carer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shield_For_Dementia_Carer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABB721B6225632FA000EF648 /* SHA1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA1.swift; sourceTree = "<group>"; };
-		ABC91E3322575E3300964626 /* CarerPanelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CarerPanelCollectionViewCell.swift; path = "Shield For Dementia/ReusableCell/CarerPanelCollectionViewCell.swift"; sourceTree = SOURCE_ROOT; };
-		ABC91E352257615800964626 /* CarerPanelCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarerPanelCollectionViewController.swift; sourceTree = "<group>"; };
-		B4D6B6FA7D8939F2B516DDA2 /* Pods-Shield For DementiaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shield For DementiaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shield For DementiaUITests/Pods-Shield For DementiaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B4B90EA3587C0514C4D581A8 /* Pods-Shield For Dementia Carer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shield For Dementia Carer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shield For Dementia Carer/Pods-Shield For Dementia Carer.release.xcconfig"; sourceTree = "<group>"; };
+		B58D4C1483B305B53CEAB6F0 /* Pods-Shield For Dementia CarerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shield For Dementia CarerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shield For Dementia CarerUITests/Pods-Shield For Dementia CarerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B95660601786FF398BA96429 /* Pods_Shield_For_Dementia_CarerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shield_For_Dementia_CarerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD96EABA2252D90B0042F236 /* Shield For Dementia Carer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shield For Dementia Carer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD96EABD2252D90C0042F236 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD96EAC22252D90C0042F236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -69,16 +88,11 @@
 		BD96EADC2252D90D0042F236 /* Shield For Dementia CarerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shield For Dementia CarerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD96EAE02252D90D0042F236 /* Shield_For_DementiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shield_For_DementiaUITests.swift; sourceTree = "<group>"; };
 		BD96EAE22252D90D0042F236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BD96EB2B22548D820042F236 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		BD96EB2E22548EE90042F236 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		BD96EB32225497490042F236 /* LoginNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNavigationController.swift; sourceTree = "<group>"; };
-		BD96EB3A2254B4FE0042F236 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		BD96EB3F2254E07A0042F236 /* ValidationUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationUtils.swift; sourceTree = "<group>"; };
 		BD96EB412254E48D0042F236 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		BD96EB422254E48D0042F236 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		DB748431E958BFEEF13320BD /* Pods_Shield_For_DementiaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shield_For_DementiaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD6478BC999782C6B294D84F /* Pods-Shield For Dementia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shield For Dementia.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shield For Dementia/Pods-Shield For Dementia.release.xcconfig"; sourceTree = "<group>"; };
-		FC84541F1BE76BA887CF6AD5 /* Pods-Shield For DementiaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shield For DementiaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shield For DementiaUITests/Pods-Shield For DementiaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C0B24F6411A335D447A337C9 /* Pods-Shield For Dementia CarerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shield For Dementia CarerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shield For Dementia CarerUITests/Pods-Shield For Dementia CarerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E4860B47BB14FEA6B864CB99 /* Pods_Shield_For_Dementia_CarerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shield_For_Dementia_CarerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CD7C18F83F7034E22BA15FB /* Pods_Shield_For_Dementia.framework in Frameworks */,
+				07EF44B991DE70A77E587D2A /* Pods_Shield_For_Dementia_Carer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A5045B1E8B14B86831249A2 /* Pods_Shield_For_DementiaTests.framework in Frameworks */,
+				D5A12CADE66E261BE126A942 /* Pods_Shield_For_Dementia_CarerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,32 +116,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43EF146BCA407CC3B5C555E1 /* Pods_Shield_For_DementiaUITests.framework in Frameworks */,
+				8AFDE46CFB66B3C21B87E906 /* Pods_Shield_For_Dementia_CarerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57D56C3546DF5A6EA0BDB0D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B882A6BB7AB2B2681AEF060 /* Pods-Shield For Dementia Carer.debug.xcconfig */,
+				B4B90EA3587C0514C4D581A8 /* Pods-Shield For Dementia Carer.release.xcconfig */,
+				7512C1B2369F0A8453E20E38 /* Pods-Shield For Dementia CarerTests.debug.xcconfig */,
+				21E1AAFDA419D33840A2CEF0 /* Pods-Shield For Dementia CarerTests.release.xcconfig */,
+				B58D4C1483B305B53CEAB6F0 /* Pods-Shield For Dementia CarerUITests.debug.xcconfig */,
+				C0B24F6411A335D447A337C9 /* Pods-Shield For Dementia CarerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A30D369109F79F8053547346 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A302B97CDDD730ED83F0AED9 /* Pods_Shield_For_Dementia_Carer.framework */,
+				E4860B47BB14FEA6B864CB99 /* Pods_Shield_For_Dementia_CarerTests.framework */,
+				B95660601786FF398BA96429 /* Pods_Shield_For_Dementia_CarerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ABC91E3222575E0A00964626 /* ReusableCell */ = {
 			isa = PBXGroup;
 			children = (
-				ABC91E3322575E3300964626 /* CarerPanelCollectionViewCell.swift */,
+				18B26E592259BEFE005F024F /* MemoryTableViewCell.swift */,
+				18B26E582259BEFE005F024F /* ReminderTableViewCell.swift */,
 			);
 			path = ReusableCell;
-			sourceTree = "<group>";
-		};
-		B96C0E48537EE60BD243FEE2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0FBABC181B06B370249B39E1 /* Pods-Shield For Dementia.debug.xcconfig */,
-				DD6478BC999782C6B294D84F /* Pods-Shield For Dementia.release.xcconfig */,
-				19B6D2559A4C511B35CB61D9 /* Pods-Shield For DementiaTests.debug.xcconfig */,
-				3E71CD4C7E2401A330C3684F /* Pods-Shield For DementiaTests.release.xcconfig */,
-				B4D6B6FA7D8939F2B516DDA2 /* Pods-Shield For DementiaUITests.debug.xcconfig */,
-				FC84541F1BE76BA887CF6AD5 /* Pods-Shield For DementiaUITests.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		BD96EAB12252D90B0042F236 = {
@@ -137,8 +162,8 @@
 				BD96EAD42252D90D0042F236 /* Shield For DementiaTests */,
 				BD96EADF2252D90D0042F236 /* Shield For DementiaUITests */,
 				BD96EABB2252D90B0042F236 /* Products */,
-				B96C0E48537EE60BD243FEE2 /* Pods */,
-				E2BF8F72D911A4649FDFDC04 /* Frameworks */,
+				57D56C3546DF5A6EA0BDB0D8 /* Pods */,
+				A30D369109F79F8053547346 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -190,11 +215,17 @@
 		BD96EB2D22548D9D0042F236 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				BD96EB2B22548D820042F236 /* LoginViewController.swift */,
-				BD96EB2E22548EE90042F236 /* WelcomeViewController.swift */,
-				BD96EB32225497490042F236 /* LoginNavigationController.swift */,
-				BD96EB3A2254B4FE0042F236 /* SignUpViewController.swift */,
-				ABC91E352257615800964626 /* CarerPanelCollectionViewController.swift */,
+				18B26E4A2259BEDF005F024F /* CameraViewController.swift */,
+				18B26E4B2259BEE0005F024F /* CarerPanelViewController.swift */,
+				18B26E432259BEDD005F024F /* GalleryCollectionViewController.swift */,
+				18B26E422259BEDD005F024F /* ImageCollectionViewCell.swift */,
+				18B26E4C2259BEE0005F024F /* LoginNavigationController.swift */,
+				18B26E492259BEDF005F024F /* LoginViewController.swift */,
+				18B26E442259BEDD005F024F /* MemoryTableViewController.swift */,
+				18B26E472259BEDE005F024F /* PictureDetailViewController.swift */,
+				18B26E452259BEDE005F024F /* ReminderTableViewController.swift */,
+				18B26E462259BEDE005F024F /* SignUpViewController.swift */,
+				18B26E482259BEDF005F024F /* WelcomeViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -208,16 +239,6 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		E2BF8F72D911A4649FDFDC04 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6490D335997F1C0E98E8027D /* Pods_Shield_For_Dementia.framework */,
-				86A9CF3B9C3B479A0488B12D /* Pods_Shield_For_DementiaTests.framework */,
-				DB748431E958BFEEF13320BD /* Pods_Shield_For_DementiaUITests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -225,11 +246,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD96EAE52252D90D0042F236 /* Build configuration list for PBXNativeTarget "Shield For Dementia Carer" */;
 			buildPhases = (
-				86F492BE9CD2C282CE7A8388 /* [CP] Check Pods Manifest.lock */,
+				7798B65E1C4856D5DD3086CC /* [CP] Check Pods Manifest.lock */,
 				BD96EAB62252D90B0042F236 /* Sources */,
 				BD96EAB72252D90B0042F236 /* Frameworks */,
 				BD96EAB82252D90B0042F236 /* Resources */,
-				D95FCACACA4E9C0A9C13A583 /* [CP] Embed Pods Frameworks */,
+				EC4A90E63FFBC8D9F5838D91 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -244,7 +265,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD96EAE82252D90D0042F236 /* Build configuration list for PBXNativeTarget "Shield For Dementia CarerTests" */;
 			buildPhases = (
-				E2D9F04985EE102F11CE56B2 /* [CP] Check Pods Manifest.lock */,
+				10D4B66CF4087E5DA0774907 /* [CP] Check Pods Manifest.lock */,
 				BD96EACD2252D90D0042F236 /* Sources */,
 				BD96EACE2252D90D0042F236 /* Frameworks */,
 				BD96EACF2252D90D0042F236 /* Resources */,
@@ -263,7 +284,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD96EAEB2252D90D0042F236 /* Build configuration list for PBXNativeTarget "Shield For Dementia CarerUITests" */;
 			buildPhases = (
-				D15C71A661236E891BDEBAE2 /* [CP] Check Pods Manifest.lock */,
+				08BE31004D3F411D02741EBC /* [CP] Check Pods Manifest.lock */,
 				BD96EAD82252D90D0042F236 /* Sources */,
 				BD96EAD92252D90D0042F236 /* Frameworks */,
 				BD96EADA2252D90D0042F236 /* Resources */,
@@ -308,6 +329,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = BD96EAB12252D90B0042F236;
 			productRefGroup = BD96EABB2252D90B0042F236 /* Products */;
@@ -350,7 +372,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		86F492BE9CD2C282CE7A8388 /* [CP] Check Pods Manifest.lock */ = {
+		08BE31004D3F411D02741EBC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -365,14 +387,14 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Shield For Dementia-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Shield For Dementia CarerUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D15C71A661236E891BDEBAE2 /* [CP] Check Pods Manifest.lock */ = {
+		10D4B66CF4087E5DA0774907 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -387,14 +409,14 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Shield For DementiaUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Shield For Dementia CarerTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D95FCACACA4E9C0A9C13A583 /* [CP] Embed Pods Frameworks */ = {
+		7798B65E1C4856D5DD3086CC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -402,7 +424,29 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Shield For Dementia/Pods-Shield For Dementia-frameworks.sh",
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Shield For Dementia Carer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC4A90E63FFBC8D9F5838D91 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Shield For Dementia Carer/Pods-Shield For Dementia Carer-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -419,29 +463,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Shield For Dementia/Pods-Shield For Dementia-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E2D9F04985EE102F11CE56B2 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Shield For DementiaTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Shield For Dementia Carer/Pods-Shield For Dementia Carer-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -451,16 +473,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD96EB2C22548D820042F236 /* LoginViewController.swift in Sources */,
+				18B26E4D2259BEE0005F024F /* ImageCollectionViewCell.swift in Sources */,
 				BD96EB402254E07A0042F236 /* ValidationUtils.swift in Sources */,
+				18B26E4F2259BEE0005F024F /* MemoryTableViewController.swift in Sources */,
 				ABB721B7225632FA000EF648 /* SHA1.swift in Sources */,
-				ABC91E362257615800964626 /* CarerPanelCollectionViewController.swift in Sources */,
-				ABC91E3422575E3300964626 /* CarerPanelCollectionViewCell.swift in Sources */,
-				BD96EB33225497490042F236 /* LoginNavigationController.swift in Sources */,
-				BD96EB3B2254B4FE0042F236 /* SignUpViewController.swift in Sources */,
-				BD96EB2F22548EE90042F236 /* WelcomeViewController.swift in Sources */,
+				18B26E512259BEE0005F024F /* SignUpViewController.swift in Sources */,
+				18B26E502259BEE0005F024F /* ReminderTableViewController.swift in Sources */,
+				18B26E572259BEE0005F024F /* LoginNavigationController.swift in Sources */,
+				18B26E5B2259BEFE005F024F /* MemoryTableViewCell.swift in Sources */,
+				18B26E522259BEE0005F024F /* PictureDetailViewController.swift in Sources */,
 				BD96EABE2252D90C0042F236 /* AppDelegate.swift in Sources */,
+				18B26E532259BEE0005F024F /* WelcomeViewController.swift in Sources */,
+				18B26E4E2259BEE0005F024F /* GalleryCollectionViewController.swift in Sources */,
+				18B26E552259BEE0005F024F /* CameraViewController.swift in Sources */,
+				18B26E562259BEE0005F024F /* CarerPanelViewController.swift in Sources */,
+				18B26E542259BEE0005F024F /* LoginViewController.swift in Sources */,
 				BD96EAC62252D90C0042F236 /* Shield_For_Dementia.xcdatamodeld in Sources */,
+				18B26E5A2259BEFE005F024F /* ReminderTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,7 +666,7 @@
 		};
 		BD96EAE62252D90D0042F236 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0FBABC181B06B370249B39E1 /* Pods-Shield For Dementia.debug.xcconfig */;
+			baseConfigurationReference = 1B882A6BB7AB2B2681AEF060 /* Pods-Shield For Dementia Carer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -656,7 +685,7 @@
 		};
 		BD96EAE72252D90D0042F236 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DD6478BC999782C6B294D84F /* Pods-Shield For Dementia.release.xcconfig */;
+			baseConfigurationReference = B4B90EA3587C0514C4D581A8 /* Pods-Shield For Dementia Carer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -675,7 +704,7 @@
 		};
 		BD96EAE92252D90D0042F236 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 19B6D2559A4C511B35CB61D9 /* Pods-Shield For DementiaTests.debug.xcconfig */;
+			baseConfigurationReference = 7512C1B2369F0A8453E20E38 /* Pods-Shield For Dementia CarerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -696,7 +725,7 @@
 		};
 		BD96EAEA2252D90D0042F236 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E71CD4C7E2401A330C3684F /* Pods-Shield For DementiaTests.release.xcconfig */;
+			baseConfigurationReference = 21E1AAFDA419D33840A2CEF0 /* Pods-Shield For Dementia CarerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -717,7 +746,7 @@
 		};
 		BD96EAEC2252D90D0042F236 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B4D6B6FA7D8939F2B516DDA2 /* Pods-Shield For DementiaUITests.debug.xcconfig */;
+			baseConfigurationReference = B58D4C1483B305B53CEAB6F0 /* Pods-Shield For Dementia CarerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -737,7 +766,7 @@
 		};
 		BD96EAED2252D90D0042F236 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FC84541F1BE76BA887CF6AD5 /* Pods-Shield For DementiaUITests.release.xcconfig */;
+			baseConfigurationReference = C0B24F6411A335D447A337C9 /* Pods-Shield For Dementia CarerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
