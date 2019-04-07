@@ -124,7 +124,7 @@ class SignUpViewController: UIViewController {
             let firstName = firstNameTF.text!
             let lastName = lastNameTF.text!
             
-            var requestURL3 = "https://sqbk9h1frd.execute-api.us-east-2.amazonaws.com/IEProject/ieproject/carer/addaewcarer?carerId="
+            var requestURL3 = "https://sqbk9h1frd.execute-api.us-east-2.amazonaws.com/IEProject/ieproject/patient/addnewpatient?patientId="
             requestURL3 = requestURL3 + username
             requestURL3 = requestURL3 + "&password="
             requestURL3 = requestURL3 + passwordHash! + "&firstName=" + firstName + "&lastName=" + lastName
@@ -180,7 +180,7 @@ class SignUpViewController: UIViewController {
     
     
     func checkUsernameAvailability(username: String!){
-        let requestURL = "https://sqbk9h1frd.execute-api.us-east-2.amazonaws.com/IEProject/ieproject/carer/checkcarerid?carerId=" + username
+        let requestURL = "https://sqbk9h1frd.execute-api.us-east-2.amazonaws.com/IEProject/ieproject/patient/checkpatientid?patientId=" + username
         let task = URLSession.shared.dataTask(with: URL(string: requestURL)!){ data, response, error in
             if error != nil{
                 print("error occured")

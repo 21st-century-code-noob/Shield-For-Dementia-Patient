@@ -9,6 +9,7 @@
 import UIKit
 
 class CarerPanelViewController: UIViewController {
+    
     @IBOutlet weak var greetingLabel: UILabel!
     @IBOutlet weak var pairedPatientLabel: UINavigationItem!
     

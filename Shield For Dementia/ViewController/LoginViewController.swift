@@ -55,7 +55,7 @@ class LoginViewController: UIViewController {
         }
         else{
             let passwordHash = SHA1.hexString(from: password!)
-            let requestURL:String! = "https://sqbk9h1frd.execute-api.us-east-2.amazonaws.com/IEProject/ieproject/carer/checkcareridandpassword?carerId=" + username! + "&password=" + passwordHash!
+            let requestURL:String! = "https://sqbk9h1frd.execute-api.us-east-2.amazonaws.com/IEProject/ieproject/patient/checkpatientidandpassword?patientId=" + username! + "&password=" + passwordHash!
             let task = URLSession.shared.dataTask(with: URL(string: requestURL)!){ data, response, error in
                 if error != nil{
                     print("error occured")
