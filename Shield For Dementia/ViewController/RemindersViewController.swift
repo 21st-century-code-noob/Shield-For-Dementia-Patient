@@ -13,6 +13,8 @@ class RemindersViewController: UIViewController,UITableViewDataSource,UITableVie
     var reminders: [Reminder] = []
     @IBOutlet weak var reminderTableView: UITableView!
 
+    @IBOutlet weak var kenBurnsView: JBKenBurnsView!
+    
     override func viewDidLoad(){
         super.viewDidLoad()
         reminderTableView.delegate = self

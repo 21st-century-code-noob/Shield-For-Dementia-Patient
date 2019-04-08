@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var greetingLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var pauseButton: UIButton!
-    
+    var canRetrieveData: Bool = true
     var reminders:[Reminder] = []
     var databaseRef = Database.database().reference()
     var storageRef = Storage.storage()
@@ -149,8 +149,9 @@ class ViewController: UIViewController {
                     
                     self.imagePathList.append(url)
                     if self.localFileExists(fileName: fileName){
-                        if let image = self.loadImageData(fileName: fileName){
+                        if var image = self.loadImageData(fileName: fileName){
                             
+                            image = self.fixOrientation(img : image)
                             self.imageList.append(image)
                             self.imageNameList.append(fileName)
                             //self.collectionView?.reloadSections([0])
@@ -162,8 +163,9 @@ class ViewController: UIViewController {
                                 print(error.localizedDescription)
                             }
                             else{
-                                let image = UIImage(data: data!)!
+                                var image = UIImage(data: data!)!
                                 self.saveLocalData(fileName: fileName, imageData: data!)
+                                image = self.fixOrientation(img : image)
                                 self.imageList.append(image)
                                 self.imageNameList.append(fileName)
                                 self.kenBurnsView.animateWithImages(self.imageList, imageAnimationDuration: 10, initialDelay: 0, shouldLoop: true, randomFirstImage: true)
@@ -214,11 +216,38 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         kenBurnsView.resumeAnimation()
-        retrieveReminderData()
+
+        if canRetrieveData{
+            retrieveReminderData()
+            canRetrieveData = false
+            Timer.scheduledTimer(timeInterval:3, target: self, selector: #selector(setCanRetrieveData), userInfo: nil, repeats: false)
+        }
         if (self.imageList.count != 0){
             self.kenBurnsView.animateWithImages(self.imageList, imageAnimationDuration: 10, initialDelay: 0, shouldLoop: true, randomFirstImage: true)
         }
     }
+    
+    @objc func setCanRetrieveData(){
+        canRetrieveData = true
+    }
+    
+    func fixOrientation(img:UIImage) -> UIImage {
+        
+        if (img.imageOrientation == UIImage.Orientation.up) {
+            return img;
+        }
+        
+        UIGraphicsBeginImageContextWithOptions(img.size, false, img.scale);
+        let rect = CGRect(x: 0, y: 0, width: img.size.width, height: img.size.height)
+        img.draw(in: rect)
+        
+        let normalizedImage : UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext();
+        return normalizedImage;
+        
+    }
+    
+    
     
     //Advance Mobile system, tutorial, (Moodle 2018)
     func localFileExists(fileName: String) -> Bool{
@@ -312,7 +341,7 @@ class ViewController: UIViewController {
     }
     
     func setWelcomeLabel(){
-        greetingLabel.text = "Good " + getTimeOfTheDay() + ","
+        greetingLabel.text = "Good " + getTimeOfTheDay() + "!"
         UIView.animate(withDuration: 1, animations: {
             self.greetingLabel.alpha = 1
         })
