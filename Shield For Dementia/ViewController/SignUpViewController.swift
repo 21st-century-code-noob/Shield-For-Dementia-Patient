@@ -30,13 +30,14 @@ class SignUpViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //dismiss keyboard by tapping blank area
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
         signUpButton.layer.cornerRadius = 10
 
         // Do any additional setup after loading the view.
     }
     
-
+    //all below listen for textfield change, and do the validation./
     @IBAction func pswEditChanged(_ sender: Any) {
         let inputPsw = pswTF.text! + ""
         let validated:Bool = ValidationUtils.validatePsw(psw: inputPsw)
@@ -179,7 +180,7 @@ class SignUpViewController: UIViewController {
         }
     }
     
-    
+    //check username availability via API
     func checkUsernameAvailability(username: String!){
         let requestURL = "https://sqbk9h1frd.execute-api.us-east-2.amazonaws.com/IEProject/ieproject/patient/checkpatientid?patientId=" + username
         let task = URLSession.shared.dataTask(with: URL(string: requestURL)!){ data, response, error in

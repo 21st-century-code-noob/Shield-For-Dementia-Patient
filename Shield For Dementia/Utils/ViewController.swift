@@ -220,6 +220,7 @@ class ViewController: UIViewController {
         if canRetrieveData{
             retrieveReminderData()
             canRetrieveData = false
+            //set delay to avoid to frequent data retrieving.
             Timer.scheduledTimer(timeInterval:3, target: self, selector: #selector(setCanRetrieveData), userInfo: nil, repeats: false)
         }
         if (self.imageList.count != 0){
@@ -227,10 +228,12 @@ class ViewController: UIViewController {
         }
     }
     
+    
     @objc func setCanRetrieveData(){
         canRetrieveData = true
     }
     
+    //adamn kanben, questions, (stackoverflow)
     func fixOrientation(img:UIImage) -> UIImage {
         
         if (img.imageOrientation == UIImage.Orientation.up) {
@@ -297,6 +300,7 @@ class ViewController: UIViewController {
         self.present(alertController, animated: true, completion: nil)
     }
     
+    
     func getPatientName(){
         let requestURL = "https://sqbk9h1frd.execute-api.us-east-2.amazonaws.com/IEProject/ieproject/patient/checkpatientid?patientId=" + (UserDefaults.standard.value(forKey: "username") as! String)
         let task = URLSession.shared.dataTask(with: URL(string: requestURL)!){ data, response, error in
@@ -324,6 +328,7 @@ class ViewController: UIViewController {
         task.resume()
     }
 
+    //Code learned from stackoverflow
     func getTimeOfTheDay() -> String{
         let dateComponents = Calendar.current.dateComponents([.hour], from: Date())
         var timeOfDay: String = ""
@@ -332,6 +337,7 @@ class ViewController: UIViewController {
             case 0..<12:
                 timeOfDay = "Morning"
             case 12..<17:
+
                 timeOfDay = "Afternoon"
             default:
                 timeOfDay = "Night"
@@ -340,19 +346,20 @@ class ViewController: UIViewController {
         return timeOfDay
     }
     
+    //the function name is self explaining
     func setWelcomeLabel(){
         greetingLabel.text = "Good " + getTimeOfTheDay() + "!"
         UIView.animate(withDuration: 1, animations: {
             self.greetingLabel.alpha = 1
         })
         
-        nameLabel.text = (UserDefaults.standard.value(forKey: "patientName") as! String)
+        nameLabel.text = (UserDefaults.standard.value(forKey: "firstName") as! String)
         UIView.animate(withDuration: 1, delay:0.5, animations: {
             self.nameLabel.alpha = 1
         })
     }
     
-    
+    //handles data retrieving
     func retrieveReminderData(){
         CBToast.showToastAction()
         reminders.removeAll()
@@ -387,6 +394,7 @@ class ViewController: UIViewController {
         task.resume()
     }
     
+    //going to reminder
     @IBAction func remindersButtonPressed(_ sender: Any) {
         performSegue(withIdentifier: "reminderSegue", sender: reminders)
     }

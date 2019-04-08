@@ -25,6 +25,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //handles UI
         self.blurView.layer.cornerRadius = 20
         self.blurView.clipsToBounds = true
         logInButton.layer.cornerRadius = 10
@@ -32,7 +33,7 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    
+    //handles login button tapped behavior
     @IBAction func loginButtonPressed(_ sender: Any) {
         loginHintLabel.text = ""
         loginButton.setTitle("", for: .normal)
