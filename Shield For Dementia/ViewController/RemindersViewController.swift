@@ -12,8 +12,8 @@ import UIKit
 class RemindersViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     var reminders: [Reminder] = []
     @IBOutlet weak var reminderTableView: UITableView!
-
-    @IBOutlet weak var kenBurnsView: JBKenBurnsView!
+    @IBOutlet weak var refreshReminderButton: UIButton!
+    
     
     override func viewDidLoad(){
         super.viewDidLoad()
@@ -54,8 +54,46 @@ class RemindersViewController: UIViewController,UITableViewDataSource,UITableVie
         
         return cell
     }
+    @IBAction func refreshButtonPressed(_ sender: Any) {
+        retrieveReminderData()
+    }
     
-
+    func retrieveReminderData(){
+        refreshReminderButton.isEnabled = false
+        CBToast.showToastAction()
+        reminders.removeAll()
+        let requestURL = "https://sqbk9h1frd.execute-api.us-east-2.amazonaws.com/IEProject/ieproject/reminder/selectreminderbypatientid?patientId=" + (UserDefaults.standard.object(forKey: "username") as! String)
+        let task = URLSession.shared.dataTask(with: URL(string: requestURL)!){ data, response, error in
+            if error != nil{
+                CBToast.hiddenToastAction()
+                print("error occured")
+            }
+            else{
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data!) as? [Any]
+                    for item in json!{
+                        let reminderJson = item as? [String: Any]
+                        let reminderId = reminderJson!["reminder_id"] as! Int
+                        let reminderTime = reminderJson!["time"] as! String
+                        let drugName = reminderJson!["drug_name"] as! String
+                        let startDate = reminderJson!["dates"] as! String
+                        let lastTime = reminderJson!["lasts"] as! Int
+                        let reminder: Reminder = Reminder(reminderId: reminderId, reminderTime: reminderTime, drugName: drugName, startDate: startDate, lastTime: lastTime)
+                        self.reminders.append(reminder)
+                    }
+                }
+                catch{
+                    print(error)
+                }
+                DispatchQueue.main.sync{
+                    CBToast.hiddenToastAction()
+                    self.refreshReminderButton.isEnabled = true
+                }
+            }
+        }
+        task.resume()
+    }
+    
 
 
     /*

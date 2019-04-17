@@ -105,7 +105,7 @@ class LoginViewController: UIViewController {
                             UserDefaults.standard.set(patientIDS, forKey: "patientIDS")
                             UserDefaults.standard.set(firstName, forKey: "firstName")
                             UserDefaults.standard.set(lastName, forKey: "lastName")
-                            self.performSegue(withIdentifier: "LoginSegue", sender: self)
+                            self.performSegue(withIdentifier: "loginSegue", sender: self)
                         }
                     }
                     else{
