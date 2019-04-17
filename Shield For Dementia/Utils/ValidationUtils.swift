@@ -29,7 +29,7 @@ class ValidationUtils{
     
     static func validatePsw(psw: String!) -> Bool{
         var validated: Bool! = true
-        let RegEx = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,24}$"
+        let RegEx = "^[a-zA-Z\\d]{8,24}$"
         let Test = NSPredicate(format:"SELF MATCHES %@", RegEx)
         if psw.isEmpty{
             validated = false
