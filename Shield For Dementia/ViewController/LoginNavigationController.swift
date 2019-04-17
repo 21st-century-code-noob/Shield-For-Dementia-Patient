@@ -12,6 +12,8 @@ class LoginNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    //set background
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Login Background")!)
         // Do any additional setup after loading the view.
     }

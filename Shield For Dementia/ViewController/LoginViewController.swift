@@ -25,19 +25,21 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //handles UI
         self.blurView.layer.cornerRadius = 20
         self.blurView.clipsToBounds = true
         logInButton.layer.cornerRadius = 10
+                self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
         // Do any additional setup after loading the view.
     }
     
-    
+    //handles login button tapped behavior
     @IBAction func loginButtonPressed(_ sender: Any) {
         loginHintLabel.text = ""
         loginButton.setTitle("", for: .normal)
         loginButton.isEnabled = false
         loginIndicator.startAnimating()
-        let username = userNameTF.text
+        var username = userNameTF.text
         let password = pswTF.text
         if !ValidationUtils.validateUsername(username: username){
             loginHintLabel.text = "Please enter a valid username"
@@ -54,7 +56,7 @@ class LoginViewController: UIViewController {
             return
         }
         else{
-            let passwordHash = SHA1.hexString(from: password!)
+            var passwordHash = SHA1.hexString(from: password!)
             let requestURL:String! = "https://sqbk9h1frd.execute-api.us-east-2.amazonaws.com/IEProject/ieproject/patient/checkpatientidandpassword?patientId=" + username! + "&password=" + passwordHash!
             let task = URLSession.shared.dataTask(with: URL(string: requestURL)!){ data, response, error in
                 if error != nil{
@@ -68,14 +70,41 @@ class LoginViewController: UIViewController {
                 }
                 else{
                     let resultString = String(data: data!, encoding: String.Encoding.utf8)
-                    if resultString == "true"{
+                    
+                    var patientIDS : Int?
+                    var firstName: String?
+                    var lastName: String?
+                    
+                    if resultString != "[]"{
                         //Going to main page. Save password into userPreference
+                        
+                        do{
+                            let json = try JSONSerialization.jsonObject(with: data!) as? [Any]
+                            for item in json!{
+                                if let pair = item as? [String: Any]{
+                                    
+                                    patientIDS = pair["ids"] as? Int
+                                    username = pair["user_id"] as? String
+                                    passwordHash = pair["password"] as? String
+                                    firstName = pair["first_name"] as? String
+                                    lastName = pair["last_name"] as? String
+                                    
+                                    
+                                }
+                            }
+                        }catch{
+                            
+                        }
+                        
                         DispatchQueue.main.sync{
                             self.loginButton.setTitle("Log In", for: .normal)
                             self.loginButton.isEnabled = true
                             self.loginIndicator.stopAnimating()
                             UserDefaults.standard.set(username, forKey: "username")
                             UserDefaults.standard.set(passwordHash, forKey: "carerPassword")
+                            UserDefaults.standard.set(patientIDS, forKey: "patientIDS")
+                            UserDefaults.standard.set(firstName, forKey: "firstName")
+                            UserDefaults.standard.set(lastName, forKey: "lastName")
                             self.performSegue(withIdentifier: "LoginSegue", sender: self)
                         }
                     }

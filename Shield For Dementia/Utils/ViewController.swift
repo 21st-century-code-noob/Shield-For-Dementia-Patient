@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var greetingLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var pauseButton: UIButton!
-    
+    var canRetrieveData: Bool = true
     var reminders:[Reminder] = []
     var databaseRef = Database.database().reference()
     var storageRef = Storage.storage()
@@ -149,8 +149,9 @@ class ViewController: UIViewController {
                     
                     self.imagePathList.append(url)
                     if self.localFileExists(fileName: fileName){
-                        if let image = self.loadImageData(fileName: fileName){
+                        if var image = self.loadImageData(fileName: fileName){
                             
+                            image = self.fixOrientation(img : image)
                             self.imageList.append(image)
                             self.imageNameList.append(fileName)
                             //self.collectionView?.reloadSections([0])
@@ -162,8 +163,9 @@ class ViewController: UIViewController {
                                 print(error.localizedDescription)
                             }
                             else{
-                                let image = UIImage(data: data!)!
+                                var image = UIImage(data: data!)!
                                 self.saveLocalData(fileName: fileName, imageData: data!)
+                                image = self.fixOrientation(img : image)
                                 self.imageList.append(image)
                                 self.imageNameList.append(fileName)
                                 self.kenBurnsView.animateWithImages(self.imageList, imageAnimationDuration: 10, initialDelay: 0, shouldLoop: true, randomFirstImage: true)
@@ -214,11 +216,41 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         kenBurnsView.resumeAnimation()
-        retrieveReminderData()
+
+        if canRetrieveData{
+            retrieveReminderData()
+            canRetrieveData = false
+            //set delay to avoid to frequent data retrieving.
+            Timer.scheduledTimer(timeInterval:3, target: self, selector: #selector(setCanRetrieveData), userInfo: nil, repeats: false)
+        }
         if (self.imageList.count != 0){
             self.kenBurnsView.animateWithImages(self.imageList, imageAnimationDuration: 10, initialDelay: 0, shouldLoop: true, randomFirstImage: true)
         }
     }
+    
+    
+    @objc func setCanRetrieveData(){
+        canRetrieveData = true
+    }
+    
+    //adamn kanben, questions, (stackoverflow)
+    func fixOrientation(img:UIImage) -> UIImage {
+        
+        if (img.imageOrientation == UIImage.Orientation.up) {
+            return img;
+        }
+        
+        UIGraphicsBeginImageContextWithOptions(img.size, false, img.scale);
+        let rect = CGRect(x: 0, y: 0, width: img.size.width, height: img.size.height)
+        img.draw(in: rect)
+        
+        let normalizedImage : UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext();
+        return normalizedImage;
+        
+    }
+    
+    
     
     //Advance Mobile system, tutorial, (Moodle 2018)
     func localFileExists(fileName: String) -> Bool{
@@ -268,6 +300,7 @@ class ViewController: UIViewController {
         self.present(alertController, animated: true, completion: nil)
     }
     
+    
     func getPatientName(){
         let requestURL = "https://sqbk9h1frd.execute-api.us-east-2.amazonaws.com/IEProject/ieproject/patient/checkpatientid?patientId=" + (UserDefaults.standard.value(forKey: "username") as! String)
         let task = URLSession.shared.dataTask(with: URL(string: requestURL)!){ data, response, error in
@@ -295,6 +328,7 @@ class ViewController: UIViewController {
         task.resume()
     }
 
+    //Code learned from stackoverflow
     func getTimeOfTheDay() -> String{
         let dateComponents = Calendar.current.dateComponents([.hour], from: Date())
         var timeOfDay: String = ""
@@ -303,6 +337,7 @@ class ViewController: UIViewController {
             case 0..<12:
                 timeOfDay = "Morning"
             case 12..<17:
+
                 timeOfDay = "Afternoon"
             default:
                 timeOfDay = "Night"
@@ -311,19 +346,20 @@ class ViewController: UIViewController {
         return timeOfDay
     }
     
+    //the function name is self explaining
     func setWelcomeLabel(){
-        greetingLabel.text = "Good " + getTimeOfTheDay() + ","
+        greetingLabel.text = "Good " + getTimeOfTheDay() + "!"
         UIView.animate(withDuration: 1, animations: {
             self.greetingLabel.alpha = 1
         })
         
-        nameLabel.text = (UserDefaults.standard.value(forKey: "patientName") as! String)
+        nameLabel.text = (UserDefaults.standard.value(forKey: "firstName") as! String)
         UIView.animate(withDuration: 1, delay:0.5, animations: {
             self.nameLabel.alpha = 1
         })
     }
     
-    
+    //handles data retrieving
     func retrieveReminderData(){
         CBToast.showToastAction()
         reminders.removeAll()
@@ -358,6 +394,7 @@ class ViewController: UIViewController {
         task.resume()
     }
     
+    //going to reminder
     @IBAction func remindersButtonPressed(_ sender: Any) {
         performSegue(withIdentifier: "reminderSegue", sender: reminders)
     }
