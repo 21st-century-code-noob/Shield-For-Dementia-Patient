@@ -23,6 +23,8 @@
 		AB668CEA225A70A70082BEF3 /* reminderTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB668CE9225A70A70082BEF3 /* reminderTableView.swift */; };
 		AB668CF1225A73FC0082BEF3 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB668CF0225A73FC0082BEF3 /* Reminder.swift */; };
 		AB668CF6225A8E850082BEF3 /* CBToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB668CF5225A8E850082BEF3 /* CBToast.swift */; };
+		ABAF897222709F7A00561E3A /* PairedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAF897122709F7A00561E3A /* PairedViewController.swift */; };
+		ABAF89742270A05A00561E3A /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAF89732270A05A00561E3A /* SettingViewController.swift */; };
 		ABB721B7225632FA000EF648 /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB721B6225632FA000EF648 /* SHA1.swift */; };
 		BD96EABE2252D90C0042F236 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96EABD2252D90C0042F236 /* AppDelegate.swift */; };
 		BD96EAC32252D90C0042F236 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD96EAC12252D90C0042F236 /* Main.storyboard */; };
@@ -74,6 +76,8 @@
 		AB668CE9225A70A70082BEF3 /* reminderTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reminderTableView.swift; sourceTree = "<group>"; };
 		AB668CF0225A73FC0082BEF3 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 		AB668CF5225A8E850082BEF3 /* CBToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBToast.swift; sourceTree = "<group>"; };
+		ABAF897122709F7A00561E3A /* PairedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairedViewController.swift; sourceTree = "<group>"; };
+		ABAF89732270A05A00561E3A /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		ABB721B6225632FA000EF648 /* SHA1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA1.swift; sourceTree = "<group>"; };
 		B3528C33A317B4538FB19DF1 /* Pods-Shield For Dementia PatientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shield For Dementia PatientTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shield For Dementia PatientTests/Pods-Shield For Dementia PatientTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BD96EABA2252D90B0042F236 /* Shield For Dementia Patient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shield For Dementia Patient.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -240,6 +244,8 @@
 				AB668CE7225A702D0082BEF3 /* RemindersViewController.swift */,
 				AB668CE9225A70A70082BEF3 /* reminderTableView.swift */,
 				AB167406226757BC00E397CA /* SignUpTableViewController.swift */,
+				ABAF897122709F7A00561E3A /* PairedViewController.swift */,
+				ABAF89732270A05A00561E3A /* SettingViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -492,6 +498,7 @@
 				AB668CEA225A70A70082BEF3 /* reminderTableView.swift in Sources */,
 				BD96EB402254E07A0042F236 /* ValidationUtils.swift in Sources */,
 				ABB721B7225632FA000EF648 /* SHA1.swift in Sources */,
+				ABAF897222709F7A00561E3A /* PairedViewController.swift in Sources */,
 				18B26E512259BEE0005F024F /* SignUpViewController.swift in Sources */,
 				18B26E572259BEE0005F024F /* LoginNavigationController.swift in Sources */,
 				18B26E5B2259BEFE005F024F /* MemoryTableViewCell.swift in Sources */,
@@ -504,6 +511,7 @@
 				18B26E542259BEE0005F024F /* LoginViewController.swift in Sources */,
 				AB167407226757BC00E397CA /* SignUpTableViewController.swift in Sources */,
 				BD96EAC62252D90C0042F236 /* Shield_For_Dementia.xcdatamodeld in Sources */,
+				ABAF89742270A05A00561E3A /* SettingViewController.swift in Sources */,
 				18B26E5A2259BEFE005F024F /* ReminderTableViewCell.swift in Sources */,
 				AB668CF1225A73FC0082BEF3 /* Reminder.swift in Sources */,
 			);
@@ -695,7 +703,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "monash.Shield-For-Patient";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -714,7 +722,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "monash.Shield-For-Patient";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

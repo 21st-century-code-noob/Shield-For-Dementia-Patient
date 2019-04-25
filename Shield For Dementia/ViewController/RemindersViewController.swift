@@ -88,6 +88,7 @@ class RemindersViewController: UIViewController,UITableViewDataSource,UITableVie
                 DispatchQueue.main.sync{
                     CBToast.hiddenToastAction()
                     self.refreshReminderButton.isEnabled = true
+                    self.reminderTableView.reloadData()
                 }
             }
         }
