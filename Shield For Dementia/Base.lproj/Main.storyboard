@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Biq-33-oqy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Biq-33-oqy">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -188,10 +188,10 @@
             </objects>
             <point key="canvasLocation" x="282.60869565217394" y="441.96428571428572"/>
         </scene>
-        <!--Setting View Controller-->
+        <!--Settings-->
         <scene sceneID="8Ws-zi-6Yu">
             <objects>
-                <viewController id="cr4-mY-LJ6" customClass="SettingViewController" customModule="Shield_For_Dementia_Patient" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Settings" id="cr4-mY-LJ6" customClass="SettingViewController" customModule="Shield_For_Dementia_Patient" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qnD-JX-aqk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -223,37 +223,118 @@
             </objects>
             <point key="canvasLocation" x="268" y="1173"/>
         </scene>
-        <!--Paired View Controller-->
+        <!--Pairing Status-->
         <scene sceneID="Ncw-dh-TpE">
             <objects>
-                <viewController id="dvg-9U-HPv" customClass="PairedViewController" customModule="Shield_For_Dementia_Patient" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Pairing Status" id="dvg-9U-HPv" customClass="PairedViewController" customModule="Shield_For_Dementia_Patient" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vce-9g-iNM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FN2-1y-A0I">
+                                <rect key="frame" x="20" y="111" width="374" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You have been paired." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2e-DH-XS2">
+                                <rect key="frame" x="20" y="323" width="374" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="F71-Nt-naV"/>
                     </view>
+                    <connections>
+                        <outlet property="statusLabel" destination="k2e-DH-XS2" id="z4f-sK-a4U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zOy-mH-iQx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1674" y="1937"/>
+            <point key="canvasLocation" x="1673.913043478261" y="1936.6071428571427"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Pairing Requests-->
         <scene sceneID="JIq-s0-sHM">
             <objects>
-                <tableViewController id="S5V-bg-ERI" sceneMemberID="viewController">
+                <tableViewController title="Pairing Requests" id="S5V-bg-ERI" customClass="PairingTableViewController" customModule="Shield_For_Dementia_Patient" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="xzI-Lg-DoQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="nih-A4-2aJ">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="pairingRequestCell" rowHeight="124" id="nih-A4-2aJ" customClass="RequestTableViewCell" customModule="Shield_For_Dementia_Patient" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="124"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nih-A4-2aJ" id="ApF-5y-mos">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="123.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4C-wM-ZlD">
+                                            <rect key="frame" x="20" y="11" width="374" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="W1x-Xf-rt5"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wants to pair with you" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6g-l8-Rmh">
+                                            <rect key="frame" x="20" y="40" width="374" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="9Eg-Ih-ULe"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1P-aV-aD8">
+                                            <rect key="frame" x="20" y="77" width="182" height="32"/>
+                                            <color key="backgroundColor" red="0.20000000000000001" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="182" id="K6i-bb-8Gj"/>
+                                                <constraint firstAttribute="height" constant="32" id="OIk-xg-VIa"/>
+                                            </constraints>
+                                            <state key="normal" title="Accept">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="acceptButtonPressed:" destination="nih-A4-2aJ" eventType="touchUpInside" id="PqL-8w-WMg"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koS-KI-PAR">
+                                            <rect key="frame" x="210" y="77" width="184" height="32"/>
+                                            <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <state key="normal" title="Decline">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="declineButtonPressed:" destination="nih-A4-2aJ" eventType="touchUpInside" id="Cz2-YZ-YOJ"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="k6g-l8-Rmh" firstAttribute="leading" secondItem="ApF-5y-mos" secondAttribute="leadingMargin" id="3ja-J4-JO1"/>
+                                        <constraint firstItem="k6g-l8-Rmh" firstAttribute="top" secondItem="N4C-wM-ZlD" secondAttribute="bottom" constant="8" id="4UC-L8-4yb"/>
+                                        <constraint firstItem="k6g-l8-Rmh" firstAttribute="trailing" secondItem="ApF-5y-mos" secondAttribute="trailingMargin" id="AKE-ge-esG"/>
+                                        <constraint firstItem="koS-KI-PAR" firstAttribute="firstBaseline" secondItem="A1P-aV-aD8" secondAttribute="baseline" id="OVR-hR-GHG"/>
+                                        <constraint firstItem="koS-KI-PAR" firstAttribute="trailing" secondItem="k6g-l8-Rmh" secondAttribute="trailing" id="Ox3-up-Fpe"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="A1P-aV-aD8" secondAttribute="bottom" constant="4" id="Wmq-Kj-VIQ"/>
+                                        <constraint firstItem="N4C-wM-ZlD" firstAttribute="top" secondItem="ApF-5y-mos" secondAttribute="topMargin" id="Wvf-Gv-GDn"/>
+                                        <constraint firstItem="N4C-wM-ZlD" firstAttribute="leading" secondItem="ApF-5y-mos" secondAttribute="leadingMargin" id="Ybh-IK-sXc"/>
+                                        <constraint firstItem="A1P-aV-aD8" firstAttribute="leading" secondItem="k6g-l8-Rmh" secondAttribute="leading" id="aKX-Cz-TZn"/>
+                                        <constraint firstItem="koS-KI-PAR" firstAttribute="top" secondItem="A1P-aV-aD8" secondAttribute="top" id="cBo-BG-MhF"/>
+                                        <constraint firstItem="N4C-wM-ZlD" firstAttribute="trailing" secondItem="ApF-5y-mos" secondAttribute="trailingMargin" id="dY8-o1-zZl"/>
+                                        <constraint firstItem="koS-KI-PAR" firstAttribute="leading" secondItem="A1P-aV-aD8" secondAttribute="trailing" constant="8" symbolic="YES" id="e9R-l2-yrB"/>
+                                        <constraint firstItem="A1P-aV-aD8" firstAttribute="top" secondItem="k6g-l8-Rmh" secondAttribute="bottom" constant="16" id="rU9-PO-vcb"/>
+                                        <constraint firstItem="koS-KI-PAR" firstAttribute="top" secondItem="ApF-5y-mos" secondAttribute="top" constant="77" id="wyA-Uw-2Lg"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="acceptButton" destination="A1P-aV-aD8" id="seS-RX-iTZ"/>
+                                    <outlet property="declineButton" destination="koS-KI-PAR" id="kRh-1J-p3S"/>
+                                    <outlet property="usernameLabel" destination="N4C-wM-ZlD" id="V4R-z9-uxS"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -261,10 +342,14 @@
                             <outlet property="delegate" destination="S5V-bg-ERI" id="Fhb-gk-jFw"/>
                         </connections>
                     </tableView>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="xOt-Ru-gmc">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <attributedString key="attributedTitle"/>
+                    </refreshControl>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vv4-fH-kRE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1674" y="1173"/>
+            <point key="canvasLocation" x="1673.913043478261" y="1172.5446428571429"/>
         </scene>
         <!--Reminders-->
         <scene sceneID="LUv-Dg-zRf">

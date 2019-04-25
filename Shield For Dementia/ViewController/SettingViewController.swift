@@ -19,12 +19,14 @@ class SettingViewController: UIViewController {
     
     @IBAction func pairingButtonPressed(_ sender: Any) {
         CBToast.showToastAction()
+        pairingButotn.isEnabled = false
         let username = UserDefaults.standard.object(forKey: "username") as? String
         if username != nil{
             let requestURL = "https://sqbk9h1frd.execute-api.us-east-2.amazonaws.com/IEProject/ieproject/carer/checkwhetherpatienthascarer?patientId=" + username!
             let task = URLSession.shared.dataTask(with: URL(string: requestURL)!){ data, response, error in
                 if error != nil{
                     print("error occured")
+                    self.pairingButotn.isEnabled = true
                 }
                 else{
                     let dataString = String(data: data!, encoding: String.Encoding.utf8)
@@ -40,6 +42,7 @@ class SettingViewController: UIViewController {
                                             var username:String = ""
                                             username = pair["carer_id"] as! String
                                             CBToast.hiddenToastAction()
+                                            self.pairingButotn.isEnabled = true
                                             self.performSegue(withIdentifier: "pairedSegue", sender: username)
                                             return
                                         }
@@ -53,6 +56,7 @@ class SettingViewController: UIViewController {
                         }
                         else {
                             CBToast.hiddenToastAction()
+                            self.pairingButotn.isEnabled = true
                             self.performSegue(withIdentifier: "pairingSegue", sender: self)
                         }
                     }

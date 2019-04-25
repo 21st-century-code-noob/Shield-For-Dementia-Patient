@@ -11,12 +11,14 @@ import UIKit
 class PairedViewController: UIViewController {
 
     var username:String = ""
+    @IBOutlet weak var statusLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        statusLabel.text = "You have been paired with " + username + ". To unpair, please use carer app."
         // Do any additional setup after loading the view.
     }
     
+    //ToDo refresh pairing status
 
     /*
     // MARK: - Navigation
