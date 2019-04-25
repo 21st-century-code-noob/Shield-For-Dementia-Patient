@@ -191,7 +191,7 @@ class ViewController: UIViewController {
                 let status = link as! Int
                 if status == 1{
                     
-                    self.displayMessage("You have a new photo in your memory, please check~", "HeHe")
+                    self.displayMessage("You have a new photo in your memory, please check~", "")
                     //The swift guy, Notification tutorial, (youtube, 2016)
                     let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
                     let content = UNMutableNotificationContent()
