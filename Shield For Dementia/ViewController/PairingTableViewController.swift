@@ -72,6 +72,9 @@ class PairingTableViewController: UITableViewController {
                     CBToast.hiddenToastAction()
                     self.toolbarItems?[0].isEnabled = true
                     self.tableView.reloadData()
+                    if self.requests.count == 0{
+                        CBToast.showToast(message: "There are no requests. Please send a pairing request on carer app and refersh.", aLocationStr: "center", aShowTime: 10.0)
+                    }
                 }
             }
         }

@@ -7,12 +7,14 @@
 //
 
 import UIKit
-
+import UserNotifications
 
 class RemindersViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     var reminders: [Reminder] = []
     @IBOutlet weak var reminderTableView: UITableView!
     @IBOutlet weak var refreshReminderButton: UIButton!
+    @IBOutlet weak var notificationSwitch: UISwitch!
+    @IBOutlet weak var setUpNotiButton: UIButton!
     
     
     override func viewDidLoad(){
@@ -58,8 +60,13 @@ class RemindersViewController: UIViewController,UITableViewDataSource,UITableVie
         retrieveReminderData()
     }
     
+    @IBAction func setUpNotiButtonPressed(_ sender: Any) {
+        removeAllNotifications()
+        addNotifications()
+    }
+    
     func retrieveReminderData(){
-        refreshReminderButton.isEnabled = false
+        disableButtons()
         CBToast.showToastAction()
         reminders.removeAll()
         let requestURL = "https://sqbk9h1frd.execute-api.us-east-2.amazonaws.com/IEProject/ieproject/reminder/selectreminderbypatientid?patientId=" + (UserDefaults.standard.object(forKey: "username") as! String)
@@ -87,7 +94,7 @@ class RemindersViewController: UIViewController,UITableViewDataSource,UITableVie
                 }
                 DispatchQueue.main.sync{
                     CBToast.hiddenToastAction()
-                    self.refreshReminderButton.isEnabled = true
+                    self.enableButtons()
                     self.reminderTableView.reloadData()
                 }
             }
@@ -107,4 +114,75 @@ class RemindersViewController: UIViewController,UITableViewDataSource,UITableVie
     }
     */
 
+    func removeAllNotifications(){
+        let notificationCenter = UNUserNotificationCenter.current()
+        notificationCenter.removeAllDeliveredNotifications()
+        notificationCenter.removeAllPendingNotificationRequests()
+    }
+    
+    func addNotifications(){
+        disableButtons()
+        let notificationCenter = UNUserNotificationCenter.current()
+        let currentDate = Date()
+        
+        var timeList:[String] = [String]()
+        
+        for reminder in reminders{
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyyMMdd"
+            let startDate = dateFormatter.date(from: reminder.startDate)
+            let endDate = Calendar.current.date(byAdding: .day, value: reminder.lastTime, to: startDate!)
+            
+            if !timeList.contains(reminder.reminderTime) && (startDate! < currentDate && endDate! > currentDate){
+                timeList.append(reminder.reminderTime)
+            }
+        }
+        
+        for time in timeList{
+            let content = UNMutableNotificationContent()
+            content.title = "Medicine Reminder"
+            content.body = "Tap to check what medicine you need to take at this moment."
+            content.categoryIdentifier = "reminder"
+            content.userInfo = ["username": UserDefaults.standard.value(forKey: "username") as! String]
+            content.sound = UNNotificationSound.default
+            
+            let timeArray = time.components(separatedBy:":")
+            var dateComponents = DateComponents()
+            dateComponents.hour = Int(timeArray[0])
+            dateComponents.minute = Int(timeArray[1])
+            
+            let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+            let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+            notificationCenter.add(request, withCompletionHandler: {error in
+                if error != nil{
+                    CBToast.showToast(message: "There is an error", aLocationStr: "center", aShowTime: 3.0)
+                }
+            })
+        }
+        enableButtons()
+    }
+    
+    
+    @IBAction func notificationSwitchValueChanged(_ sender: Any) {
+        if notificationSwitch.isOn{
+            removeAllNotifications()
+            addNotifications()
+        }
+        else{
+            removeAllNotifications()
+        }
+    }
+    
+    func disableButtons(){
+        setUpNotiButton.isEnabled = false
+        refreshReminderButton.isEnabled = false
+        notificationSwitch.isEnabled = false
+    }
+    
+    func enableButtons(){
+        setUpNotiButton.isEnabled = true
+        refreshReminderButton.isEnabled = true
+        notificationSwitch.isEnabled = true
+    }
+    
 }

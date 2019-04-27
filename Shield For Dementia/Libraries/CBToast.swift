@@ -81,6 +81,7 @@ class CBToast: NSObject {
             toastLabel?.frame = labFrame
             toastLabel?.text = message as String?
             toastLabel?.alpha = 1
+            toastLabel?.lineBreakMode = .byTruncatingTail
             UIView.animate(withDuration: 0.5, delay: aShowTime, animations: {
                 toastLabel?.alpha = 0;
             })
@@ -136,6 +137,7 @@ class CBToast: NSObject {
             let aLabel = toastViewLabel?.viewWithTag(11) as! UILabel
             aLabel.frame = CGRect.init(x: 0, y: 60, width: width, height: height)
             aLabel.text = message as String?
+            aLabel.lineBreakMode = .byTruncatingTail
         } else {
             DispatchQueue.main.async {
                 self.showIndicatorToast(message: message, aLocationStr: aLocationStr, aShowTime: aShowTime)
