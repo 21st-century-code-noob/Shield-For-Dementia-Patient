@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Biq-33-oqy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Biq-33-oqy">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -75,6 +75,12 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EDp-Fk-5wh" customClass="JBKenBurnsView" customModule="Shield_For_Dementia_Patient" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <mapView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="RvL-yB-x7z">
+                                        <rect key="frame" x="0.0" y="84" width="414" height="653"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </mapView>
+                                </subviews>
                                 <color key="backgroundColor" red="0.66666668650000005" green="0.66666668650000005" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nvi-HM-YU0">
@@ -177,6 +183,7 @@
                     <connections>
                         <outlet property="greetingLabel" destination="wlg-nb-hIf" id="ER2-fH-3xj"/>
                         <outlet property="kenBurnsView" destination="EDp-Fk-5wh" id="wLP-oL-rsV"/>
+                        <outlet property="mapView" destination="RvL-yB-x7z" id="fhI-9q-HII"/>
                         <outlet property="nameLabel" destination="hq3-ii-lN7" id="Pvq-PC-vog"/>
                         <outlet property="pauseButton" destination="Rb2-k2-wiL" id="k13-nx-9cY"/>
                         <segue destination="mVt-ic-y1M" kind="unwind" identifier="logoutUnwindSegue" unwindAction="unwindToWelcomeWithSegue:" id="GcW-kg-2Q7"/>
