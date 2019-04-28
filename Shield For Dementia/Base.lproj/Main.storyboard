@@ -76,7 +76,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EDp-Fk-5wh" customClass="JBKenBurnsView" customModule="Shield_For_Dementia_Patient" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <mapView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="RvL-yB-x7z">
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="RvL-yB-x7z">
                                         <rect key="frame" x="0.0" y="84" width="414" height="653"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </mapView>
@@ -130,6 +130,14 @@
                                             <state key="normal" title="Pause"/>
                                             <connections>
                                                 <action selector="pauseTouchUpFrom:" destination="yeM-td-zrE" eventType="touchUpInside" id="u9s-No-Nhm"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1k-Hz-UYW">
+                                            <rect key="frame" x="283" y="12" width="120" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Update SafeZone"/>
+                                            <connections>
+                                                <action selector="updateSafeZoneButton:" destination="yeM-td-zrE" eventType="touchUpInside" id="c6R-Vt-q8f"/>
                                             </connections>
                                         </button>
                                     </subviews>

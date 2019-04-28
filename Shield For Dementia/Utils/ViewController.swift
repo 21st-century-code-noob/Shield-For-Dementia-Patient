@@ -29,6 +29,13 @@ class ViewController: UIViewController{
     var imageNameList = [String]()
     
     
+    @IBAction func updateSafeZoneButton(_ sender: Any) {
+        self.viewWillAppear(true)
+        
+        displayMessage("Safe zones has been updated!", "Success")
+    }
+    
+    
     @IBAction func logOutButtonPressed(_ sender: Any) {
         let alert = UIAlertController(title: "Log Out", message: "Are you sure you want to log out?", preferredStyle: .alert)
         
