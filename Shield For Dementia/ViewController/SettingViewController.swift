@@ -41,6 +41,7 @@ class SettingViewController: UIViewController {
                                         else if pair["status"] as! Int == 1{
                                             var username:String = ""
                                             username = pair["carer_id"] as! String
+                                            
                                             CBToast.hiddenToastAction()
                                             self.pairingButotn.isEnabled = true
                                             self.performSegue(withIdentifier: "pairedSegue", sender: username)
