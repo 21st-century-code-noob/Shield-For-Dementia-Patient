@@ -17,6 +17,7 @@
 		18B26E5B2259BEFE005F024F /* MemoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B26E592259BEFE005F024F /* MemoryTableViewCell.swift */; };
 		18B26E5D2259CD6A005F024F /* JBKenBurnsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B26E5C2259CD69005F024F /* JBKenBurnsView.swift */; };
 		18B26E5F2259CDBF005F024F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B26E5E2259CDBF005F024F /* ViewController.swift */; };
+		18C7CB3222744BAF00C2BCDE /* FencedAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C7CB3122744BAF00C2BCDE /* FencedAnnotation.swift */; };
 		6A7625FB1D6BB8EE6C5D5B04 /* Pods_Shield_For_Dementia_PatientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EBD18B4FDE1AE67F8904EEA /* Pods_Shield_For_Dementia_PatientTests.framework */; };
 		AB167407226757BC00E397CA /* SignUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB167406226757BC00E397CA /* SignUpTableViewController.swift */; };
 		AB668CE8225A702D0082BEF3 /* RemindersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB668CE7225A702D0082BEF3 /* RemindersViewController.swift */; };
@@ -67,6 +68,7 @@
 		18B26E592259BEFE005F024F /* MemoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryTableViewCell.swift; sourceTree = "<group>"; };
 		18B26E5C2259CD69005F024F /* JBKenBurnsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JBKenBurnsView.swift; sourceTree = "<group>"; };
 		18B26E5E2259CDBF005F024F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18C7CB3122744BAF00C2BCDE /* FencedAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FencedAnnotation.swift; sourceTree = "<group>"; };
 		4039E7054C7361586760BFC3 /* Pods_Shield_For_Dementia_Patient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shield_For_Dementia_Patient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42C4EBF907ED2BF25F709DB8 /* Pods-Shield For Dementia PatientUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shield For Dementia PatientUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shield For Dementia PatientUITests/Pods-Shield For Dementia PatientUITests.release.xcconfig"; sourceTree = "<group>"; };
 		553B9366588E60B332F457D3 /* Pods-Shield For Dementia Patient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shield For Dementia Patient.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shield For Dementia Patient/Pods-Shield For Dementia Patient.release.xcconfig"; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 			children = (
 				AB668CF0225A73FC0082BEF3 /* Reminder.swift */,
 				BD237177227189AC00CC38D4 /* Request.swift */,
+				18C7CB3122744BAF00C2BCDE /* FencedAnnotation.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -513,6 +516,7 @@
 				18B26E5B2259BEFE005F024F /* MemoryTableViewCell.swift in Sources */,
 				BD96EABE2252D90C0042F236 /* AppDelegate.swift in Sources */,
 				BD237176227185BC00CC38D4 /* RequestTableViewCell.swift in Sources */,
+				18C7CB3222744BAF00C2BCDE /* FencedAnnotation.swift in Sources */,
 				18B26E5D2259CD6A005F024F /* JBKenBurnsView.swift in Sources */,
 				AB668CF6225A8E850082BEF3 /* CBToast.swift in Sources */,
 				18B26E532259BEE0005F024F /* WelcomeViewController.swift in Sources */,

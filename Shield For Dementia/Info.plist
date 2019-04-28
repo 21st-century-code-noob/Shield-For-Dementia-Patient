@@ -3,7 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>NSCameraUsageDescription</key>
-	<string>We need to do this</string>
+	<string>$(PRODUCT_NAME) camera usage</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>$(PRODUCT_NAME) photo library</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>The application uses this information to show you your location</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>The application uses this information to show you your location</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>The application uses this information to show you your location</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$</string>
 	<key>CFBundleDisplayName</key>

@@ -2,6 +2,18 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:testcoles.gpx">
+   </FileRef>
+   <FileRef
+      location = "group:test3.gpx">
+   </FileRef>
+   <FileRef
+      location = "group:test2.gpx">
+   </FileRef>
+   <FileRef
+      location = "group:test1.gpx">
+   </FileRef>
+   <FileRef
       location = "group:Shield For Dementia Patient.xcodeproj">
    </FileRef>
    <FileRef
