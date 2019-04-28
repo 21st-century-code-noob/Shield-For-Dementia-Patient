@@ -32,7 +32,6 @@
 		BD237178227189AC00CC38D4 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD237177227189AC00CC38D4 /* Request.swift */; };
 		BD96EABE2252D90C0042F236 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96EABD2252D90C0042F236 /* AppDelegate.swift */; };
 		BD96EAC32252D90C0042F236 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD96EAC12252D90C0042F236 /* Main.storyboard */; };
-		BD96EAC62252D90C0042F236 /* Shield_For_Dementia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD96EAC42252D90C0042F236 /* Shield_For_Dementia.xcdatamodeld */; };
 		BD96EAC82252D90D0042F236 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD96EAC72252D90D0042F236 /* Assets.xcassets */; };
 		BD96EACB2252D90D0042F236 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD96EAC92252D90D0042F236 /* LaunchScreen.storyboard */; };
 		BD96EAD62252D90D0042F236 /* Shield_For_DementiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96EAD52252D90D0042F236 /* Shield_For_DementiaTests.swift */; };
@@ -91,7 +90,6 @@
 		BD96EABA2252D90B0042F236 /* Shield For Dementia Patient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shield For Dementia Patient.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD96EABD2252D90C0042F236 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD96EAC22252D90C0042F236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BD96EAC52252D90C0042F236 /* Shield_For_Dementia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shield_For_Dementia.xcdatamodel; sourceTree = "<group>"; };
 		BD96EAC72252D90D0042F236 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD96EACA2252D90D0042F236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD96EACC2252D90D0042F236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -222,7 +220,6 @@
 				BD96EAC72252D90D0042F236 /* Assets.xcassets */,
 				BD96EAC92252D90D0042F236 /* LaunchScreen.storyboard */,
 				BD96EACC2252D90D0042F236 /* Info.plist */,
-				BD96EAC42252D90C0042F236 /* Shield_For_Dementia.xcdatamodeld */,
 			);
 			path = "Shield For Dementia";
 			sourceTree = "<group>";
@@ -526,7 +523,6 @@
 				BD237178227189AC00CC38D4 /* Request.swift in Sources */,
 				18B26E542259BEE0005F024F /* LoginViewController.swift in Sources */,
 				AB167407226757BC00E397CA /* SignUpTableViewController.swift in Sources */,
-				BD96EAC62252D90C0042F236 /* Shield_For_Dementia.xcdatamodeld in Sources */,
 				ABAF89742270A05A00561E3A /* SettingViewController.swift in Sources */,
 				18B26E5A2259BEFE005F024F /* ReminderTableViewCell.swift in Sources */,
 				AB668CF1225A73FC0082BEF3 /* Reminder.swift in Sources */,
@@ -864,19 +860,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		BD96EAC42252D90C0042F236 /* Shield_For_Dementia.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				BD96EAC52252D90C0042F236 /* Shield_For_Dementia.xcdatamodel */,
-			);
-			currentVersion = BD96EAC52252D90C0042F236 /* Shield_For_Dementia.xcdatamodel */;
-			path = Shield_For_Dementia.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = BD96EAB22252D90B0042F236 /* Project object */;
 }
