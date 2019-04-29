@@ -309,18 +309,18 @@ class ViewController: UIViewController{
                                                                     newAnnotation.subtitle = "Familiarity: " + newAnnotation.subtitle!
                                                                     self.addAnnotation(annotation: newAnnotation)
                                                                     self.locationList.append(newAnnotation)
-                                                                    let geoLocation: CLCircularRegion? = CLCircularRegion(center: newAnnotation.coordinate, radius: 30, identifier: newAnnotation.title!)
+                                                                    var geoLocation: CLCircularRegion? = CLCircularRegion(center: newAnnotation.coordinate, radius: 75, identifier: newAnnotation.title!)
                                                                     //geoLocation!.notifyOnExit = true
                                                                     geoLocation!.notifyOnEntry = true
                                                                     
                                                                     let circle: MKCircle = MKCircle.init(center: newAnnotation.coordinate, radius: 75)
                                                                     
                                                                     if(newAnnotation.subtitle == "Familiarity: Low"){
-                                                                        
+                                                                        geoLocation = CLCircularRegion(center: newAnnotation.coordinate, radius: 50, identifier: newAnnotation.title!)
                                                                         circle.setValue(50, forKey: "radius")
                                                                     }
                                                                     else if(newAnnotation.subtitle == "Familiarity: High"){
-                                                                        
+                                                                        geoLocation = CLCircularRegion(center: newAnnotation.coordinate, radius: 100, identifier: newAnnotation.title!)
                                                                         circle.setValue(100, forKey: "radius")
                                                                     }
                                                                     
@@ -558,24 +558,28 @@ extension ViewController: CLLocationManagerDelegate{
     
     @objc func counterFor10Minutes(){
         self.timeLimit -= 1
-        if(self.timeLimit == 0){
+        if(self.timeLimit == 0 && !timerActual.isValid){
             timerOnExit.invalidate()
             var patientId = UserDefaults.standard.value(forKey: "username") as! String
             self.databaseRef.child("users").child(patientId).child("notificationWhenTimerIsUp").updateChildValues(["destination": "Unknown",
                                                                                                                    "time limit": "10 mins",
                                                                                                                    "notification": 1])
         }
+        if(self.timeLimit == 0){
+            timerOnExit.invalidate()
+        }
         
     }
     
     @objc func counterForReal(){
         self.timeLimitForActual -= 1
+        
         if(self.timeLimitForActual == 0){
             timerActual.invalidate()
             var patientId = UserDefaults.standard.value(forKey: "username") as! String
             self.databaseRef.child("users").child(patientId).child("notificationWhenTimerIsUp").updateChildValues(["destination": liveDestination,
                                                                                                                    "time limit": liveTime,
-                                                                                                                   "notification": 1])
+                                                                                                            "notification": 1])
         }
     }
     
@@ -652,9 +656,10 @@ extension ViewController: CLLocationManagerDelegate{
                         }
                         DispatchQueue.main.sync{
                             if(v){
+                                self.timerOnExit.invalidate()
                                 self.timerActual = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.counterForReal), userInfo: nil, repeats: true)
                                 
-                                var bgTask = UIBackgroundTaskIdentifier(rawValue: 3)
+                                var bgTask = UIBackgroundTaskIdentifier(rawValue: 2)
                                 bgTask = UIApplication.shared.beginBackgroundTask(expirationHandler: {
                                     UIApplication.shared.endBackgroundTask(bgTask)
                                 })
