@@ -37,6 +37,7 @@
 		BD96EAD62252D90D0042F236 /* Shield_For_DementiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96EAD52252D90D0042F236 /* Shield_For_DementiaTests.swift */; };
 		BD96EAE12252D90D0042F236 /* Shield_For_DementiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96EAE02252D90D0042F236 /* Shield_For_DementiaUITests.swift */; };
 		BD96EB402254E07A0042F236 /* ValidationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96EB3F2254E07A0042F236 /* ValidationUtils.swift */; };
+		BDCB265922769CDD00737DA7 /* Shield_For_Dementia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDCB265722769CDD00737DA7 /* Shield_For_Dementia.xcdatamodeld */; };
 		DC7FA20AE9F071F1A5A43395 /* Pods_Shield_For_Dementia_Patient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4039E7054C7361586760BFC3 /* Pods_Shield_For_Dementia_Patient.framework */; };
 /* End PBXBuildFile section */
 
@@ -102,6 +103,7 @@
 		BD96EB3F2254E07A0042F236 /* ValidationUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationUtils.swift; sourceTree = "<group>"; };
 		BD96EB412254E48D0042F236 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		BD96EB422254E48D0042F236 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		BDCB265822769CDD00737DA7 /* Shield_For_Dementia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shield_For_Dementia.xcdatamodel; sourceTree = "<group>"; };
 		FD6157F56DFFC59EA73791E0 /* Pods-Shield For Dementia PatientUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shield For Dementia PatientUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shield For Dementia PatientUITests/Pods-Shield For Dementia PatientUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -220,6 +222,7 @@
 				BD96EAC72252D90D0042F236 /* Assets.xcassets */,
 				BD96EAC92252D90D0042F236 /* LaunchScreen.storyboard */,
 				BD96EACC2252D90D0042F236 /* Info.plist */,
+				BDCB265722769CDD00737DA7 /* Shield_For_Dementia.xcdatamodeld */,
 			);
 			path = "Shield For Dementia";
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB668CEA225A70A70082BEF3 /* reminderTableView.swift in Sources */,
+				BDCB265922769CDD00737DA7 /* Shield_For_Dementia.xcdatamodeld in Sources */,
 				BD96EB402254E07A0042F236 /* ValidationUtils.swift in Sources */,
 				ABB721B7225632FA000EF648 /* SHA1.swift in Sources */,
 				ABAF897222709F7A00561E3A /* PairedViewController.swift in Sources */,
@@ -860,6 +864,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BDCB265722769CDD00737DA7 /* Shield_For_Dementia.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BDCB265822769CDD00737DA7 /* Shield_For_Dementia.xcdatamodel */,
+			);
+			currentVersion = BDCB265822769CDD00737DA7 /* Shield_For_Dementia.xcdatamodel */;
+			path = Shield_For_Dementia.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BD96EAB22252D90B0042F236 /* Project object */;
 }
