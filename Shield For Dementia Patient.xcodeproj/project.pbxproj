@@ -22,7 +22,6 @@
 		AB167407226757BC00E397CA /* SignUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB167406226757BC00E397CA /* SignUpTableViewController.swift */; };
 		AB668CE8225A702D0082BEF3 /* RemindersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB668CE7225A702D0082BEF3 /* RemindersViewController.swift */; };
 		AB668CEA225A70A70082BEF3 /* reminderTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB668CE9225A70A70082BEF3 /* reminderTableView.swift */; };
-		AB668CF1225A73FC0082BEF3 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB668CF0225A73FC0082BEF3 /* Reminder.swift */; };
 		AB668CF6225A8E850082BEF3 /* CBToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB668CF5225A8E850082BEF3 /* CBToast.swift */; };
 		ABAF897222709F7A00561E3A /* PairedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAF897122709F7A00561E3A /* PairedViewController.swift */; };
 		ABAF89742270A05A00561E3A /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAF89732270A05A00561E3A /* SettingViewController.swift */; };
@@ -79,7 +78,6 @@
 		AB167406226757BC00E397CA /* SignUpTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTableViewController.swift; sourceTree = "<group>"; };
 		AB668CE7225A702D0082BEF3 /* RemindersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersViewController.swift; sourceTree = "<group>"; };
 		AB668CE9225A70A70082BEF3 /* reminderTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reminderTableView.swift; sourceTree = "<group>"; };
-		AB668CF0225A73FC0082BEF3 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 		AB668CF5225A8E850082BEF3 /* CBToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBToast.swift; sourceTree = "<group>"; };
 		ABAF897122709F7A00561E3A /* PairedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairedViewController.swift; sourceTree = "<group>"; };
 		ABAF89732270A05A00561E3A /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -161,7 +159,6 @@
 		AB668CEF225A73EB0082BEF3 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				AB668CF0225A73FC0082BEF3 /* Reminder.swift */,
 				BD237177227189AC00CC38D4 /* Request.swift */,
 				18C7CB3122744BAF00C2BCDE /* FencedAnnotation.swift */,
 			);
@@ -529,7 +526,6 @@
 				AB167407226757BC00E397CA /* SignUpTableViewController.swift in Sources */,
 				ABAF89742270A05A00561E3A /* SettingViewController.swift in Sources */,
 				18B26E5A2259BEFE005F024F /* ReminderTableViewCell.swift in Sources */,
-				AB668CF1225A73FC0082BEF3 /* Reminder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

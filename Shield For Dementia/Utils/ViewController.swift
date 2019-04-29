@@ -21,7 +21,6 @@ class ViewController: UIViewController{
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var pauseButton: UIButton!
     var canRetrieveData: Bool = true
-    var reminders:[Reminder] = []
     var databaseRef = Database.database().reference()
     var storageRef = Storage.storage()
     var imageList = [UIImage]()
@@ -248,12 +247,6 @@ class ViewController: UIViewController{
         geoLocationList = []
         
 
-        if canRetrieveData{
-            retrieveReminderData()
-            canRetrieveData = false
-            //set delay to avoid to frequent data retrieving.
-            Timer.scheduledTimer(timeInterval:3, target: self, selector: #selector(setCanRetrieveData), userInfo: nil, repeats: false)
-        }
         if (self.imageList.count != 0){
             self.kenBurnsView.animateWithImages(self.imageList, imageAnimationDuration: 10, initialDelay: 0, shouldLoop: true, randomFirstImage: true)
         }
@@ -492,51 +485,11 @@ class ViewController: UIViewController{
         })
     }
     
-    //handles data retrieving
-    func retrieveReminderData(){
-        CBToast.showToastAction()
-        reminders.removeAll()
-        let requestURL = "https://sqbk9h1frd.execute-api.us-east-2.amazonaws.com/IEProject/ieproject/reminder/selectreminderbypatientid?patientId=" + (UserDefaults.standard.object(forKey: "username") as! String)
-        let task = URLSession.shared.dataTask(with: URL(string: requestURL)!){ data, response, error in
-            if error != nil{
-                CBToast.hiddenToastAction()
-                print("error occured")
-            }
-            else{
-                do {
-                    let json = try JSONSerialization.jsonObject(with: data!) as? [Any]
-                    for item in json!{
-                        let reminderJson = item as? [String: Any]
-                        let reminderId = reminderJson!["reminder_id"] as! Int
-                        let reminderTime = reminderJson!["time"] as! String
-                        let drugName = reminderJson!["drug_name"] as! String
-                        let startDate = reminderJson!["dates"] as! String
-                        let lastTime = reminderJson!["lasts"] as! Int
-                        let reminder: Reminder = Reminder(reminderId: reminderId, reminderTime: reminderTime, drugName: drugName, startDate: startDate, lastTime: lastTime)
-                        self.reminders.append(reminder)
-                    }
-                }
-                catch{
-                    print(error)
-                }
-                DispatchQueue.main.sync{
-                    CBToast.hiddenToastAction()
-                }
-            }
-        }
-        task.resume()
-    }
-    
     //going to reminder
     @IBAction func remindersButtonPressed(_ sender: Any) {
-        performSegue(withIdentifier: "reminderSegue", sender: reminders)
+        performSegue(withIdentifier: "reminderSegue", sender: nil)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let vc = segue.destination as? RemindersViewController, let reminderToSend = sender as? [Reminder] {
-            vc.reminders = reminderToSend
-        }
-    }
     
     
     @objc func uploadUserLocation(){

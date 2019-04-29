@@ -8,37 +8,76 @@
 
 import UIKit
 import UserNotifications
-
-class RemindersViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
-    var reminders: [Reminder] = []
+import CoreData
+class RemindersViewController: UIViewController,UITableViewDataSource,UITableViewDelegate,UNUserNotificationCenterDelegate {
+    var reminders = [NSManagedObject]()
+    
     @IBOutlet weak var reminderTableView: UITableView!
     @IBOutlet weak var refreshReminderButton: UIButton!
     @IBOutlet weak var notificationSwitch: UISwitch!
     @IBOutlet weak var setUpNotiButton: UIButton!
     
+    override func viewWillAppear(_ animated: Bool) {
+ 
+    }
     
     override func viewDidLoad(){
         super.viewDidLoad()
         reminderTableView.delegate = self
         reminderTableView.dataSource = self
+        loadLocalReminderFromCoreData()
+        reminderTableView.reloadData()
+        
     }
-
+    
+    func loadLocalReminderFromCoreData(){
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{return}
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Reminder")
+        
+        do{
+            let result = try managedContext.fetch(fetchRequest)
+            for data in result as! [NSManagedObject]{
+                reminders.append(data)
+            }
+        }
+        catch{
+            print("error")
+        }
+    }
+    
+    func removeAllCoreData(){
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{return}
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let deleteFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Reminder")
+        let deleteRequest = NSBatchDeleteRequest(fetchRequest: deleteFetch)
+        
+        do {
+            try managedContext.execute(deleteRequest)
+            try managedContext.save()
+        } catch {
+            print ("There was an error")
+        }
+        
+        
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return reminders.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reminderCell", for: indexPath) as! ReminderTableViewCell
-        cell.medicineNameLabel.text = reminders[indexPath.row].drugName
-        cell.timeLabel.text = reminders[indexPath.row].reminderTime
+        cell.medicineNameLabel.text = reminders[indexPath.row].value(forKey: "drugName") as? String
+        cell.timeLabel.text = reminders[indexPath.row].value(forKey: "reminderTime") as? String
         
-        let strDate = reminders[indexPath.row].startDate
-        let lastDays = reminders[indexPath.row].lastTime
+        let strDate = reminders[indexPath.row].value(forKey: "startDate") as? String
+        let lastDays = reminders[indexPath.row].value(forKey: "lastTime") as? Int
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyyMMdd"
-        let startDate = dateFormatter.date(from: strDate)
-        let endDate = Calendar.current.date(byAdding: .day, value: lastDays, to: startDate!)
+        let startDate = dateFormatter.date(from: strDate!)
+        let endDate = Calendar.current.date(byAdding: .day, value: lastDays!, to: startDate!)
         let currentDate = Date()
         
         if startDate! > currentDate{
@@ -69,6 +108,12 @@ class RemindersViewController: UIViewController,UITableViewDataSource,UITableVie
         disableButtons()
         CBToast.showToastAction()
         reminders.removeAll()
+        removeAllCoreData()
+        
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{return}
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let reminderEntity = NSEntityDescription.entity(forEntityName: "Reminder", in: managedContext)!
+        
         let requestURL = "https://sqbk9h1frd.execute-api.us-east-2.amazonaws.com/IEProject/ieproject/reminder/selectreminderbypatientid?patientId=" + (UserDefaults.standard.object(forKey: "username") as! String)
         let task = URLSession.shared.dataTask(with: URL(string: requestURL)!){ data, response, error in
             if error != nil{
@@ -85,9 +130,22 @@ class RemindersViewController: UIViewController,UITableViewDataSource,UITableVie
                         let drugName = reminderJson!["drug_name"] as! String
                         let startDate = reminderJson!["dates"] as! String
                         let lastTime = reminderJson!["lasts"] as! Int
-                        let reminder: Reminder = Reminder(reminderId: reminderId, reminderTime: reminderTime, drugName: drugName, startDate: startDate, lastTime: lastTime)
+                        
+                        let reminder = NSManagedObject(entity: reminderEntity, insertInto: managedContext)
+                        reminder.setValue(reminderId, forKey: "reminderId")
+                        reminder.setValue(reminderTime, forKey: "reminderTime")
+                        reminder.setValue(drugName, forKey: "drugName")
+                        reminder.setValue(startDate, forKey: "startDate")
+                        reminder.setValue(lastTime, forKey: "lastTime")
+                        
                         self.reminders.append(reminder)
                     }
+                }
+                catch{
+                    print(error)
+                }
+                do{
+                    try managedContext.save()
                 }
                 catch{
                     print(error)
@@ -102,18 +160,18 @@ class RemindersViewController: UIViewController,UITableViewDataSource,UITableVie
         task.resume()
     }
     
-
-
+    
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
     func removeAllNotifications(){
         let notificationCenter = UNUserNotificationCenter.current()
         notificationCenter.removeAllDeliveredNotifications()
@@ -130,21 +188,22 @@ class RemindersViewController: UIViewController,UITableViewDataSource,UITableVie
         for reminder in reminders{
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "yyyyMMdd"
-            let startDate = dateFormatter.date(from: reminder.startDate)
-            let endDate = Calendar.current.date(byAdding: .day, value: reminder.lastTime, to: startDate!)
+            let startDate = dateFormatter.date(from: reminder.value(forKey: "startDate") as! String)
+            let endDate = Calendar.current.date(byAdding: .day, value: reminder.value(forKey: "lastTime") as! Int, to: startDate!)
             
-            if !timeList.contains(reminder.reminderTime) && (startDate! < currentDate && endDate! > currentDate){
-                timeList.append(reminder.reminderTime)
+            if !timeList.contains(reminder.value(forKey: "reminderTime") as! String) && (startDate! < currentDate && endDate! > currentDate){
+                timeList.append(reminder.value(forKey: "reminderTime") as! String)
             }
         }
         
         for time in timeList{
             let content = UNMutableNotificationContent()
-            content.title = "Medicine Reminder"
-            content.body = "Tap to check what medicine you need to take at this moment."
+            content.title = "Remember to take medicine at " + time
+            content.body = "Please check medicine reminder list in the app."
             content.categoryIdentifier = "reminder"
-            content.userInfo = ["username": UserDefaults.standard.value(forKey: "username") as! String]
+            content.userInfo = ["reminderTime": time]
             content.sound = UNNotificationSound.default
+            
             
             let timeArray = time.components(separatedBy:":")
             var dateComponents = DateComponents()
@@ -152,10 +211,13 @@ class RemindersViewController: UIViewController,UITableViewDataSource,UITableVie
             dateComponents.minute = Int(timeArray[1])
             
             let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
-            let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+            let request = UNNotificationRequest(identifier: time, content: content, trigger: trigger)
             notificationCenter.add(request, withCompletionHandler: {error in
                 if error != nil{
                     CBToast.showToast(message: "There is an error", aLocationStr: "center", aShowTime: 3.0)
+                }
+                else{
+                    CBToast.showToast(message: "Successfully set up notifications", aLocationStr: "center", aShowTime: 5.0)
                 }
             })
         }
@@ -184,5 +246,8 @@ class RemindersViewController: UIViewController,UITableViewDataSource,UITableVie
         refreshReminderButton.isEnabled = true
         notificationSwitch.isEnabled = true
     }
+    
+    
+    
     
 }
