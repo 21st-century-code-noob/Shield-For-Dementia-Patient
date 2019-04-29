@@ -36,6 +36,11 @@ class ViewController: UIViewController{
     
     
     @IBAction func logOutButtonPressed(_ sender: Any) {
+        
+        timer.invalidate()
+        timerOnExit.invalidate()
+        timerActual.invalidate()
+        
         let alert = UIAlertController(title: "Log Out", message: "Are you sure you want to log out?", preferredStyle: .alert)
         
         // Create OK button with action handler
@@ -115,7 +120,7 @@ class ViewController: UIViewController{
     override func viewDidLoad() {
         
         mapView.delegate = self
-        var timer = Timer.scheduledTimer(timeInterval: 10.0,
+        timer = Timer.scheduledTimer(timeInterval: 10.0,
                                                            target: self,
                                                            selector: #selector(self.uploadUserLocation),
                                                            userInfo: nil,
@@ -510,6 +515,7 @@ class ViewController: UIViewController{
     var geoLocation: CLCircularRegion?
     var locationManger: CLLocationManager = CLLocationManager()
     
+    var timer = Timer()
     var timeLimit = 10 * 60
     var timerOnExit = Timer()
     var timeLimitForActual = 0
