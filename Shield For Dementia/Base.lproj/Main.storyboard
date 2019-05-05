@@ -145,12 +145,6 @@
                                 </constraints>
                                 <blurEffect style="extraLight"/>
                             </visualEffectView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="16v-HK-3cO">
-                                <rect key="frame" x="186" y="690" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alex?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hq3-ii-lN7">
                                 <rect key="frame" x="50" y="157.5" width="314" height="29"/>
                                 <constraints>
@@ -168,7 +162,6 @@
                             <constraint firstItem="wlg-nb-hIf" firstAttribute="top" secondItem="tyR-Rg-kh7" secondAttribute="top" constant="23" id="InV-bA-Z9S"/>
                             <constraint firstAttribute="bottom" secondItem="Nvi-HM-YU0" secondAttribute="bottom" id="JOv-KL-eru"/>
                             <constraint firstItem="RvL-yB-x7z" firstAttribute="top" secondItem="tyR-Rg-kh7" secondAttribute="top" id="KIf-cW-tql"/>
-                            <constraint firstItem="hq3-ii-lN7" firstAttribute="centerX" secondItem="16v-HK-3cO" secondAttribute="centerX" id="Nb5-Iq-xmy"/>
                             <constraint firstItem="Nvi-HM-YU0" firstAttribute="leading" secondItem="PkG-VZ-7n7" secondAttribute="leading" constant="-2" id="RZS-Xe-4Ng"/>
                             <constraint firstItem="hq3-ii-lN7" firstAttribute="centerX" secondItem="RvL-yB-x7z" secondAttribute="centerX" id="YrP-BJ-ccy"/>
                             <constraint firstItem="hq3-ii-lN7" firstAttribute="centerX" secondItem="Nvi-HM-YU0" secondAttribute="centerX" id="ab5-aQ-86f"/>
@@ -176,12 +169,10 @@
                             <constraint firstItem="EDp-Fk-5wh" firstAttribute="bottom" secondItem="Nvi-HM-YU0" secondAttribute="bottom" id="c6B-NN-sFA"/>
                             <constraint firstItem="RvL-yB-x7z" firstAttribute="leading" secondItem="EDp-Fk-5wh" secondAttribute="leading" id="eqq-QI-Iw5"/>
                             <constraint firstItem="EDp-Fk-5wh" firstAttribute="top" secondItem="PkG-VZ-7n7" secondAttribute="top" id="gtF-ex-ROb"/>
-                            <constraint firstItem="16v-HK-3cO" firstAttribute="centerX" secondItem="RvL-yB-x7z" secondAttribute="centerX" id="irH-1b-If0"/>
                             <constraint firstItem="wlg-nb-hIf" firstAttribute="leading" secondItem="hq3-ii-lN7" secondAttribute="leading" id="lH6-D3-GoR"/>
                             <constraint firstItem="wlg-nb-hIf" firstAttribute="centerX" secondItem="RvL-yB-x7z" secondAttribute="centerX" id="pNK-Kx-Qu2"/>
                             <constraint firstAttribute="trailing" secondItem="Nvi-HM-YU0" secondAttribute="trailing" constant="-2" id="wcf-m6-mcl"/>
                             <constraint firstItem="Nvi-HM-YU0" firstAttribute="top" secondItem="RvL-yB-x7z" secondAttribute="bottom" constant="46" id="xa1-5P-SN6"/>
-                            <constraint firstItem="Nvi-HM-YU0" firstAttribute="top" secondItem="16v-HK-3cO" secondAttribute="bottom" constant="65" id="yYI-Rp-N6R"/>
                             <constraint firstItem="EDp-Fk-5wh" firstAttribute="leading" secondItem="PkG-VZ-7n7" secondAttribute="leading" id="ydS-Cw-jOO"/>
                             <constraint firstItem="EDp-Fk-5wh" firstAttribute="centerX" secondItem="Nvi-HM-YU0" secondAttribute="centerX" id="zfU-D2-fTE"/>
                         </constraints>

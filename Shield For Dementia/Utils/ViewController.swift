@@ -165,27 +165,23 @@ class ViewController: UIViewController{
             guard let value = snapshot.value as? NSDictionary else{
                 return
             }
-                
+            self.imageList = []
             for(name, link) in value{
                 let url = link as! String
                 let fileName = name as! String
                 
-                if(!self.imagePathList.contains(url)){
-                    
-                    self.imagePathList.append(url)
                     if self.localFileExists(fileName: fileName){
                         if var image = self.loadImageData(fileName: fileName){
                             
                             image = self.fixOrientation(img : image)
                             self.imageList.append(image)
                             self.imageNameList.append(fileName)
-                            //self.collectionView?.reloadSections([0])
                         }
                     }
                     else{
                         self.storageRef.reference(forURL: url).getData(maxSize: 5 * 1024 * 1024, completion: {(data, error) in
-                            if let error = error{
-                                print(error.localizedDescription)
+                            if error != nil{
+                                print(error!.localizedDescription)
                             }
                             else{
                                 var image = UIImage(data: data!)!
@@ -193,18 +189,19 @@ class ViewController: UIViewController{
                                 image = self.fixOrientation(img : image)
                                 self.imageList.append(image)
                                 self.imageNameList.append(fileName)
+                            }
+                            if(self.kenBurnsView.isAnimating){
                                 self.kenBurnsView.animateWithImages(self.imageList, imageAnimationDuration: 10, initialDelay: 0, shouldLoop: true, randomFirstImage: true)
-                                //self.collectionView?.reloadSections([0])
                             }
                         })
                     }
-                }
+
             }
             if (self.imageList.count != 0){
                  self.kenBurnsView.animateWithImages(self.imageList, imageAnimationDuration: 10, initialDelay: 0, shouldLoop: true, randomFirstImage: true)
             }
-           
-  
+
+
         })
         
         databaseRef.child("users").child("\(userID)").child("notifications").observe(.value, with:{(snapshot) in
