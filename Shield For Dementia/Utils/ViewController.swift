@@ -37,10 +37,7 @@ class ViewController: UIViewController{
     
     @IBAction func logOutButtonPressed(_ sender: Any) {
         
-        timer.invalidate()
-        timerOnExit.invalidate()
-        timerActual.invalidate()
-        
+
         let alert = UIAlertController(title: "Log Out", message: "Are you sure you want to log out?", preferredStyle: .alert)
         
         // Create OK button with action handler
@@ -49,6 +46,10 @@ class ViewController: UIViewController{
             UserDefaults.standard.removeObject(forKey: "username")
             UserDefaults.standard.removeObject(forKey: "password")
             UserDefaults.standard.removeObject(forKey: "lastName")
+            self.removeAllNotifications()
+            self.timer.invalidate()
+            self.timerOnExit.invalidate()
+            self.timerActual.invalidate()
             self.performSegue(withIdentifier: "logoutUnwindSegue", sender: self)
         })
         
@@ -750,5 +751,11 @@ extension ViewController: MKMapViewDelegate{
         
         annotationView?.canShowCallout = true
         return annotationView
+    }
+    
+    func removeAllNotifications(){
+        let notificationCenter = UNUserNotificationCenter.current()
+        notificationCenter.removeAllDeliveredNotifications()
+        notificationCenter.removeAllPendingNotificationRequests()
     }
 }
