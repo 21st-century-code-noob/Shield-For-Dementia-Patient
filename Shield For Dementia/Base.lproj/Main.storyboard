@@ -36,10 +36,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uB1-Sj-U5i">
-                                <rect key="frame" x="33" y="760" width="348" height="41"/>
+                                <rect key="frame" x="20" y="802" width="374" height="40"/>
                                 <color key="backgroundColor" red="0.89541948599999999" green="0.65343643689999997" blue="0.33297074339999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="41" id="UEL-h5-DVZ"/>
+                                    <constraint firstAttribute="height" constant="40" id="UEL-h5-DVZ"/>
                                 </constraints>
                                 <color key="tintColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
                                 <state key="normal" title="Continue"/>
@@ -49,9 +49,9 @@
                             </button>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="PAo-Xu-rXX" firstAttribute="trailing" secondItem="uB1-Sj-U5i" secondAttribute="trailing" constant="33" id="bsv-GC-zi8"/>
-                            <constraint firstItem="uB1-Sj-U5i" firstAttribute="leading" secondItem="PAo-Xu-rXX" secondAttribute="leading" constant="33" id="rCE-vE-Zkr"/>
-                            <constraint firstItem="PAo-Xu-rXX" firstAttribute="bottom" secondItem="uB1-Sj-U5i" secondAttribute="bottom" constant="61" id="v5M-Gx-o9B"/>
+                            <constraint firstItem="PAo-Xu-rXX" firstAttribute="trailing" secondItem="uB1-Sj-U5i" secondAttribute="trailing" constant="20" id="bsv-GC-zi8"/>
+                            <constraint firstItem="uB1-Sj-U5i" firstAttribute="leading" secondItem="PAo-Xu-rXX" secondAttribute="leading" constant="20" id="rCE-vE-Zkr"/>
+                            <constraint firstItem="PAo-Xu-rXX" firstAttribute="bottom" secondItem="uB1-Sj-U5i" secondAttribute="bottom" constant="20" id="v5M-Gx-o9B"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PAo-Xu-rXX"/>
                     </view>
@@ -1003,7 +1003,7 @@ please log in or sign up</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="CLE-Xd-58i"/>
+        <segue reference="toa-M0-1l5"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.89541948599999999" green="0.65343643689999997" blue="0.33297074339999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
 </document>
