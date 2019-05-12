@@ -232,6 +232,7 @@ class RemindersViewController: UIViewController,UITableViewDataSource,UITableVie
         }
         else{
             removeAllNotifications()
+            setUpNotiButton.isEnabled = false
         }
     }
     
@@ -246,7 +247,6 @@ class RemindersViewController: UIViewController,UITableViewDataSource,UITableVie
         refreshReminderButton.isEnabled = true
         notificationSwitch.isEnabled = true
     }
-    
     
     
     

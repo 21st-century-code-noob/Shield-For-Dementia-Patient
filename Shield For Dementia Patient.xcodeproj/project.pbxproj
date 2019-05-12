@@ -36,6 +36,7 @@
 		BD96EAD62252D90D0042F236 /* Shield_For_DementiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96EAD52252D90D0042F236 /* Shield_For_DementiaTests.swift */; };
 		BD96EAE12252D90D0042F236 /* Shield_For_DementiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96EAE02252D90D0042F236 /* Shield_For_DementiaUITests.swift */; };
 		BD96EB402254E07A0042F236 /* ValidationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD96EB3F2254E07A0042F236 /* ValidationUtils.swift */; };
+		BDBCAD032281872200E8172A /* CurrentReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBCAD022281872200E8172A /* CurrentReminderViewController.swift */; };
 		BDCB265922769CDD00737DA7 /* Shield_For_Dementia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDCB265722769CDD00737DA7 /* Shield_For_Dementia.xcdatamodeld */; };
 		DC7FA20AE9F071F1A5A43395 /* Pods_Shield_For_Dementia_Patient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4039E7054C7361586760BFC3 /* Pods_Shield_For_Dementia_Patient.framework */; };
 /* End PBXBuildFile section */
@@ -87,7 +88,7 @@
 		BD237175227185BC00CC38D4 /* RequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTableViewCell.swift; sourceTree = "<group>"; };
 		BD237177227189AC00CC38D4 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		BD96EABA2252D90B0042F236 /* Shield For Dementia Patient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shield For Dementia Patient.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD96EABD2252D90C0042F236 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BD96EABD2252D90C0042F236 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		BD96EAC22252D90C0042F236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD96EAC72252D90D0042F236 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD96EACA2252D90D0042F236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,6 +102,8 @@
 		BD96EB3F2254E07A0042F236 /* ValidationUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationUtils.swift; sourceTree = "<group>"; };
 		BD96EB412254E48D0042F236 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		BD96EB422254E48D0042F236 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		BDBCAD022281872200E8172A /* CurrentReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentReminderViewController.swift; sourceTree = "<group>"; };
+		BDBCAD052281A85700E8172A /* Shield For Dementia Patient.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Shield For Dementia Patient.entitlements"; sourceTree = "<group>"; };
 		BDCB265822769CDD00737DA7 /* Shield_For_Dementia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shield_For_Dementia.xcdatamodel; sourceTree = "<group>"; };
 		FD6157F56DFFC59EA73791E0 /* Pods-Shield For Dementia PatientUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shield For Dementia PatientUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shield For Dementia PatientUITests/Pods-Shield For Dementia PatientUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -186,6 +189,7 @@
 		BD96EAB12252D90B0042F236 = {
 			isa = PBXGroup;
 			children = (
+				BDBCAD052281A85700E8172A /* Shield For Dementia Patient.entitlements */,
 				BD96EABC2252D90B0042F236 /* Shield For Dementia */,
 				BD96EAD42252D90D0042F236 /* Shield For DementiaTests */,
 				BD96EADF2252D90D0042F236 /* Shield For DementiaUITests */,
@@ -255,6 +259,7 @@
 				ABAF897122709F7A00561E3A /* PairedViewController.swift */,
 				ABAF89732270A05A00561E3A /* SettingViewController.swift */,
 				BD237173227185A300CC38D4 /* PairingTableViewController.swift */,
+				BDBCAD022281872200E8172A /* CurrentReminderViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -342,6 +347,11 @@
 				TargetAttributes = {
 					BD96EAB92252D90B0042F236 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 					BD96EAD02252D90D0042F236 = {
 						CreatedOnToolsVersion = 10.1;
@@ -511,6 +521,7 @@
 				ABAF897222709F7A00561E3A /* PairedViewController.swift in Sources */,
 				18B26E512259BEE0005F024F /* SignUpViewController.swift in Sources */,
 				18B26E572259BEE0005F024F /* LoginNavigationController.swift in Sources */,
+				BDBCAD032281872200E8172A /* CurrentReminderViewController.swift in Sources */,
 				18B26E5B2259BEFE005F024F /* MemoryTableViewCell.swift in Sources */,
 				BD96EABE2252D90C0042F236 /* AppDelegate.swift in Sources */,
 				BD237176227185BC00CC38D4 /* RequestTableViewCell.swift in Sources */,
@@ -707,7 +718,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = D4E88Q87ES;
 				INFOPLIST_FILE = "Shield For Dementia/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -728,7 +739,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = D4E88Q87ES;
 				INFOPLIST_FILE = "Shield For Dementia/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
