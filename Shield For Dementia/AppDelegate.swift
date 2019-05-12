@@ -29,8 +29,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print("not granted")
             }
         })
+        
+        application.registerUserNotificationSettings(UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil))
+        
         return true
     }
+    
+    func application(_ application: UIApplication, didReceive notification: UILocalNotification) {
+        if notification.category == "reminder"{
+            //actions when user taps the notification
+            let userDefaults = UserDefaults.standard
+            userDefaults.set(notification.userInfo!["reminderTime"] as! String, forKey: "reminderTime")
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let currentReminderController = storyBoard.instantiateViewController(withIdentifier: "currentReminderController") as! CurrentReminderViewController
+            UIApplication.shared.keyWindow?.rootViewController!.present(currentReminderController, animated: true, completion: nil)
+
+        }
+    }
+    
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        if response.actionIdentifier == UNNotificationDefaultActionIdentifier {
+            print("The user tapped the notification!!!")
+        }
+    }
+
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
