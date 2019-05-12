@@ -15,7 +15,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "141"
             endingLineNumber = "141"
-            landmarkName = "viewDidLoad()"
+            landmarkName = "changeMessage()"
             landmarkType = "7">
             <Locations>
                <Location
@@ -111,7 +111,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "142"
             endingLineNumber = "142"
-            landmarkName = "viewDidLoad()"
+            landmarkName = "changeMessage()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -287,7 +287,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "588"
             endingLineNumber = "588"
-            landmarkName = "locationManager(_:didExitRegion:)"
+            landmarkName = "focusOn(annotation:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

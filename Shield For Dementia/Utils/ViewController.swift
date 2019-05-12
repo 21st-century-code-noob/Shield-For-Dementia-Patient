@@ -20,12 +20,16 @@ class ViewController: UIViewController{
     @IBOutlet weak var greetingLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var pauseButton: UIButton!
+    
+    @IBOutlet weak var messageLabel: UILabel!
+    
     var canRetrieveData: Bool = true
     var databaseRef = Database.database().reference()
     var storageRef = Storage.storage()
     var imageList = [UIImage]()
     var imagePathList = [String]()
     var imageNameList = [String]()
+    var imageMessageList = [String]()
     
     
     @IBAction func updateSafeZoneButton(_ sender: Any) {
@@ -116,6 +120,27 @@ class ViewController: UIViewController{
     //Johan Basberg, Computer Program, (github, 2019)
     @IBAction func stopTouchUpFrom(_ sender: UIButton) {
         kenBurnsView.stopAnimation()
+        
+    }
+    
+    @objc func changeMessage(){
+        var currentImage = kenBurnsView.currentImage
+        var i = 0
+        while(i < imageList.count){
+            if(currentImage == imageList[i]){
+                if(imageMessageList[i] != ""){
+                    messageLabel.text = "Behind the picture: " + imageMessageList[i]
+                }
+                else{
+                    messageLabel.text = ""
+                }
+                return
+            }
+            else{
+                messageLabel.text = ""
+            }
+            i += 1
+        }
     }
     
     override func viewDidLoad() {
@@ -132,6 +157,12 @@ class ViewController: UIViewController{
             UIApplication.shared.endBackgroundTask(bgTask)
         })
         RunLoop.current.add(timer, forMode: RunLoop.Mode.default)
+        
+        var messageTimer = Timer.scheduledTimer(timeInterval: 2.0,
+                                     target: self,
+                                     selector: #selector(self.changeMessage),
+                                     userInfo: nil,
+                                     repeats: true)
         
         Auth.auth().signIn(withEmail: "123@123.com", password: "123456789"){(user,error) in
         if error != nil{
@@ -163,30 +194,34 @@ class ViewController: UIViewController{
         let userRef = databaseRef.child("users").child("\(userID)").child("images")
         
         userRef.observe(.value, with:{(snapshot) in
+            self.imageList = []
+            self.imageNameList = []
+            self.imageMessageList = []
             guard let value = snapshot.value as? NSDictionary else{
+                self.kenBurnsView.stopAnimation()
+                self.messageLabel.text = ""
                 return
             }
-                
+            
             for(name, link) in value{
-                let url = link as! String
+                let detail = link as! NSDictionary
+                let url = detail.value(forKey: "url") as! String
+                let message = detail.value(forKey: "message") as! String
                 let fileName = name as! String
                 
-                if(!self.imagePathList.contains(url)){
-                    
-                    self.imagePathList.append(url)
                     if self.localFileExists(fileName: fileName){
                         if var image = self.loadImageData(fileName: fileName){
                             
                             image = self.fixOrientation(img : image)
                             self.imageList.append(image)
                             self.imageNameList.append(fileName)
-                            //self.collectionView?.reloadSections([0])
+                            self.imageMessageList.append(message)
                         }
                     }
                     else{
                         self.storageRef.reference(forURL: url).getData(maxSize: 5 * 1024 * 1024, completion: {(data, error) in
-                            if let error = error{
-                                print(error.localizedDescription)
+                            if error != nil{
+                                print(error!.localizedDescription)
                             }
                             else{
                                 var image = UIImage(data: data!)!
@@ -194,19 +229,28 @@ class ViewController: UIViewController{
                                 image = self.fixOrientation(img : image)
                                 self.imageList.append(image)
                                 self.imageNameList.append(fileName)
+                                self.imageMessageList.append(message)
+                            }
+                            if(self.kenBurnsView.isAnimating){
                                 self.kenBurnsView.animateWithImages(self.imageList, imageAnimationDuration: 10, initialDelay: 0, shouldLoop: true, randomFirstImage: true)
-                                //self.collectionView?.reloadSections([0])
+                            }
+                            else{
+                                if(self.imageList.count == 1){
+                                    self.kenBurnsView.animateWithImages(self.imageList, imageAnimationDuration: 10, initialDelay: 0, shouldLoop: true, randomFirstImage: true)
+                                }
                             }
                         })
                     }
-                }
+
             }
             if (self.imageList.count != 0){
                  self.kenBurnsView.animateWithImages(self.imageList, imageAnimationDuration: 10, initialDelay: 0, shouldLoop: true, randomFirstImage: true)
             }
-           
-  
+
+
         })
+        
+
         
         databaseRef.child("users").child("\(userID)").child("notifications").observe(.value, with:{(snapshot) in
             guard let value = snapshot.value as? NSDictionary else{

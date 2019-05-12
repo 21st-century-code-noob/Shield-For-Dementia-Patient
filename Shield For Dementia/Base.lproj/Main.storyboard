@@ -36,10 +36,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uB1-Sj-U5i">
-                                <rect key="frame" x="33" y="760" width="348" height="41"/>
+                                <rect key="frame" x="20" y="802" width="374" height="40"/>
                                 <color key="backgroundColor" red="0.89541948599999999" green="0.65343643689999997" blue="0.33297074339999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="41" id="UEL-h5-DVZ"/>
+                                    <constraint firstAttribute="height" constant="40" id="UEL-h5-DVZ"/>
                                 </constraints>
                                 <color key="tintColor" name="alternateSelectedControlTextColor" catalog="System" colorSpace="catalog"/>
                                 <state key="normal" title="Continue"/>
@@ -49,9 +49,9 @@
                             </button>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="PAo-Xu-rXX" firstAttribute="trailing" secondItem="uB1-Sj-U5i" secondAttribute="trailing" constant="33" id="bsv-GC-zi8"/>
-                            <constraint firstItem="uB1-Sj-U5i" firstAttribute="leading" secondItem="PAo-Xu-rXX" secondAttribute="leading" constant="33" id="rCE-vE-Zkr"/>
-                            <constraint firstItem="PAo-Xu-rXX" firstAttribute="bottom" secondItem="uB1-Sj-U5i" secondAttribute="bottom" constant="61" id="v5M-Gx-o9B"/>
+                            <constraint firstItem="PAo-Xu-rXX" firstAttribute="trailing" secondItem="uB1-Sj-U5i" secondAttribute="trailing" constant="20" id="bsv-GC-zi8"/>
+                            <constraint firstItem="uB1-Sj-U5i" firstAttribute="leading" secondItem="PAo-Xu-rXX" secondAttribute="leading" constant="20" id="rCE-vE-Zkr"/>
+                            <constraint firstItem="PAo-Xu-rXX" firstAttribute="bottom" secondItem="uB1-Sj-U5i" secondAttribute="bottom" constant="20" id="v5M-Gx-o9B"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PAo-Xu-rXX"/>
                     </view>
@@ -155,6 +155,13 @@
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Story behind it:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BCY-HK-dLF">
+                                <rect key="frame" x="20" y="437" width="374" height="331"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -189,6 +196,7 @@
                         <outlet property="greetingLabel" destination="wlg-nb-hIf" id="ER2-fH-3xj"/>
                         <outlet property="kenBurnsView" destination="EDp-Fk-5wh" id="wLP-oL-rsV"/>
                         <outlet property="mapView" destination="RvL-yB-x7z" id="fhI-9q-HII"/>
+                        <outlet property="messageLabel" destination="BCY-HK-dLF" id="tiw-oc-o4r"/>
                         <outlet property="nameLabel" destination="hq3-ii-lN7" id="Pvq-PC-vog"/>
                         <outlet property="pauseButton" destination="Rb2-k2-wiL" id="k13-nx-9cY"/>
                         <segue destination="mVt-ic-y1M" kind="unwind" identifier="logoutUnwindSegue" unwindAction="unwindToWelcomeWithSegue:" id="GcW-kg-2Q7"/>
@@ -1108,7 +1116,7 @@ please log in or sign up</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="CLE-Xd-58i"/>
+        <segue reference="toa-M0-1l5"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.89541948599999999" green="0.65343643689999997" blue="0.33297074339999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
 </document>
