@@ -6,15 +6,10 @@ target 'Shield For Dementia Patient' do
   use_frameworks!
 
   # Pods for Shield For Dementia Patient
-
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
-
-
-
-
 
   target 'Shield For Dementia PatientTests' do
     inherit! :search_paths
