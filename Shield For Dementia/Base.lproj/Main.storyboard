@@ -65,6 +65,79 @@
             </objects>
             <point key="canvasLocation" x="-130.43478260869566" y="-445.3125"/>
         </scene>
+        <!--Popup View Controller-->
+        <scene sceneID="acT-K2-vFu">
+            <objects>
+                <viewController storyboardIdentifier="PopupViewController" id="z2r-jg-Y4l" customClass="PopupViewController" customModule="Shield_For_Dementia_Patient" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="80S-ae-hVq">
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rQP-VR-LEy">
+                                <rect key="frame" x="0.0" y="0.0" width="350" height="48"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BEHIND THE PICTURES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VaD-Yc-I9v">
+                                        <rect key="frame" x="69.5" y="13" width="211" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93990677600000005" green="0.64201354980000003" blue="0.2586052418" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="4m3-Pr-Edc"/>
+                                    <constraint firstItem="VaD-Yc-I9v" firstAttribute="top" secondItem="rQP-VR-LEy" secondAttribute="top" constant="13" id="7BE-gA-bWg"/>
+                                    <constraint firstItem="VaD-Yc-I9v" firstAttribute="centerX" secondItem="rQP-VR-LEy" secondAttribute="centerX" id="GhA-nM-zb3"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxL-Cy-p6c">
+                                <rect key="frame" x="0.0" y="218" width="350" height="48"/>
+                                <color key="backgroundColor" red="0.93990677600000005" green="0.64201354980000003" blue="0.2586052418" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="WPV-IC-EEo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Dismiss">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissButton:" destination="z2r-jg-Y4l" eventType="touchUpInside" id="K3m-Si-REo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story behind it: " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mO-uW-ZGl">
+                                <rect key="frame" x="20" y="78" width="310" height="110"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lxL-Cy-p6c" firstAttribute="bottom" secondItem="kn4-f6-DnU" secondAttribute="bottom" id="3My-Eo-dqn"/>
+                            <constraint firstItem="6mO-uW-ZGl" firstAttribute="top" secondItem="rQP-VR-LEy" secondAttribute="bottom" constant="30" id="5QE-ED-XxO"/>
+                            <constraint firstItem="6mO-uW-ZGl" firstAttribute="centerY" secondItem="80S-ae-hVq" secondAttribute="centerY" id="A54-f9-zZt"/>
+                            <constraint firstItem="kn4-f6-DnU" firstAttribute="trailing" secondItem="rQP-VR-LEy" secondAttribute="trailing" id="Fod-1B-ltX"/>
+                            <constraint firstItem="lxL-Cy-p6c" firstAttribute="top" secondItem="6mO-uW-ZGl" secondAttribute="bottom" constant="30" id="IYb-ff-Qh0"/>
+                            <constraint firstItem="kn4-f6-DnU" firstAttribute="trailing" secondItem="6mO-uW-ZGl" secondAttribute="trailing" constant="20" id="LBj-Jt-nNV"/>
+                            <constraint firstItem="rQP-VR-LEy" firstAttribute="top" secondItem="80S-ae-hVq" secondAttribute="top" id="YrF-gu-VIy"/>
+                            <constraint firstItem="kn4-f6-DnU" firstAttribute="trailing" secondItem="lxL-Cy-p6c" secondAttribute="trailing" id="lZm-qy-vYR"/>
+                            <constraint firstItem="lxL-Cy-p6c" firstAttribute="leading" secondItem="kn4-f6-DnU" secondAttribute="leading" id="m4M-TI-wXz"/>
+                            <constraint firstItem="6mO-uW-ZGl" firstAttribute="centerX" secondItem="80S-ae-hVq" secondAttribute="centerX" id="owu-6W-BXz"/>
+                            <constraint firstItem="6mO-uW-ZGl" firstAttribute="leading" secondItem="kn4-f6-DnU" secondAttribute="leading" constant="20" id="pAn-f6-Vi6"/>
+                            <constraint firstItem="rQP-VR-LEy" firstAttribute="leading" secondItem="kn4-f6-DnU" secondAttribute="leading" id="zt0-Lo-zih"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kn4-f6-DnU"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="350" height="300"/>
+                    <connections>
+                        <outlet property="messageLabel" destination="6mO-uW-ZGl" id="bw9-5A-SnK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kuM-hI-PME" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-438" y="446"/>
+        </scene>
         <!--Memory-->
         <scene sceneID="kBN-9c-sCU">
             <objects>
@@ -73,10 +146,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="RvL-yB-x7z">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="RvL-yB-x7z">
                                 <rect key="frame" x="0.0" y="88" width="414" height="642"/>
                             </mapView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EDp-Fk-5wh" customClass="JBKenBurnsView" customModule="Shield_For_Dementia_Patient" customModuleProvider="target">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EDp-Fk-5wh" customClass="JBKenBurnsView" customModule="Shield_For_Dementia_Patient" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" red="0.66666668650000005" green="0.66666668650000005" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
@@ -155,13 +228,6 @@
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Story behind it:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BCY-HK-dLF">
-                                <rect key="frame" x="20" y="437" width="374" height="331"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -196,7 +262,6 @@
                         <outlet property="greetingLabel" destination="wlg-nb-hIf" id="ER2-fH-3xj"/>
                         <outlet property="kenBurnsView" destination="EDp-Fk-5wh" id="wLP-oL-rsV"/>
                         <outlet property="mapView" destination="RvL-yB-x7z" id="fhI-9q-HII"/>
-                        <outlet property="messageLabel" destination="BCY-HK-dLF" id="tiw-oc-o4r"/>
                         <outlet property="nameLabel" destination="hq3-ii-lN7" id="Pvq-PC-vog"/>
                         <outlet property="pauseButton" destination="Rb2-k2-wiL" id="k13-nx-9cY"/>
                         <segue destination="mVt-ic-y1M" kind="unwind" identifier="logoutUnwindSegue" unwindAction="unwindToWelcomeWithSegue:" id="GcW-kg-2Q7"/>
@@ -229,6 +294,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Log Out"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Background Music: https://www.bensound.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHO-yR-Xp8">
+                                <rect key="frame" x="26" y="342" width="362" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="4KO-Ta-0cj"/>

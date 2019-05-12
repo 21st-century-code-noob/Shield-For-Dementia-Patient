@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:apple.gpx">
+   </FileRef>
+   <FileRef
       location = "group:InColes.gpx">
    </FileRef>
    <FileRef
