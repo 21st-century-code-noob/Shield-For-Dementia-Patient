@@ -570,7 +570,7 @@ class ViewController: UIViewController{
 
                 timeOfDay = "Afternoon"
             default:
-                timeOfDay = "Night"
+                timeOfDay = "Evening"
             }
         }
         return timeOfDay
