@@ -569,10 +569,13 @@
                             <constraint firstItem="NQt-rv-22M" firstAttribute="top" secondItem="BrJ-ge-UPh" secondAttribute="top" constant="14" id="C6j-be-h11"/>
                             <constraint firstItem="6tT-RH-r1y" firstAttribute="leading" secondItem="BrJ-ge-UPh" secondAttribute="leading" constant="20" id="Dik-np-LoM"/>
                             <constraint firstItem="BrJ-ge-UPh" firstAttribute="trailing" secondItem="Uye-64-CgP" secondAttribute="trailing" constant="20" id="FnA-BC-94a"/>
+                            <constraint firstItem="aRv-Tz-Tqj" firstAttribute="trailing" secondItem="BrJ-ge-UPh" secondAttribute="trailing" id="MMS-uw-fIO"/>
                             <constraint firstItem="BrJ-ge-UPh" firstAttribute="trailing" secondItem="kAD-Bh-xBD" secondAttribute="trailing" constant="20" id="Mri-AX-a2k"/>
                             <constraint firstItem="aRv-Tz-Tqj" firstAttribute="top" secondItem="5sI-7k-cCi" secondAttribute="bottom" constant="8" id="YqR-2F-i9p"/>
                             <constraint firstItem="BrJ-ge-UPh" firstAttribute="trailing" secondItem="6tT-RH-r1y" secondAttribute="trailing" constant="20" id="Z8Z-Wb-3tx"/>
                             <constraint firstItem="BrJ-ge-UPh" firstAttribute="trailing" secondItem="NQt-rv-22M" secondAttribute="trailing" constant="22" id="ZFE-o0-JRB"/>
+                            <constraint firstAttribute="bottom" secondItem="aRv-Tz-Tqj" secondAttribute="bottom" id="d4J-Ow-aST"/>
+                            <constraint firstItem="aRv-Tz-Tqj" firstAttribute="leading" secondItem="BrJ-ge-UPh" secondAttribute="leading" id="dOz-kh-cQb"/>
                             <constraint firstAttribute="bottom" secondItem="aRv-Tz-Tqj" secondAttribute="bottom" id="dcM-yp-DPs"/>
                             <constraint firstItem="FcE-UB-3hM" firstAttribute="top" secondItem="BrJ-ge-UPh" secondAttribute="top" constant="19" id="eMK-jP-Slz"/>
                             <constraint firstItem="FcE-UB-3hM" firstAttribute="leading" secondItem="BrJ-ge-UPh" secondAttribute="leading" constant="20" id="gYE-Cg-Gki"/>
