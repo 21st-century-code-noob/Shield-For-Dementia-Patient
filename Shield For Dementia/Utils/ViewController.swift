@@ -44,7 +44,6 @@ class ViewController: UIViewController{
     
     
     @IBAction func logOutButtonPressed(_ sender: Any) {
-        
 
         let alert = UIAlertController(title: "Log Out", message: "Are you sure you want to log out?", preferredStyle: .alert)
         

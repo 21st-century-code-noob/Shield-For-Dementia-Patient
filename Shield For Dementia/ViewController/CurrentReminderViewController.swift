@@ -12,7 +12,6 @@ import CoreData
 class CurrentReminderViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
    
-    @IBOutlet weak var takeMedicineButton: UIButton!
     @IBOutlet weak var indicationLabel: UILabel!
     @IBOutlet weak var reminderTableView: UITableView!
     var currentReminders:[NSManagedObject] = [NSManagedObject]()
@@ -20,7 +19,6 @@ class CurrentReminderViewController: UIViewController, UITableViewDataSource, UI
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchCurrentRemindersFromCoreData()
-        takeMedicineButton.layer.cornerRadius = 10
         if (currentReminders.count == 1){
             indicationLabel.text = "This is the medicine you need to take at " + (UserDefaults.standard.object(forKey: "reminderTime") as! String)
         }

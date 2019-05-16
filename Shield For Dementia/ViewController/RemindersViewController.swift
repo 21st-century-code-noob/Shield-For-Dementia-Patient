@@ -14,8 +14,6 @@ class RemindersViewController: UIViewController,UITableViewDataSource,UITableVie
     
     @IBOutlet weak var reminderTableView: UITableView!
     @IBOutlet weak var refreshReminderButton: UIButton!
-    @IBOutlet weak var notificationSwitch: UISwitch!
-    @IBOutlet weak var setUpNotiButton: UIButton!
     
     override func viewWillAppear(_ animated: Bool) {
  
@@ -27,7 +25,6 @@ class RemindersViewController: UIViewController,UITableViewDataSource,UITableVie
         reminderTableView.dataSource = self
         loadLocalReminderFromCoreData()
         reminderTableView.reloadData()
-        
     }
     
     func loadLocalReminderFromCoreData(){
@@ -99,16 +96,11 @@ class RemindersViewController: UIViewController,UITableViewDataSource,UITableVie
         retrieveReminderData()
     }
     
-    @IBAction func setUpNotiButtonPressed(_ sender: Any) {
-        removeAllNotifications()
-        addNotifications()
-    }
     
     func retrieveReminderData(){
         disableButtons()
         CBToast.showToastAction()
-        reminders.removeAll()
-        removeAllCoreData()
+        var retrievedReminders = [NSManagedObject]()
         
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{return}
         let managedContext = appDelegate.persistentContainer.viewContext
@@ -138,19 +130,26 @@ class RemindersViewController: UIViewController,UITableViewDataSource,UITableVie
                         reminder.setValue(startDate, forKey: "startDate")
                         reminder.setValue(lastTime, forKey: "lastTime")
                         
-                        self.reminders.append(reminder)
+                        retrievedReminders.append(reminder)
+                        if retrievedReminders.count != self.reminders.count || self.isThereChangeOnReminder(newReminderList: retrievedReminders){
+                            self.reminders = retrievedReminders
+                            self.removeAllNotifications()
+                            self.addNotifications()
+                        }
                     }
                 }
                 catch{
                     print(error)
                 }
-                do{
-                    try managedContext.save()
-                }
-                catch{
-                    print(error)
-                }
                 DispatchQueue.main.sync{
+                    do{
+                        
+                        self.removeAllCoreData()
+                        try managedContext.save()
+                    }
+                    catch{
+                        print(error)
+                    }
                     CBToast.hiddenToastAction()
                     self.enableButtons()
                     self.reminderTableView.reloadData()
@@ -224,30 +223,25 @@ class RemindersViewController: UIViewController,UITableViewDataSource,UITableVie
         enableButtons()
     }
     
-    
-    @IBAction func notificationSwitchValueChanged(_ sender: Any) {
-        if notificationSwitch.isOn{
-            removeAllNotifications()
-            addNotifications()
-        }
-        else{
-            removeAllNotifications()
-            setUpNotiButton.isEnabled = false
-        }
-    }
+
     
     func disableButtons(){
-        setUpNotiButton.isEnabled = false
         refreshReminderButton.isEnabled = false
-        notificationSwitch.isEnabled = false
     }
     
     func enableButtons(){
-        setUpNotiButton.isEnabled = true
         refreshReminderButton.isEnabled = true
-        notificationSwitch.isEnabled = true
     }
     
-    
+    func isThereChangeOnReminder(newReminderList: [NSManagedObject]) -> Bool{
+        var same = false
+        for index in 0...reminders.count - 1{
+            if reminders[index].value(forKey: "reminderId") as! Int != newReminderList[index].value(forKey: "reminderId") as! Int{
+                same = true
+                return same
+            }
+        }
+        return same
+    }
     
 }
