@@ -333,6 +333,7 @@ class ViewController: UIViewController{
         locationList = []
         for geoLocation in geoLocationList{
             locationManager.stopMonitoring(for: geoLocation)
+ 
         }
         geoLocationList = []
         
