@@ -168,7 +168,8 @@ class SignUpTableViewController: UITableViewController {
             signUp(username: usernameTF.text!)
         }
         else{
-            CBToast.showToast(message: "Please check your input", aLocationStr: "center", aShowTime: 2.0)
+            self.displayAlert(title: "Please Check Your Input", message: "All the fields are required and must be in correct format.")
+
         }
     }
     
@@ -188,7 +189,7 @@ class SignUpTableViewController: UITableViewController {
                 let responseString = String(data: data!, encoding: String.Encoding.utf8) as String?
                 if "[]" != responseString{
                     DispatchQueue.main.sync{
-                        CBToast.showToast(message: "The username already exists", aLocationStr: "center", aShowTime: 2.0)
+                        self.displayAlert(title: "Username Already Exists", message: "Please try another username")
                     }
                     finished(false)
                 }
@@ -240,7 +241,7 @@ class SignUpTableViewController: UITableViewController {
                     else{
                         DispatchQueue.main.sync{
                             CBToast.hiddenToastAction()
-                            CBToast.showToast(message: "Account successfully created.", aLocationStr: "center", aShowTime: 5.0)
+                            self.displayAlert(title: "Successful", message: "Account has been created.")
                             self.submitButton.isEnabled = true
                             self.navigationController?.popViewController(animated: true)
                         }
@@ -257,4 +258,9 @@ class SignUpTableViewController: UITableViewController {
         }
     }
     
+    func displayAlert(title: String, message: String){
+        let alert = UIAlertController(title: title, message:message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true)
+    }
 }
