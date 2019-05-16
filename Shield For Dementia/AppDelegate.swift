@@ -67,6 +67,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+
+        let navigationController = window?.rootViewController as? UINavigationController
+        if let activeController = navigationController!.visibleViewController {
+            do{
+                let a : ViewController?
+                if activeController is ViewController{
+                    a = activeController as! ViewController
+                    a!.kenBurnsView.animateWithImages(a!.imageList, imageAnimationDuration: 10, initialDelay: 0, shouldLoop: true, randomFirstImage: true)
+                    a!.pauseButton.setTitle("Pause", for: .normal)
+                }         
+            }
+            catch{
+                
+            }
+           
+            }
+        
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
