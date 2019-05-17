@@ -51,7 +51,10 @@ class ViewController: UIViewController{
         let ok = UIAlertAction(title: "Log Out", style: .default, handler: { (action) -> Void in
             // Present dialog message to user
             
-            self.locationManger.stopMonitoring(for: self.geoLocation!)
+            for geoLocation in self.geoLocationList{
+                self.locationManger.stopMonitoring(for: geoLocation)
+            }
+        
             
             UserDefaults.standard.removeObject(forKey: "username")
             UserDefaults.standard.removeObject(forKey: "password")
