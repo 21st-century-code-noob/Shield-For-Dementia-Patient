@@ -50,6 +50,9 @@ class ViewController: UIViewController{
         // Create OK button with action handler
         let ok = UIAlertAction(title: "Log Out", style: .default, handler: { (action) -> Void in
             // Present dialog message to user
+            
+            self.locationManger.stopMonitoring(for: self.geoLocation!)
+            
             UserDefaults.standard.removeObject(forKey: "username")
             UserDefaults.standard.removeObject(forKey: "password")
             UserDefaults.standard.removeObject(forKey: "lastName")
@@ -238,7 +241,7 @@ class ViewController: UIViewController{
                                 self.imageList.append(image)
                                 self.imageNameList.append(fileName)
                                 self.imageMessageList.append(message)
-                            }
+            }
                             if(self.kenBurnsView.isAnimating){
                                 self.kenBurnsView.animateWithImages(self.imageList, imageAnimationDuration: 10, initialDelay: 0, shouldLoop: true, randomFirstImage: true)
                             }
@@ -252,6 +255,10 @@ class ViewController: UIViewController{
 
             }
             if (self.imageList.count != 0){
+                if(self.kenBurnsView.isPaused){
+                    self.kenBurnsView.resumeAnimation()
+                }
+                
                  self.kenBurnsView.animateWithImages(self.imageList, imageAnimationDuration: 10, initialDelay: 0, shouldLoop: true, randomFirstImage: true)
             }
 
@@ -332,6 +339,7 @@ class ViewController: UIViewController{
         locationList = []
         for geoLocation in geoLocationList{
             locationManager.stopMonitoring(for: geoLocation)
+ 
         }
         geoLocationList = []
         
