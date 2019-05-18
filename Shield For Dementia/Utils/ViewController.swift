@@ -31,9 +31,7 @@ class ViewController: UIViewController{
     var imagePathList = [String]()
     var imageNameList = [String]()
     var imageMessageList = [String]()
-    
     var availableRouteList : [String] = []
-    
     var routePointList: [CLLocationCoordinate2D] = []
     
     @IBAction func updateSafeZoneButton(_ sender: Any) {
@@ -41,7 +39,6 @@ class ViewController: UIViewController{
         
         displayMessage("Safe zones has been updated!", "Success")
     }
-    
     
     @IBAction func logOutButtonPressed(_ sender: Any) {
 
@@ -55,7 +52,7 @@ class ViewController: UIViewController{
                 self.locationManger.stopMonitoring(for: geoLocation)
             }
         
-            
+
             UserDefaults.standard.removeObject(forKey: "username")
             UserDefaults.standard.removeObject(forKey: "password")
             UserDefaults.standard.removeObject(forKey: "lastName")
@@ -83,7 +80,6 @@ class ViewController: UIViewController{
     }
     
     // Johan Basberg, Computer Program, (github, 2019)
-
     @IBAction func valueChangeOfSwitch(_ sender: UISwitch) {
         UIView.setAnimationsEnabled(sender.isOn)
         if !sender.isOn && kenBurnsView.isAnimating {
@@ -95,23 +91,11 @@ class ViewController: UIViewController{
     
     // Johan Basberg, Computer Program, (github, 2019)
     @IBAction func startTouchUpFrom(_ sender: UIButton) {
-//        let images = [
-//            UIImage(named: "ImageOne")!,
-//            UIImage(named: "ImageTwo")!,
-//            UIImage(named: "Johan")!,
-//            ]
-        
         kenBurnsView.animateWithImages(imageList, imageAnimationDuration: 10, initialDelay: 0, shouldLoop: true)
     }
     
     // Johan Basberg, Computer Program, (github, 2019)
     @IBAction func randomStartTouchUpFrom(_ sender: UIButton) {
-//        let images = [
-//            UIImage(named: "ImageOne")!,
-//            UIImage(named: "ImageTwo")!,
-//            UIImage(named: "Johan")!,
-//            ]
-        
         kenBurnsView.animateWithImages(imageList, imageAnimationDuration: 10, initialDelay: 0, shouldLoop: true, randomFirstImage: true)
     }
 
@@ -124,8 +108,7 @@ class ViewController: UIViewController{
             kenBurnsView.pauseAnimation()
             pauseButton.setTitle("Resume", for: .normal)
             
-            
-            
+            //Show the popup message
             let popup = PopupViewController.create() as! PopupViewController
             let sbPopup = SBCardPopupViewController(contentViewController: popup)
             
@@ -149,9 +132,7 @@ class ViewController: UIViewController{
             if(imageList.count == 0){
                 popup.messageLabel.text = "There is no story behind it, just enjoy."
             }
-            
             sbPopup.show(onViewController: self)
-            
         }
     }
 
@@ -160,7 +141,6 @@ class ViewController: UIViewController{
         kenBurnsView.stopAnimation()
         
     }
-    
     
     override func viewDidLoad() {
         
@@ -177,11 +157,10 @@ class ViewController: UIViewController{
         })
         RunLoop.current.add(timer, forMode: RunLoop.Mode.default)
         
-        
         Auth.auth().signIn(withEmail: "123@123.com", password: "123456789"){(user,error) in
         if error != nil{
-            print(123456789)
             }}
+        
         super.viewDidLoad()
         self.greetingLabel.alpha = 0
         self.nameLabel.alpha = 0
@@ -193,6 +172,7 @@ class ViewController: UIViewController{
         else{
             setWelcomeLabel()
         }
+        
         //The swift guy, Notification tutorial, (youtube, 2016)
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert,.badge,.sound], completionHandler: {didAllow, error in
             
@@ -204,6 +184,7 @@ class ViewController: UIViewController{
             }
         })
         
+        //download images
         let userID = UserDefaults.standard.value(forKey: "username") as! String
         let userRef = databaseRef.child("users").child("\(userID)").child("images")
         
@@ -264,12 +245,10 @@ class ViewController: UIViewController{
                 
                  self.kenBurnsView.animateWithImages(self.imageList, imageAnimationDuration: 10, initialDelay: 0, shouldLoop: true, randomFirstImage: true)
             }
-
-
         })
         
 
-        
+        //monitor notification
         databaseRef.child("users").child("\(userID)").child("notifications").observe(.value, with:{(snapshot) in
             guard let value = snapshot.value as? NSDictionary else{
                 return
@@ -291,15 +270,14 @@ class ViewController: UIViewController{
                     UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
                     
                     
-                self.databaseRef.child("users").child("\(userID)").child("notifications").updateChildValues(["notification":0])
+                    self.databaseRef.child("users").child("\(userID)").child("notifications").updateChildValues(["notification":0])
                     
                 }
-            
-                
             }
 
         })
         
+        //monitor available route
         databaseRef.child("users").child("\(userID)").child("availableRoute").observe(.value, with:{(snapshot) in
             guard let value = snapshot.value as? NSDictionary else{
                 return
@@ -317,17 +295,12 @@ class ViewController: UIViewController{
         catch{
             print("error")
         }
-        
-        var origin = CLLocationCoordinate2DMake(-37.87784670058864, 145.04467365151385)
-        var pointa = CLLocationCoordinate2DMake(-37.877673982480964, 145.04198705048265)
-        var pointb = CLLocationCoordinate2DMake(-37.877146230198186, 145.04269213129623)
-        
-        
-        print("距离等于： " + String(self.lineSegmentDistanceFromOrigin(origin, pointa, pointb)))
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        
+        pauseButton.setTitle("Pause", for: .normal)
         
         self.routePointList = []
         
@@ -351,6 +324,7 @@ class ViewController: UIViewController{
             self.kenBurnsView.animateWithImages(self.imageList, imageAnimationDuration: 10, initialDelay: 0, shouldLoop: true, randomFirstImage: true)
         }
         
+        //load safe zone information
         let username = UserDefaults.standard.object(forKey: "username") as? String
         if username != nil{
             let requestURL = "https://sqbk9h1frd.execute-api.us-east-2.amazonaws.com/IEProject/ieproject/carer/checkwhetherpatienthascarer?patientId=" + username!
@@ -451,6 +425,7 @@ class ViewController: UIViewController{
             task.resume()
         }
         
+        //download available route information
         let userID = UserDefaults.standard.value(forKey: "username") as! String
         databaseRef.child("users").child("\(userID)").child("availableRoute").observeSingleEvent(of: .value, with:{(snapshot) in
             guard let value = snapshot.value as? NSDictionary else{
@@ -489,8 +464,6 @@ class ViewController: UIViewController{
         return normalizedImage;
         
     }
-    
-    
     
     //Advance Mobile system, tutorial, (Moodle 2018)
     func localFileExists(fileName: String) -> Bool{
@@ -604,8 +577,6 @@ class ViewController: UIViewController{
         performSegue(withIdentifier: "reminderSegue", sender: nil)
     }
     
-    
-    
     @objc func uploadUserLocation(){
         var patientId = UserDefaults.standard.value(forKey: "username") as! String
         self.databaseRef.child("users").child(patientId).child("realTimeLocation").updateChildValues(["latitude": currentLocation?.latitude, "longitude": currentLocation?.longitude])
@@ -634,8 +605,7 @@ class ViewController: UIViewController{
     var liveTime = 0
     var timerOnDeviation = Timer()
     
-    
-    
+    //configure location service
     private func configureLocationServices(){
         locationManager.delegate = self
         locationManager.requestAlwaysAuthorization()
@@ -868,15 +838,9 @@ extension ViewController: CLLocationManagerDelegate{
                                 })
                                 RunLoop.current.add(self.timerOnDeviation, forMode: RunLoop.Mode.default)
                                 
-                                
                             }
                         }
-                        
-                        
                     }
-                    
-                    
-                    // ...
                 }) { (error) in
                     print(error.localizedDescription)
                 }
@@ -890,7 +854,7 @@ extension ViewController: CLLocationManagerDelegate{
         self.present(alert, animated: true, completion: nil)
     }
     
-    
+    //calculate the distance between a point and a line
     func lineSegmentDistanceFromOrigin(_ origin:CLLocationCoordinate2D, _ pointA:CLLocationCoordinate2D,  _ pointB:CLLocationCoordinate2D) -> Float{
     
         var dAP = CGPoint(x: CGFloat(origin.longitude - pointA.longitude), y: CGFloat(origin.latitude - pointA.latitude));
