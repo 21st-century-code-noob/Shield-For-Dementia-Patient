@@ -708,6 +708,7 @@ extension ViewController: CLLocationManagerDelegate{
         for location in locationListEdited {
             alert.addAction(UIAlertAction(title: location.title, style: UIAlertAction.Style.default, handler: {(action) in
                 
+                self.timerOnExit.invalidate()
                 
                 self.databaseRef.child("users").child(patientId).child("routeList").observeSingleEvent(of: .value, with: { (snapshot) in
                     // Get user value
