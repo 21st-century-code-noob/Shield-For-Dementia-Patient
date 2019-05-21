@@ -31,9 +31,7 @@ class ViewController: UIViewController{
     var imagePathList = [String]()
     var imageNameList = [String]()
     var imageMessageList = [String]()
-    
     var availableRouteList : [String] = []
-    
     var routePointList: [CLLocationCoordinate2D] = []
     
     @IBAction func updateSafeZoneButton(_ sender: Any) {
@@ -41,7 +39,6 @@ class ViewController: UIViewController{
         
         displayMessage("Safe zones has been updated!", "Success")
     }
-    
     
     @IBAction func logOutButtonPressed(_ sender: Any) {
 
@@ -55,7 +52,7 @@ class ViewController: UIViewController{
                 self.locationManger.stopMonitoring(for: geoLocation)
             }
         
-            
+
             UserDefaults.standard.removeObject(forKey: "username")
             UserDefaults.standard.removeObject(forKey: "password")
             UserDefaults.standard.removeObject(forKey: "lastName")
@@ -83,7 +80,6 @@ class ViewController: UIViewController{
     }
     
     // Johan Basberg, Computer Program, (github, 2019)
-
     @IBAction func valueChangeOfSwitch(_ sender: UISwitch) {
         UIView.setAnimationsEnabled(sender.isOn)
         if !sender.isOn && kenBurnsView.isAnimating {
@@ -95,23 +91,11 @@ class ViewController: UIViewController{
     
     // Johan Basberg, Computer Program, (github, 2019)
     @IBAction func startTouchUpFrom(_ sender: UIButton) {
-//        let images = [
-//            UIImage(named: "ImageOne")!,
-//            UIImage(named: "ImageTwo")!,
-//            UIImage(named: "Johan")!,
-//            ]
-        
         kenBurnsView.animateWithImages(imageList, imageAnimationDuration: 10, initialDelay: 0, shouldLoop: true)
     }
     
     // Johan Basberg, Computer Program, (github, 2019)
     @IBAction func randomStartTouchUpFrom(_ sender: UIButton) {
-//        let images = [
-//            UIImage(named: "ImageOne")!,
-//            UIImage(named: "ImageTwo")!,
-//            UIImage(named: "Johan")!,
-//            ]
-        
         kenBurnsView.animateWithImages(imageList, imageAnimationDuration: 10, initialDelay: 0, shouldLoop: true, randomFirstImage: true)
     }
 
@@ -124,12 +108,11 @@ class ViewController: UIViewController{
             kenBurnsView.pauseAnimation()
             pauseButton.setTitle("Resume", for: .normal)
             
-            
-            
+            //Show the popup message
             let popup = PopupViewController.create() as! PopupViewController
             let sbPopup = SBCardPopupViewController(contentViewController: popup)
             
-            var currentImage = kenBurnsView.currentImage
+            let currentImage = kenBurnsView.currentImage
             var i = 0
             while(i < imageList.count){
                 if(currentImage == imageList[i]){
@@ -149,9 +132,7 @@ class ViewController: UIViewController{
             if(imageList.count == 0){
                 popup.messageLabel.text = "There is no story behind it, just enjoy."
             }
-            
             sbPopup.show(onViewController: self)
-            
         }
     }
 
@@ -160,7 +141,6 @@ class ViewController: UIViewController{
         kenBurnsView.stopAnimation()
         
     }
-    
     
     override func viewDidLoad() {
         
@@ -177,11 +157,10 @@ class ViewController: UIViewController{
         })
         RunLoop.current.add(timer, forMode: RunLoop.Mode.default)
         
-        
         Auth.auth().signIn(withEmail: "123@123.com", password: "123456789"){(user,error) in
         if error != nil{
-            print(123456789)
             }}
+        
         super.viewDidLoad()
         self.greetingLabel.alpha = 0
         self.nameLabel.alpha = 0
@@ -193,6 +172,7 @@ class ViewController: UIViewController{
         else{
             setWelcomeLabel()
         }
+        
         //The swift guy, Notification tutorial, (youtube, 2016)
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert,.badge,.sound], completionHandler: {didAllow, error in
             
@@ -204,6 +184,7 @@ class ViewController: UIViewController{
             }
         })
         
+        //download images
         let userID = UserDefaults.standard.value(forKey: "username") as! String
         let userRef = databaseRef.child("users").child("\(userID)").child("images")
         
@@ -264,18 +245,16 @@ class ViewController: UIViewController{
                 
                  self.kenBurnsView.animateWithImages(self.imageList, imageAnimationDuration: 10, initialDelay: 0, shouldLoop: true, randomFirstImage: true)
             }
-
-
         })
         
 
-        
+        //monitor notification
         databaseRef.child("users").child("\(userID)").child("notifications").observe(.value, with:{(snapshot) in
             guard let value = snapshot.value as? NSDictionary else{
                 return
             }
             
-            for(name, link) in value{
+            for(_, link) in value{
                 let status = link as! Int
                 if status == 1{
                     
@@ -291,15 +270,14 @@ class ViewController: UIViewController{
                     UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
                     
                     
-                self.databaseRef.child("users").child("\(userID)").child("notifications").updateChildValues(["notification":0])
+                    self.databaseRef.child("users").child("\(userID)").child("notifications").updateChildValues(["notification":0])
                     
                 }
-            
-                
             }
 
         })
         
+        //monitor available route
         databaseRef.child("users").child("\(userID)").child("availableRoute").observe(.value, with:{(snapshot) in
             guard let value = snapshot.value as? NSDictionary else{
                 return
@@ -317,17 +295,12 @@ class ViewController: UIViewController{
         catch{
             print("error")
         }
-        
-        var origin = CLLocationCoordinate2DMake(-37.87784670058864, 145.04467365151385)
-        var pointa = CLLocationCoordinate2DMake(-37.877673982480964, 145.04198705048265)
-        var pointb = CLLocationCoordinate2DMake(-37.877146230198186, 145.04269213129623)
-        
-        
-        print("距离等于： " + String(self.lineSegmentDistanceFromOrigin(origin, pointa, pointb)))
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        
+        pauseButton.setTitle("Pause", for: .normal)
         
         self.routePointList = []
         
@@ -351,6 +324,7 @@ class ViewController: UIViewController{
             self.kenBurnsView.animateWithImages(self.imageList, imageAnimationDuration: 10, initialDelay: 0, shouldLoop: true, randomFirstImage: true)
         }
         
+        //load safe zone information
         let username = UserDefaults.standard.object(forKey: "username") as? String
         if username != nil{
             let requestURL = "https://sqbk9h1frd.execute-api.us-east-2.amazonaws.com/IEProject/ieproject/carer/checkwhetherpatienthascarer?patientId=" + username!
@@ -369,13 +343,10 @@ class ViewController: UIViewController{
                                         if pair["status"] is NSNull{
                                         }
                                         else if pair["status"] as! Int == 1{
-                                            var username:String = ""
-                                            username = pair["carer_id"] as! String
-                                            self.requestId = pair["request_id"] as! Int
+                                            self.requestId = pair["request_id"] as? Int
                                             
                                             let requestURL = "https://sqbk9h1frd.execute-api.us-east-2.amazonaws.com/IEProject/ieproject/safezonelocation/getlocationbyrequestid?requestId=" + String(self.requestId!)
                                             
-                                            let a = URL(string: requestURL)!
                                             
                                             let task = URLSession.shared.dataTask(with: URL(string: requestURL)!){ data, response, error in
                                                 if error != nil{
@@ -398,8 +369,8 @@ class ViewController: UIViewController{
                                                                 
                                                                 for a in json!{
                                                                     
-                                                                    var b = a as! NSDictionary
-                                                                    var newAnnotation = FencedAnnotation(newTitle: b.value(forKey: "locationName") as! String,newSubtitle: b.value(forKey: "familiarity") as! String,lat: b.value(forKey: "latitude") as! Double, long: b.value(forKey: "longitude") as! Double)
+                                                                    let b = a as! NSDictionary
+                                                                    let newAnnotation = FencedAnnotation(newTitle: b.value(forKey: "locationName") as! String,newSubtitle: b.value(forKey: "familiarity") as! String,lat: b.value(forKey: "latitude") as! Double, long: b.value(forKey: "longitude") as! Double)
                                                                     newAnnotation.subtitle = "Familiarity: " + newAnnotation.subtitle!
                                                                     self.addAnnotation(annotation: newAnnotation)
                                                                     self.locationList.append(newAnnotation)
@@ -451,6 +422,7 @@ class ViewController: UIViewController{
             task.resume()
         }
         
+        //download available route information
         let userID = UserDefaults.standard.value(forKey: "username") as! String
         databaseRef.child("users").child("\(userID)").child("availableRoute").observeSingleEvent(of: .value, with:{(snapshot) in
             guard let value = snapshot.value as? NSDictionary else{
@@ -489,8 +461,6 @@ class ViewController: UIViewController{
         return normalizedImage;
         
     }
-    
-    
     
     //Advance Mobile system, tutorial, (Moodle 2018)
     func localFileExists(fileName: String) -> Bool{
@@ -604,10 +574,8 @@ class ViewController: UIViewController{
         performSegue(withIdentifier: "reminderSegue", sender: nil)
     }
     
-    
-    
     @objc func uploadUserLocation(){
-        var patientId = UserDefaults.standard.value(forKey: "username") as! String
+        let patientId = UserDefaults.standard.value(forKey: "username") as! String
         self.databaseRef.child("users").child(patientId).child("realTimeLocation").updateChildValues(["latitude": currentLocation?.latitude, "longitude": currentLocation?.longitude])
     }
     
@@ -634,8 +602,7 @@ class ViewController: UIViewController{
     var liveTime = 0
     var timerOnDeviation = Timer()
     
-    
-    
+    //configure location service
     private func configureLocationServices(){
         locationManager.delegate = self
         locationManager.requestAlwaysAuthorization()
@@ -670,7 +637,7 @@ extension ViewController: CLLocationManagerDelegate{
         self.timeLimit -= 1
         if(self.timeLimit == 0 && !timerActual.isValid){
             timerOnExit.invalidate()
-            var patientId = UserDefaults.standard.value(forKey: "username") as! String
+            let patientId = UserDefaults.standard.value(forKey: "username") as! String
             self.databaseRef.child("users").child(patientId).child("notificationWhenTimerIsUp").updateChildValues(["destination": "Unknown",
                                                                                                                    "time limit": "10 mins",
                                                                                                                    "notification": 1])
@@ -687,8 +654,8 @@ extension ViewController: CLLocationManagerDelegate{
         if(self.timeLimitForActual == 0){
             timerActual.invalidate()
             timerOnDeviation.invalidate()
-            var patientId = UserDefaults.standard.value(forKey: "username") as! String
-            var timeText = liveTime.quotientAndRemainder(dividingBy: 60)
+            let patientId = UserDefaults.standard.value(forKey: "username") as! String
+            let timeText = liveTime.quotientAndRemainder(dividingBy: 60)
             self.databaseRef.child("users").child(patientId).child("notificationWhenTimerIsUp").updateChildValues(["destination": liveDestination,
                                                                                                                    "time limit": String(timeText.quotient) + " minutes " +   String(timeText.remainder) + " seconds",
                                                                                                             "notification": 1])
@@ -699,7 +666,7 @@ extension ViewController: CLLocationManagerDelegate{
         var i = 0
         var distanceMin = Float(0)
         while(i < (routePointList.count - 1)){
-            var distance = self.lineSegmentDistanceFromOrigin(currentLocation!, routePointList[i], routePointList[i+1])
+            let distance = self.lineSegmentDistanceFromOrigin(currentLocation!, routePointList[i], routePointList[i+1])
             if(distance < Float(distanceMin) || distanceMin == 0){
                 distanceMin = distance
             }
@@ -709,7 +676,7 @@ extension ViewController: CLLocationManagerDelegate{
         if(distanceMin > Float(0.1)){
             timerActual.invalidate()
             timerOnDeviation.invalidate()
-            var patientId = UserDefaults.standard.value(forKey: "username") as! String
+            let patientId = UserDefaults.standard.value(forKey: "username") as! String
             self.databaseRef.child("users").child(patientId).child("notificationWhenDeviate").updateChildValues(["start": currentSafeZone, "destination": liveDestination,"notification": 1])
         }
     }
@@ -726,7 +693,7 @@ extension ViewController: CLLocationManagerDelegate{
         RunLoop.current.add(self.timerOnExit, forMode: RunLoop.Mode.default)
         
         
-        var patientId = UserDefaults.standard.value(forKey: "username") as! String
+        let patientId = UserDefaults.standard.value(forKey: "username") as! String
         self.databaseRef.child("users").child(patientId).child("notificationExitRegin").updateChildValues(["locationExited": region.identifier, "notification": 1])
         
         var locationListEdited  = [FencedAnnotation]()
@@ -741,6 +708,7 @@ extension ViewController: CLLocationManagerDelegate{
         for location in locationListEdited {
             alert.addAction(UIAlertAction(title: location.title, style: UIAlertAction.Style.default, handler: {(action) in
                 
+                self.timerOnExit.invalidate()
                 
                 self.databaseRef.child("users").child(patientId).child("routeList").observeSingleEvent(of: .value, with: { (snapshot) in
                     // Get user value
@@ -754,7 +722,6 @@ extension ViewController: CLLocationManagerDelegate{
                         
                         
                         let sourceMark = MKPlacemark(coordinate: CLLocationCoordinate2DMake(self.currentLocation!.latitude, self.currentLocation!.longitude))
-                        let destinationMark = MKPlacemark(coordinate: coordinates)
                         
                         let regionDistance : CLLocationDistance = 1000
                         let regionSpan = MKCoordinateRegion(center: coordinates, latitudinalMeters: regionDistance, longitudinalMeters: regionDistance)
@@ -767,10 +734,10 @@ extension ViewController: CLLocationManagerDelegate{
                     
                     var actualResult : NSDictionary?
                     if response != nil{
-                        var routeIdentifier1 = location.title! + " <=> " + region.identifier
-                        var routeIdentifier2 = region.identifier + " <=> " + location.title!
-                        var result1 = response!.value(forKey: routeIdentifier1) as? NSDictionary
-                        var result2 = response!.value(forKey: routeIdentifier2) as? NSDictionary
+                        let routeIdentifier1 = location.title! + " <=> " + region.identifier
+                        let routeIdentifier2 = region.identifier + " <=> " + location.title!
+                        let result1 = response!.value(forKey: routeIdentifier1) as? NSDictionary
+                        let result2 = response!.value(forKey: routeIdentifier2) as? NSDictionary
                         
                         if(result1 == nil && result2 == nil){
                             actualResult = nil
@@ -827,16 +794,16 @@ extension ViewController: CLLocationManagerDelegate{
                         }
                         else{
                             
-                            var duration = actualResult?.value(forKey: "duration") as! Int
-                            var pointList = actualResult?.value(forKey: "pointList") as! NSArray
+                            let duration = actualResult?.value(forKey: "duration") as! Int
+                            let pointList = actualResult?.value(forKey: "pointList") as! NSArray
                             
                             self.routePointList = []
                             var i = 0
                             while (i < pointList.count){
-                                var info = pointList[i] as! NSDictionary
-                                var lat = info.value(forKey: "lat") as! Double
-                                var long = info.value(forKey: "long") as! Double
-                                var point = CLLocationCoordinate2DMake(lat, long)
+                                let info = pointList[i] as! NSDictionary
+                                let lat = info.value(forKey: "lat") as! Double
+                                let long = info.value(forKey: "long") as! Double
+                                let point = CLLocationCoordinate2DMake(lat, long)
                                 self.routePointList.append(point)
                                 i += 1
                             }
@@ -868,15 +835,9 @@ extension ViewController: CLLocationManagerDelegate{
                                 })
                                 RunLoop.current.add(self.timerOnDeviation, forMode: RunLoop.Mode.default)
                                 
-                                
                             }
                         }
-                        
-                        
                     }
-                    
-                    
-                    // ...
                 }) { (error) in
                     print(error.localizedDescription)
                 }
@@ -890,29 +851,29 @@ extension ViewController: CLLocationManagerDelegate{
         self.present(alert, animated: true, completion: nil)
     }
     
-    
+    //calculate the distance between a point and a line
     func lineSegmentDistanceFromOrigin(_ origin:CLLocationCoordinate2D, _ pointA:CLLocationCoordinate2D,  _ pointB:CLLocationCoordinate2D) -> Float{
     
-        var dAP = CGPoint(x: CGFloat(origin.longitude - pointA.longitude), y: CGFloat(origin.latitude - pointA.latitude));
-        var dAB = CGPoint(x: CGFloat(pointB.longitude - pointA.longitude), y: CGFloat(pointB.latitude - pointA.latitude));
-    var dot = dAP.x * dAB.x + dAP.y * dAB.y;
-    var squareLength = dAB.x * dAB.x + dAB.y * dAB.y;
-    var param = dot / squareLength;
-    
+        let dAP = CGPoint(x: CGFloat(origin.longitude - pointA.longitude), y: CGFloat(origin.latitude - pointA.latitude));
+        let dAB = CGPoint(x: CGFloat(pointB.longitude - pointA.longitude), y: CGFloat(pointB.latitude - pointA.latitude));
+        let dot = dAP.x * dAB.x + dAP.y * dAB.y;
+        let squareLength = dAB.x * dAB.x + dAB.y * dAB.y;
+        let param = dot / squareLength;
+
         var nearestPoint = CGPoint(x: 0, y: 0)
-    if (param < 0 || (pointA.longitude == pointB.longitude && pointA.latitude == pointB.latitude)) {
-    nearestPoint.x = CGFloat(pointA.longitude);
-    nearestPoint.y = CGFloat(pointA.latitude);
-    } else if (param > 1) {
-    nearestPoint.x = CGFloat(pointB.longitude);
-    nearestPoint.y = CGFloat(pointB.latitude);
-    } else {
-        nearestPoint.x = CGFloat(pointA.longitude) + param * dAB.x;
-        nearestPoint.y = CGFloat(pointA.latitude) + param * dAB.y;
-    }
-    
-    var dx = origin.longitude - Double(nearestPoint.x);
-    var dy = origin.latitude - Double(nearestPoint.y);
+        if (param < 0 || (pointA.longitude == pointB.longitude && pointA.latitude == pointB.latitude)) {
+        nearestPoint.x = CGFloat(pointA.longitude);
+        nearestPoint.y = CGFloat(pointA.latitude);
+        } else if (param > 1) {
+        nearestPoint.x = CGFloat(pointB.longitude);
+        nearestPoint.y = CGFloat(pointB.latitude);
+        } else {
+            nearestPoint.x = CGFloat(pointA.longitude) + param * dAB.x;
+            nearestPoint.y = CGFloat(pointA.latitude) + param * dAB.y;
+        }
+
+        let dx = origin.longitude - Double(nearestPoint.x);
+        let dy = origin.latitude - Double(nearestPoint.y);
         return sqrtf(Float(dx * dx + dy * dy)) * 100;
     
     }

@@ -70,19 +70,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let navigationController = window?.rootViewController as? UINavigationController
         if let activeController = navigationController!.visibleViewController {
-            do{
-                let a : ViewController?
-                if activeController is ViewController{
-                    a = activeController as! ViewController
-                    a!.kenBurnsView.animateWithImages(a!.imageList, imageAnimationDuration: 10, initialDelay: 0, shouldLoop: true, randomFirstImage: true)
-                    a!.pauseButton.setTitle("Pause", for: .normal)
-                }         
+
+            let a : ViewController?
+            if activeController is ViewController{
+                a = activeController as! ViewController
+                a!.kenBurnsView.animateWithImages(a!.imageList, imageAnimationDuration: 10, initialDelay: 0, shouldLoop: true, randomFirstImage: true)
+                a!.pauseButton.setTitle("Pause", for: .normal)
             }
-            catch{
-                
-            }
-           
-            }
+        }
         
     }
 
