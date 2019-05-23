@@ -28,15 +28,17 @@ class RemindersViewController: UIViewController,UITableViewDataSource,UITableVie
     }
     
     func loadLocalReminderFromCoreData(){
+        var idSort = NSSortDescriptor(key:"reminderId", ascending:false)
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{return}
         let managedContext = appDelegate.persistentContainer.viewContext
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Reminder")
-        
+        fetchRequest.sortDescriptors = [idSort]
         do{
             let result = try managedContext.fetch(fetchRequest)
             for data in result as! [NSManagedObject]{
                 reminders.append(data)
             }
+            reminders.reverse()
         }
         catch{
             print("error")
@@ -131,7 +133,7 @@ class RemindersViewController: UIViewController,UITableViewDataSource,UITableVie
                         reminder.setValue(lastTime, forKey: "lastTime")
                         
                         retrievedReminders.append(reminder)
-                        if retrievedReminders.count != self.reminders.count || self.isThereChangeOnReminder(newReminderList: retrievedReminders){
+                        if retrievedReminders.count != self.reminders.count ||  self.isThereChangeOnReminder(newReminderList: retrievedReminders){
                             self.reminders = retrievedReminders
                             self.removeAllNotifications()
                             self.addNotifications()
@@ -178,7 +180,6 @@ class RemindersViewController: UIViewController,UITableViewDataSource,UITableVie
     }
     
     func addNotifications(){
-        disableButtons()
         let notificationCenter = UNUserNotificationCenter.current()
         let currentDate = Date()
         
@@ -220,7 +221,6 @@ class RemindersViewController: UIViewController,UITableViewDataSource,UITableVie
                 }
             })
         }
-        enableButtons()
     }
     
 
