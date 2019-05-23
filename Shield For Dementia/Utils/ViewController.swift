@@ -37,7 +37,7 @@ class ViewController: UIViewController{
     @IBAction func updateSafeZoneButton(_ sender: Any) {
         self.viewWillAppear(true)
         
-        displayMessage("Safe zones has been updated!", "Success")
+        displayMessage("Safe zones have been updated!", "Success")
     }
     
     @IBAction func logOutButtonPressed(_ sender: Any) {
@@ -194,7 +194,9 @@ class ViewController: UIViewController{
             self.imageMessageList = []
             
             guard let value = snapshot.value as? NSDictionary else{
-                self.kenBurnsView.stopAnimation()
+                self.imageList.append(UIImage(named: "default")!)
+                self.imageMessageList.append("There is no memory, please check.")
+                self.kenBurnsView.animateWithImages(self.imageList, imageAnimationDuration: 10, initialDelay: 0, shouldLoop: true, randomFirstImage: true)
                 return
             }
             
@@ -225,7 +227,7 @@ class ViewController: UIViewController{
                                 self.imageList.append(image)
                                 self.imageNameList.append(fileName)
                                 self.imageMessageList.append(message)
-            }
+                            }
                             if(self.kenBurnsView.isAnimating){
                                 self.kenBurnsView.animateWithImages(self.imageList, imageAnimationDuration: 10, initialDelay: 0, shouldLoop: true, randomFirstImage: true)
                             }
@@ -234,6 +236,8 @@ class ViewController: UIViewController{
                                     self.kenBurnsView.animateWithImages(self.imageList, imageAnimationDuration: 10, initialDelay: 0, shouldLoop: true, randomFirstImage: true)
                                 }
                             }
+                            
+                            
                         })
                     }
 
@@ -245,6 +249,8 @@ class ViewController: UIViewController{
                 
                  self.kenBurnsView.animateWithImages(self.imageList, imageAnimationDuration: 10, initialDelay: 0, shouldLoop: true, randomFirstImage: true)
             }
+
+            
         })
         
 
@@ -321,6 +327,11 @@ class ViewController: UIViewController{
         
 
         if (self.imageList.count != 0){
+            self.kenBurnsView.animateWithImages(self.imageList, imageAnimationDuration: 10, initialDelay: 0, shouldLoop: true, randomFirstImage: true)
+        }
+        else{
+            self.imageList.append(UIImage(named: "default")!)
+            self.imageMessageList.append("There are no memories, please check.")
             self.kenBurnsView.animateWithImages(self.imageList, imageAnimationDuration: 10, initialDelay: 0, shouldLoop: true, randomFirstImage: true)
         }
         
