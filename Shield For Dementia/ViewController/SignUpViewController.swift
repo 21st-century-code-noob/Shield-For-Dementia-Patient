@@ -170,7 +170,7 @@ class SignUpViewController: UIViewController {
     }
 
 
-    
+    /*
     @IBAction func checkAvailablityButtonPressed(_ sender: Any) {
         if usernameHintLabel.isHidden {
             checkUsernameAvailability(username: usernameTF.text)
@@ -179,6 +179,7 @@ class SignUpViewController: UIViewController {
             self.displayAlert(title: "Username Not Validated", message: "Please enter a validated username before checking.")
         }
     }
+ */
     
     //check username availability via API
     func checkUsernameAvailability(username: String!){

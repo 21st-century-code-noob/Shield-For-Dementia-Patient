@@ -27,6 +27,7 @@ class RemindersViewController: UIViewController,UITableViewDataSource,UITableVie
         reminderTableView.reloadData()
     }
     
+    //load reminder from core data. no need to download data from api everytime.
     func loadLocalReminderFromCoreData(){
         var idSort = NSSortDescriptor(key:"reminderId", ascending:false)
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{return}
@@ -98,7 +99,7 @@ class RemindersViewController: UIViewController,UITableViewDataSource,UITableVie
         retrieveReminderData()
     }
     
-    
+    //retrieve reminder data from API
     func retrieveReminderData(){
         disableButtons()
         CBToast.showToastAction()
@@ -179,6 +180,8 @@ class RemindersViewController: UIViewController,UITableViewDataSource,UITableVie
         notificationCenter.removeAllPendingNotificationRequests()
     }
     
+    
+    //Add notification to notification center according to reminders. reminders with the same time will be merged to one notification
     func addNotifications(){
         let notificationCenter = UNUserNotificationCenter.current()
         let currentDate = Date()
@@ -233,6 +236,7 @@ class RemindersViewController: UIViewController,UITableViewDataSource,UITableVie
         refreshReminderButton.isEnabled = true
     }
     
+    //compare downloaded reminder with local reminder, to determine if there is any change on the reminders,
     func isThereChangeOnReminder(newReminderList: [NSManagedObject]) -> Bool{
         var same = false
         for index in 0...reminders.count - 1{
