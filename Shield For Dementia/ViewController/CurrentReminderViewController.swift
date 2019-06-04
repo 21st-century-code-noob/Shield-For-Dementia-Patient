@@ -55,6 +55,7 @@ class CurrentReminderViewController: UIViewController, UITableViewDataSource, UI
         return cell
     }
 
+    //When user taps notification, fetch current reminders from core data and display on the tableview, telling which medicine to take.
     func fetchCurrentRemindersFromCoreData(){
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{return}
         var tempReminders: [NSManagedObject] = [NSManagedObject]()

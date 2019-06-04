@@ -27,16 +27,19 @@ class RemindersViewController: UIViewController,UITableViewDataSource,UITableVie
         reminderTableView.reloadData()
     }
     
+    //load reminder from core data. no need to download data from api everytime.
     func loadLocalReminderFromCoreData(){
+        var idSort = NSSortDescriptor(key:"reminderId", ascending:false)
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{return}
         let managedContext = appDelegate.persistentContainer.viewContext
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Reminder")
-        
+        fetchRequest.sortDescriptors = [idSort]
         do{
             let result = try managedContext.fetch(fetchRequest)
             for data in result as! [NSManagedObject]{
                 reminders.append(data)
             }
+            reminders.reverse()
         }
         catch{
             print("error")
@@ -96,7 +99,7 @@ class RemindersViewController: UIViewController,UITableViewDataSource,UITableVie
         retrieveReminderData()
     }
     
-    
+    //retrieve reminder data from API
     func retrieveReminderData(){
         disableButtons()
         CBToast.showToastAction()
@@ -131,7 +134,7 @@ class RemindersViewController: UIViewController,UITableViewDataSource,UITableVie
                         reminder.setValue(lastTime, forKey: "lastTime")
                         
                         retrievedReminders.append(reminder)
-                        if retrievedReminders.count != self.reminders.count || self.isThereChangeOnReminder(newReminderList: retrievedReminders){
+                        if retrievedReminders.count != self.reminders.count ||  self.isThereChangeOnReminder(newReminderList: retrievedReminders){
                             self.reminders = retrievedReminders
                             self.removeAllNotifications()
                             self.addNotifications()
@@ -177,8 +180,9 @@ class RemindersViewController: UIViewController,UITableViewDataSource,UITableVie
         notificationCenter.removeAllPendingNotificationRequests()
     }
     
+    
+    //Add notification to notification center according to reminders. reminders with the same time will be merged to one notification
     func addNotifications(){
-        disableButtons()
         let notificationCenter = UNUserNotificationCenter.current()
         let currentDate = Date()
         
@@ -220,7 +224,6 @@ class RemindersViewController: UIViewController,UITableViewDataSource,UITableVie
                 }
             })
         }
-        enableButtons()
     }
     
 
@@ -233,6 +236,7 @@ class RemindersViewController: UIViewController,UITableViewDataSource,UITableVie
         refreshReminderButton.isEnabled = true
     }
     
+    //compare downloaded reminder with local reminder, to determine if there is any change on the reminders,
     func isThereChangeOnReminder(newReminderList: [NSManagedObject]) -> Bool{
         var same = false
         for index in 0...reminders.count - 1{

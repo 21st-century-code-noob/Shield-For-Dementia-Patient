@@ -16,6 +16,7 @@ class SettingViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    //determine if the user has already paired. if yes, go to paired view, else go to pairing view
     
     @IBAction func pairingButtonPressed(_ sender: Any) {
         CBToast.showToastAction()

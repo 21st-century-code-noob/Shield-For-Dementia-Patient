@@ -105,7 +105,7 @@ class SignUpTableViewController: UITableViewController {
      */
     
     
-    
+    //All below listen to the textfield and do validation
     @IBAction func usernameEditingChanged(_ sender: Any) {
         let username = usernameTF.text
         if ValidationUtils.validateUsername(username: username){
@@ -158,7 +158,7 @@ class SignUpTableViewController: UITableViewController {
     }
     
     
-    
+    //handle submitting button tap action
     @IBAction func submitButtonTapped(_ sender: Any) {
         if ValidationUtils.validateUsername(username: usernameTF.text) &&
             ValidationUtils.validatePsw(psw: pswTF.text) &&
@@ -173,7 +173,7 @@ class SignUpTableViewController: UITableViewController {
         }
     }
     
-    
+    //Check user name availability. code block to return true or false for availability.
     func checkUsernameAvailability(username: String!, finished: @escaping((Bool)->Void)){
         let requestURL = "https://sqbk9h1frd.execute-api.us-east-2.amazonaws.com/IEProject/ieproject/patient/checkpatientid?patientId=" + username
         let task = URLSession.shared.dataTask(with: URL(string: requestURL)!){ data, response, error in
@@ -204,6 +204,7 @@ class SignUpTableViewController: UITableViewController {
         task.resume()
     }
     
+    //sign up with information on tesxtfield
     func signUp(username: String){
         submitButton.isEnabled = false
         CBToast.showToastAction()

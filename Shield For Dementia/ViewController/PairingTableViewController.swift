@@ -42,6 +42,7 @@ class PairingTableViewController: UITableViewController {
         return requests.count
     }
 
+    //load all pairing requests
     @objc func loadAllRequests(){
         toolbarItems?[0].isEnabled = false
         CBToast.showToastAction()
@@ -86,6 +87,7 @@ class PairingTableViewController: UITableViewController {
         cell.requestId = String(requests[indexPath.row].requestId)
         cell.usernameLabel.text = requests[indexPath.row].carerId
         
+        //when accept button is pressed, use api to update database
         cell.acceptButtonAction = {[unowned self] in
             if let indexPath = self.tableView.indexPath(for: cell) {
                 let alert = UIAlertController(title: "Accept Pairing Request", message: "Accept Request? After accept the request, you can only unpair on carer app.", preferredStyle: .alert)
@@ -105,6 +107,7 @@ class PairingTableViewController: UITableViewController {
                 self.present(alert, animated: true, completion: nil)
             }
         }
+        //if declined, update database using api
         cell.declineButtonAction = {[unowned self] in
             if let indexPath = self.tableView.indexPath(for: cell) {
                 let alert = UIAlertController(title: "Decline Pairing Request", message: "Are you sure you want to decline this request?", preferredStyle: .alert)
@@ -173,7 +176,8 @@ class PairingTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    //api to accept or decline request. Parameter includes request id, index path, and accepte or not.
     func acceptOrDeclineRequest(accepted: String, requestId: String, indexPath: IndexPath){
         CBToast.showToastAction()
         let requestURL = "https://sqbk9h1frd.execute-api.us-east-2.amazonaws.com/IEProject/ieproject/friend-request/acceptorrejectrequest?requestId=" + requestId + "&status=" + accepted

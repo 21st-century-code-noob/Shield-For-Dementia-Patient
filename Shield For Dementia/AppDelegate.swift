@@ -35,6 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
+    //when tap notification, go to current location view
     func application(_ application: UIApplication, didReceive notification: UILocalNotification) {
         if notification.category == "reminder"{
             //actions when user taps the notification
