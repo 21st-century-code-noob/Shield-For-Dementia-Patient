@@ -106,7 +106,7 @@ class RemindersViewController: UIViewController,UITableViewDataSource,UITableVie
         let managedContext = appDelegate.persistentContainer.viewContext
         let reminderEntity = NSEntityDescription.entity(forEntityName: "Reminder", in: managedContext)!
         
-        let requestURL = "https://sqbk9h1frd.execute-api.us-east-2.amazonaws.com/IEProject/ieproject/reminder/selectreminderbypatientid?patientId=" + (UserDefaults.standard.object(forKey: "username") as! String)
+        let requestURL = "Replace it with your API which can load all reminders for the patient" + (UserDefaults.standard.object(forKey: "username") as! String)
         let task = URLSession.shared.dataTask(with: URL(string: requestURL)!){ data, response, error in
             if error != nil{
                 CBToast.hiddenToastAction()

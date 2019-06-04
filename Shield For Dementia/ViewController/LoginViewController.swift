@@ -57,7 +57,7 @@ class LoginViewController: UIViewController {
         }
         else{
             var passwordHash = SHA1.hexString(from: password!)
-            let requestURL:String! = "https://sqbk9h1frd.execute-api.us-east-2.amazonaws.com/IEProject/ieproject/patient/checkpatientidandpassword?patientId=" + username! + "&password=" + passwordHash!
+            let requestURL:String! = "Replace it with your API which can check the username and password" + username! + "&password=" + passwordHash!
             let task = URLSession.shared.dataTask(with: URL(string: requestURL)!){ data, response, error in
                 if error != nil{
                     print("error occured")

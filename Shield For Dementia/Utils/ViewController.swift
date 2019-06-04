@@ -157,7 +157,7 @@ class ViewController: UIViewController{
         })
         RunLoop.current.add(timer, forMode: RunLoop.Mode.default)
         
-        Auth.auth().signIn(withEmail: "123@123.com", password: "123456789"){(user,error) in
+        Auth.auth().signIn(withEmail: "You need replace it with your email for firebase.", password: "You need replace it with your password for firebase."){(user,error) in
         if error != nil{
             }}
         
@@ -338,7 +338,7 @@ class ViewController: UIViewController{
         //load safe zone information
         let username = UserDefaults.standard.object(forKey: "username") as? String
         if username != nil{
-            let requestURL = "https://sqbk9h1frd.execute-api.us-east-2.amazonaws.com/IEProject/ieproject/carer/checkwhetherpatienthascarer?patientId=" + username!
+            let requestURL = "Replace it with your API which can check whether a patient has been paired with a carer" + username!
             let task = URLSession.shared.dataTask(with: URL(string: requestURL)!){ data, response, error in
                 if error != nil{
                     print("error occured")
@@ -356,7 +356,7 @@ class ViewController: UIViewController{
                                         else if pair["status"] as! Int == 1{
                                             self.requestId = pair["request_id"] as? Int
                                             
-                                            let requestURL = "https://sqbk9h1frd.execute-api.us-east-2.amazonaws.com/IEProject/ieproject/safezonelocation/getlocationbyrequestid?requestId=" + String(self.requestId!)
+                                            let requestURL = "Replace it with your API which can load all the safe zones for a patient" + String(self.requestId!)
                                             
                                             
                                             let task = URLSession.shared.dataTask(with: URL(string: requestURL)!){ data, response, error in
@@ -523,7 +523,7 @@ class ViewController: UIViewController{
     
     
     func getPatientName(){
-        let requestURL = "https://sqbk9h1frd.execute-api.us-east-2.amazonaws.com/IEProject/ieproject/patient/checkpatientid?patientId=" + (UserDefaults.standard.value(forKey: "username") as! String)
+        let requestURL = "Replace it with your API which can get the name of the patient" + (UserDefaults.standard.value(forKey: "username") as! String)
         let task = URLSession.shared.dataTask(with: URL(string: requestURL)!){ data, response, error in
             if error != nil{
                 print("error occured")
